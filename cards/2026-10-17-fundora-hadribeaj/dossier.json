@@ -1091,7 +1091,13 @@
         "fighter_id": 1432466012,
         "picked_at": "2026-10-08T04:12:13"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Called off on fight day: Figueroa missed weight and lost the WBA title on the scale, then fell ill overnight.",
+        "source": "https://whbl.com/2026/10/17/boxing-figueroa-withdraws-from-kameda-fight-due-to-illness-after-losing-wba-featherweight-title/",
+        "at": "2026-10-19T01:06:15"
+      }
     },
     {
       "order": 3,
