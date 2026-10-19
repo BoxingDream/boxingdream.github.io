@@ -1097,7 +1097,7 @@
       "weight_class": "Featherweight",
       "scheduled_rounds": 12,
       "title": "WBO Featherweight World Championship",
-      "blocked": true,
+      "blocked": false,
       "fighters": [
         {
           "id": 1973661616,
@@ -1229,8 +1229,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
+                "v": "2026-02-28",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -1244,13 +1244,13 @@
                 "n": 11.5
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "8.0 months",
+                "d": null,
+                "n": 8.0
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 69.6
               }
             },
             {
@@ -1262,13 +1262,13 @@
                 "n": 1
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "1",
+                "d": null,
+                "n": 1
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 100.0
               }
             },
             {
@@ -1280,13 +1280,13 @@
                 "n": 1.67
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "0.7",
+                "d": null,
+                "n": 0.67
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 40.1
               }
             },
             {
@@ -1299,7 +1299,7 @@
               },
               "b": {
                 "v": null,
-                "d": "no completed fights",
+                "d": "last weight class unknown",
                 "n": null
               },
               "bar": null
@@ -1333,8 +1333,29 @@
                 "d": null
               },
               "b": {
-                "results": [],
-                "d": "data incomplete"
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "D",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  }
+                ],
+                "d": null
               }
             }
           ]
@@ -1353,7 +1374,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for only 1 of 26 opponents",
                 "n": null
               },
               "bar": null
@@ -1368,7 +1389,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for 0 of last 5",
                 "n": null
               },
               "bar": null
@@ -1382,8 +1403,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0-1-0",
+                "d": "1 fights",
                 "n": null
               },
               "bar": null
@@ -1403,13 +1424,13 @@
                 "n": 85.7
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "75%",
+                "d": "18 of 24 wins",
+                "n": 75.0
               },
               "bar": {
                 "a": 85.7,
-                "b": 0.0
+                "b": 75.0
               }
             },
             {
@@ -1422,7 +1443,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 0 wins over rated winners",
                 "n": null
               },
               "bar": {
@@ -1439,8 +1460,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0 of 26",
+                "d": "never stopped",
                 "n": null
               },
               "bar": null
@@ -1460,13 +1481,13 @@
                 "n": 12
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "Round 10",
+                "d": null,
+                "n": 10
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 83.3
               }
             },
             {
@@ -1478,13 +1499,13 @@
                 "n": 3
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "2",
+                "d": null,
+                "n": 2
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 66.7
               }
             },
             {
@@ -1496,9 +1517,9 @@
                 "n": 1
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
               "bar": {
                 "a": 100.0,
@@ -1514,13 +1535,13 @@
                 "n": 14.3
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "28%",
+                "d": "25 decided fights",
+                "n": 28.0
               },
               "bar": {
                 "a": 14.3,
-                "b": 0.0
+                "b": 28.0
               }
             },
             {
@@ -1532,9 +1553,9 @@
                 "n": 5
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
               "bar": {
                 "a": 100.0,
@@ -1556,8 +1577,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0-0-0",
+                "d": "1 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -1596,7 +1617,11 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Rafael Espinoza",
+        "fighter_id": 1973661616,
+        "picked_at": "2026-10-19T02:50:46"
+      },
       "result": null
     },
     {
@@ -3169,11 +3194,11 @@
     }
   ],
   "data_as_of": "2026-10-19",
-  "generated_at": "2026-10-19T01:03:36",
+  "generated_at": "2026-10-19T03:07:54",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-19T01:03:36"
+  "published_at": "2026-10-19T03:07:54"
 }
