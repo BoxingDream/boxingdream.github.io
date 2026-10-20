@@ -10,7 +10,7 @@
     "broadcaster": "DAZN",
     "status": "final"
   },
-  "statement": "Navarrete has never been stopped in 43 fights. Neither has Foster. Our model can't split them.",
+  "statement": "Navarrete has never been stopped in 43 fights. Neither has Foster. Our model barely splits them.",
   "bouts": [
     {
       "order": 1,
@@ -2116,16 +2116,21 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Emanuel Moreno",
+        "fighter_id": 984167348,
+        "picked_at": "2026-10-20T03:37:06",
+        "basis": "record"
+      },
       "result": null
     }
   ],
   "data_as_of": "2026-10-19",
-  "generated_at": "2026-10-20T03:10:24",
+  "generated_at": "2026-10-20T03:54:08",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-20T03:10:24"
+  "published_at": "2026-10-20T03:54:08"
 }

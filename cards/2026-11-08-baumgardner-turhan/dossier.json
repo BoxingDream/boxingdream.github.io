@@ -2710,14 +2710,14 @@
           "surname": "Patricio",
           "short": "Patricio",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United States",
+          "record": "10-0-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 3,
+            "dec": 7,
             "draw": 0,
             "loss": 0,
-            "total": 0
+            "total": 10
           },
           "photo": null,
           "initials": "SP"
@@ -3575,7 +3575,7 @@
       "blocked": true,
       "fighters": [
         {
-          "id": 1802644697,
+          "id": 1077362297,
           "name": "Fernando Garcia",
           "given": "Fernando",
           "surname": "Garcia",
@@ -3689,7 +3689,7 @@
               "label": "Last fought",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no completed fights",
                 "n": null
               },
               "b": {
@@ -3704,7 +3704,7 @@
               "label": "Since last fight",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no completed fights",
                 "n": null
               },
               "b": {
@@ -3719,7 +3719,7 @@
               "label": "Fights, last 12 months",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no completed fights",
                 "n": null
               },
               "b": {
@@ -3734,7 +3734,7 @@
               "label": "Fights per year (3 yr)",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no completed fights",
                 "n": null
               },
               "b": {
@@ -3749,7 +3749,7 @@
               "label": "Weight class vs last fight",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no completed fights",
                 "n": null
               },
               "b": {
@@ -4458,10 +4458,10 @@
     }
   ],
   "data_as_of": "2026-10-20",
-  "generated_at": "2026-10-20T03:10:37",
+  "generated_at": "2026-10-20T03:54:22",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-20T03:10:37"
+  "published_at": "2026-10-20T03:54:22"
 }

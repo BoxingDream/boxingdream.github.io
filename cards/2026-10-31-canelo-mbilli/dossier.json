@@ -3194,16 +3194,21 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Reito Tsutsumi",
+        "fighter_id": 1013365,
+        "picked_at": "2026-10-20T03:42:42",
+        "basis": "record"
+      },
       "result": null
     }
   ],
   "data_as_of": "2026-10-20",
-  "generated_at": "2026-10-20T03:10:30",
+  "generated_at": "2026-10-20T03:54:14",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-20T03:10:30"
+  "published_at": "2026-10-20T03:54:14"
 }

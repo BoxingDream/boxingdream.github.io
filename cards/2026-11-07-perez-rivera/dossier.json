@@ -547,7 +547,7 @@
       "weight_class": "Light Heavyweight",
       "scheduled_rounds": 10,
       "title": null,
-      "blocked": true,
+      "blocked": false,
       "fighters": [
         {
           "id": 2047125222,
@@ -556,14 +556,14 @@
           "surname": "Oberlton",
           "short": "Oberlton",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United States",
+          "record": "17-0-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 14,
+            "dec": 3,
             "draw": 0,
             "loss": 0,
-            "total": 0
+            "total": 17
           },
           "photo": null,
           "initials": "AO"
@@ -575,14 +575,14 @@
           "surname": "Nicholson",
           "short": "Nicholson",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United States",
+          "record": "23-1-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 19,
+            "dec": 4,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 1,
+            "total": 24
           },
           "photo": null,
           "initials": "DN"
@@ -591,64 +591,78 @@
       "groups": [
         {
           "title": "Physical",
-          "chips": [],
+          "chips": [
+            "Nicholson is 7.9 years older",
+            "Oberlton is 11 cm taller",
+            "Same reach",
+            "Southpaw vs orthodox"
+          ],
           "rows": [
             {
               "type": "pair",
               "label": "Age",
               "a": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "28",
+                "d": null,
+                "n": 28.3
               },
               "b": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "36",
+                "d": null,
+                "n": 36.2
               },
-              "bar": null
+              "bar": {
+                "a": 78.2,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
               "label": "Height",
               "a": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "191 cm",
+                "d": null,
+                "n": 191.0
               },
               "b": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "180 cm",
+                "d": null,
+                "n": 180.0
               },
-              "bar": null
+              "bar": {
+                "a": 100.0,
+                "b": 94.2
+              }
             },
             {
               "type": "pair",
               "label": "Reach",
               "a": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "186 cm",
+                "d": null,
+                "n": 186.0
               },
               "b": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "186 cm",
+                "d": null,
+                "n": 186.0
               },
-              "bar": null
+              "bar": {
+                "a": 100.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
               "label": "Stance",
               "a": {
-                "v": null,
-                "d": "not listed",
+                "v": "Southpaw",
+                "d": null,
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "not listed",
+                "v": "Orthodox",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -663,13 +677,13 @@
               "type": "pair",
               "label": "Last fought",
               "a": {
-                "v": null,
-                "d": "no completed fights",
+                "v": "2026-08-15",
+                "d": null,
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "2026-06-20",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -678,58 +692,67 @@
               "type": "pair",
               "label": "Since last fight",
               "a": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "2.8 months",
+                "d": null,
+                "n": 2.8
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "4.6 months",
+                "d": null,
+                "n": 4.6
               },
-              "bar": null
+              "bar": {
+                "a": 60.9,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
               "label": "Fights, last 12 months",
               "a": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "4",
+                "d": null,
+                "n": 4
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "1",
+                "d": null,
+                "n": 1
               },
-              "bar": null
+              "bar": {
+                "a": 100.0,
+                "b": 25.0
+              }
             },
             {
               "type": "pair",
               "label": "Fights per year (3 yr)",
               "a": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "3.0",
+                "d": null,
+                "n": 3.0
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "1.3",
+                "d": null,
+                "n": 1.33
               },
-              "bar": null
+              "bar": {
+                "a": 100.0,
+                "b": 44.3
+              }
             },
             {
               "type": "pair",
               "label": "Weight class vs last fight",
               "a": {
                 "v": null,
-                "d": "no completed fights",
+                "d": "last weight class unknown",
                 "n": null
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "last weight class unknown",
                 "n": null
               },
               "bar": null
@@ -738,12 +761,54 @@
               "type": "form",
               "label": "Last 5 fights",
               "a": {
-                "results": [],
-                "d": "data incomplete"
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  }
+                ],
+                "d": null
               },
               "b": {
-                "results": [],
-                "d": "data incomplete"
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  }
+                ],
+                "d": null
               }
             }
           ]
@@ -757,12 +822,12 @@
               "label": "Opponents' win rate at the time",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for only 2 of 17 opponents",
                 "n": null
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for only 0 of 24 opponents",
                 "n": null
               },
               "bar": null
@@ -772,12 +837,12 @@
               "label": "Same, last 5 fights",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for 2 of last 5",
                 "n": null
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for 0 of last 5",
                 "n": null
               },
               "bar": null
@@ -786,13 +851,13 @@
               "type": "pair",
               "label": "Record vs winning-record opponents",
               "a": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "2-0-0",
+                "d": "2 fights",
                 "n": null
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no rated opponents",
                 "n": null
               },
               "bar": null
@@ -807,28 +872,31 @@
               "type": "pair",
               "label": "KO/TKO rate",
               "a": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "82%",
+                "d": "14 of 17 wins",
+                "n": 82.4
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "83%",
+                "d": "19 of 23 wins",
+                "n": 82.6
               },
-              "bar": null
+              "bar": {
+                "a": 82.4,
+                "b": 82.6
+              }
             },
             {
               "type": "pair",
               "label": "KO/TKO rate vs winning-record opponents",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 2 wins over rated winners",
                 "n": null
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 0 wins over rated winners",
                 "n": null
               },
               "bar": null
@@ -837,13 +905,13 @@
               "type": "pair",
               "label": "Times stopped",
               "a": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0 of 17",
+                "d": "never stopped",
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "1 of 24",
+                "d": "9 fights ago",
                 "n": null
               },
               "bar": null
@@ -859,75 +927,90 @@
               "label": "Furthest round reached",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "Round 3",
+                "d": null,
+                "n": 3
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
               "label": "Fights into round 10 or later",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             },
             {
               "type": "pair",
               "label": "Fights into round 12",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             },
             {
               "type": "pair",
               "label": "Fights going the distance",
               "a": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "18%",
+                "d": "17 decided fights",
+                "n": 17.6
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "17%",
+                "d": "24 decided fights",
+                "n": 16.7
               },
-              "bar": null
+              "bar": {
+                "a": 17.6,
+                "b": 16.7
+              }
             },
             {
               "type": "pair",
               "label": "World title fights (WBA, WBC, IBF, WBO)",
               "a": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             }
           ]
         },
@@ -939,13 +1022,13 @@
               "type": "pair",
               "label": "Record vs southpaws",
               "a": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "1-0-0",
+                "d": "2 opponents with known stance",
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0-0-0",
+                "d": "0 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -983,7 +1066,11 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Atif Oberlton",
+        "fighter_id": 2047125222,
+        "picked_at": "2026-10-20T03:48:18"
+      },
       "result": null
     },
     {
@@ -1001,14 +1088,14 @@
           "surname": "Taylor",
           "short": "Taylor",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United States",
+          "record": "13-0-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 8,
+            "dec": 5,
             "draw": 0,
             "loss": 0,
-            "total": 0
+            "total": 13
           },
           "photo": null,
           "initials": "PT"
@@ -1021,13 +1108,13 @@
           "short": "Rogava",
           "alias": null,
           "nationality": "Ukraine",
-          "record": "13-8-0",
+          "record": "13-1-0",
           "record_bar": {
             "ko": 8,
             "dec": 5,
             "draw": 0,
-            "loss": 8,
-            "total": 21
+            "loss": 1,
+            "total": 14
           },
           "photo": null,
           "initials": "TR"
@@ -1119,8 +1206,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "2026-05-15",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -1134,11 +1221,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "5.8 months",
+                "d": null,
+                "n": 5.8
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1149,11 +1239,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "1",
+                "d": null,
+                "n": 1
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1164,11 +1257,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "3.7",
+                "d": null,
+                "n": 3.67
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1180,7 +1276,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "last weight class unknown",
                 "n": null
               },
               "bar": null
@@ -1193,8 +1289,29 @@
                 "d": "data incomplete"
               },
               "b": {
-                "results": [],
-                "d": "data incomplete"
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  }
+                ],
+                "d": null
               }
             }
           ]
@@ -1213,7 +1330,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for only 2 of 14 opponents",
                 "n": null
               },
               "bar": null
@@ -1228,7 +1345,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for 2 of last 5",
                 "n": null
               },
               "bar": null
@@ -1242,8 +1359,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "1-1-0",
+                "d": "2 fights",
                 "n": null
               },
               "bar": null
@@ -1263,11 +1380,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "62%",
+                "d": "8 of 13 wins",
+                "n": 61.5
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 61.5
+              }
             },
             {
               "type": "pair",
@@ -1279,7 +1399,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 1 wins over rated winners",
                 "n": null
               },
               "bar": null
@@ -1293,8 +1413,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0 of 14",
+                "d": "never stopped",
                 "n": null
               },
               "bar": null
@@ -1314,11 +1434,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "Round 8",
+                "d": null,
+                "n": 8
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1329,11 +1452,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             },
             {
               "type": "pair",
@@ -1344,11 +1470,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             },
             {
               "type": "pair",
@@ -1359,11 +1488,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "43%",
+                "d": "14 decided fights",
+                "n": 42.9
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 42.9
+              }
             },
             {
               "type": "pair",
@@ -1374,11 +1506,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "4",
+                "d": null,
+                "n": 4
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             }
           ]
         },
@@ -1395,8 +1530,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0-0-0",
+                "d": "1 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -1452,14 +1587,14 @@
           "surname": "Torres",
           "short": "Torres",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United States",
+          "record": "31-7-2",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
-            "draw": 0,
-            "loss": 0,
-            "total": 0
+            "ko": 17,
+            "dec": 14,
+            "draw": 2,
+            "loss": 7,
+            "total": 40
           },
           "photo": null,
           "initials": "JT"
@@ -1471,14 +1606,14 @@
           "surname": "Sánchez",
           "short": "Sánchez",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United States",
+          "record": "14-7-2",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
-            "draw": 0,
-            "loss": 0,
-            "total": 0
+            "ko": 4,
+            "dec": 10,
+            "draw": 2,
+            "loss": 7,
+            "total": 23
           },
           "photo": null,
           "initials": "JS"
@@ -1498,11 +1633,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "33",
+                "d": null,
+                "n": 33.9
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1513,11 +1651,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "not listed",
-                "n": null
+                "v": "170 cm",
+                "d": null,
+                "n": 170.0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1543,8 +1684,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "not listed",
+                "v": "Orthodox",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -1564,8 +1705,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "2026-05-01",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -1579,11 +1720,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "6.2 months",
+                "d": null,
+                "n": 6.2
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1594,11 +1738,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "2",
+                "d": null,
+                "n": 2
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1609,11 +1756,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "1.7",
+                "d": null,
+                "n": 1.67
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1625,7 +1775,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "last weight class unknown",
                 "n": null
               },
               "bar": null
@@ -1638,8 +1788,29 @@
                 "d": "data incomplete"
               },
               "b": {
-                "results": [],
-                "d": "data incomplete"
+                "results": [
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "D",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  }
+                ],
+                "d": null
               }
             }
           ]
@@ -1658,7 +1829,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for only 0 of 23 opponents",
                 "n": null
               },
               "bar": null
@@ -1673,7 +1844,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for 0 of last 5",
                 "n": null
               },
               "bar": null
@@ -1688,7 +1859,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no rated opponents",
                 "n": null
               },
               "bar": null
@@ -1708,11 +1879,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "29%",
+                "d": "4 of 14 wins",
+                "n": 28.6
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 28.6
+              }
             },
             {
               "type": "pair",
@@ -1724,7 +1898,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 0 wins over rated winners",
                 "n": null
               },
               "bar": null
@@ -1738,8 +1912,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "2 of 23",
+                "d": "3 fights ago",
                 "n": null
               },
               "bar": null
@@ -1759,11 +1933,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "Round 8",
+                "d": null,
+                "n": 8
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
             },
             {
               "type": "pair",
@@ -1774,11 +1951,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             },
             {
               "type": "pair",
@@ -1789,11 +1969,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             },
             {
               "type": "pair",
@@ -1804,11 +1987,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "71%",
+                "d": "21 decided fights",
+                "n": 71.4
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 71.4
+              }
             },
             {
               "type": "pair",
@@ -1819,11 +2005,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             }
           ]
         },
@@ -1840,8 +2029,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0-0-0",
+                "d": "1 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -1916,14 +2105,14 @@
           "surname": "Navarro",
           "short": "Navarro",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "Mexico",
+          "record": "15-4-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 13,
+            "dec": 2,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 4,
+            "total": 19
           },
           "photo": null,
           "initials": "CN"
@@ -2342,14 +2531,14 @@
           "surname": "DeLeon",
           "short": "DeLeon",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United States",
+          "record": "1-2-0",
           "record_bar": {
-            "ko": 0,
+            "ko": 1,
             "dec": 0,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 2,
+            "total": 3
           },
           "photo": null,
           "initials": "QD"
@@ -2773,11 +2962,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-10-19",
-  "generated_at": "2026-10-20T03:10:34",
+  "data_as_of": "2026-10-20",
+  "generated_at": "2026-10-20T03:54:19",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-20T03:10:34"
+  "published_at": "2026-10-20T03:54:19"
 }

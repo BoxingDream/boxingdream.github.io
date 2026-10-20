@@ -2059,7 +2059,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Edward Hardy",
+        "fighter_id": 971630075,
+        "picked_at": "2026-10-20T03:37:06",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -2555,7 +2560,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Aqib Fiaz",
+        "fighter_id": 1358813477,
+        "picked_at": "2026-10-20T03:37:06",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -3000,7 +3010,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Joe Hayden",
+        "fighter_id": 900619595,
+        "picked_at": "2026-10-20T03:37:06",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -3499,7 +3514,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Leo Atang",
+        "fighter_id": 1162584,
+        "picked_at": "2026-10-20T03:37:06",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -3944,15 +3964,20 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Chris Mulunda",
+        "fighter_id": 2078679015,
+        "picked_at": "2026-10-20T03:37:06",
+        "basis": "record"
+      },
       "result": null
     }
   ],
   "data_as_of": "2026-10-20",
-  "generated_at": "2026-10-20T01:39:32",
+  "generated_at": "2026-10-20T03:54:10",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-20T01:39:32"
+  "published_at": "2026-10-20T03:54:10"
 }
