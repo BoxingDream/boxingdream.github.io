@@ -2150,9 +2150,14 @@
         }
       ],
       "pick": {
-        "text": "Too close to call",
-        "fighter_id": null,
-        "picked_at": "2026-10-08T05:06:56"
+        "text": "Lindolfo Delgado",
+        "fighter_id": 791797,
+        "picked_at": "2026-10-20T02:35:51",
+        "narrow": true,
+        "recalled": {
+          "call": "Too close to call",
+          "picked_at": "2026-10-08T05:06:56"
+        }
       },
       "result": null
     },
@@ -3194,11 +3199,11 @@
     }
   ],
   "data_as_of": "2026-10-20",
-  "generated_at": "2026-10-20T01:40:00",
+  "generated_at": "2026-10-20T03:10:30",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-20T01:40:00"
+  "published_at": "2026-10-20T03:10:30"
 }

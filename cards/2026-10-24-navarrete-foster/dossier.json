@@ -544,9 +544,14 @@
         }
       ],
       "pick": {
-        "text": "Too close to call",
-        "fighter_id": null,
-        "picked_at": "2026-10-08T04:16:17"
+        "text": "O'Shaquie Foster",
+        "fighter_id": 1643587585,
+        "picked_at": "2026-10-20T02:30:15",
+        "narrow": true,
+        "recalled": {
+          "call": "Too close to call",
+          "picked_at": "2026-10-08T04:16:17"
+        }
       },
       "result": null
     },
@@ -2116,11 +2121,11 @@
     }
   ],
   "data_as_of": "2026-10-19",
-  "generated_at": "2026-10-19T03:07:50",
+  "generated_at": "2026-10-20T03:10:24",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-19T03:07:50"
+  "published_at": "2026-10-20T03:10:24"
 }
