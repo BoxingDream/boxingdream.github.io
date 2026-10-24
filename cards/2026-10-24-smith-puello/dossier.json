@@ -8,7 +8,8 @@
     "venue": "Utilita Arena",
     "location": "Sheffield, England, UK",
     "broadcaster": "DAZN",
-    "status": "final"
+    "status": "final",
+    "main_card_start": "2026-10-24T18:00:00Z"
   },
   "statement": "Smith has stopped every winning-record opponent he's beaten. Puello has stopped none of his 4.",
   "bouts": [
@@ -3974,10 +3975,10 @@
     }
   ],
   "data_as_of": "2026-10-24",
-  "generated_at": "2026-10-24T00:19:48",
+  "generated_at": "2026-10-24T16:17:45",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-24T00:19:48"
+  "published_at": "2026-10-24T16:17:45"
 }

@@ -8,7 +8,8 @@
     "venue": "Frost Bank Center",
     "location": "San Antonio, Texas, US",
     "broadcaster": "DAZN",
-    "status": "final"
+    "status": "final",
+    "main_card_start": "2026-10-25T00:00:00Z"
   },
   "statement": "Navarrete has never been stopped in 43 fights. Neither has Foster. Our model barely splits them.",
   "bouts": [
@@ -2126,11 +2127,11 @@
     }
   ],
   "data_as_of": "2026-10-24",
-  "generated_at": "2026-10-24T16:09:45",
+  "generated_at": "2026-10-24T16:17:42",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-24T16:09:45"
+  "published_at": "2026-10-24T16:17:42"
 }
