@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-10-24-smith-puello",
     "title": "Smith vs Puello",
@@ -548,7 +548,10 @@
         "fighter_id": 1192760973,
         "picked_at": "2026-10-08T04:16:18"
       },
-      "result": null
+      "result": {
+        "text": "Dalton Smith by split decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
@@ -1082,7 +1085,10 @@
         "fighter_id": 1038764,
         "picked_at": "2026-10-08T04:16:18"
       },
-      "result": null
+      "result": {
+        "text": "Giorgio Visioli by majority decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 3,
@@ -1616,7 +1622,10 @@
         "fighter_id": 1423567961,
         "picked_at": "2026-10-08T04:16:18"
       },
-      "result": null
+      "result": {
+        "text": "Shannon Ryan by TKO, round 1",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 4,
