@@ -71,6 +71,17 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .site nav { display: flex; gap: 6px 22px; flex-wrap: wrap; }
 .site nav a { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
 .site nav a:hover, .site nav a[aria-current] { color: var(--paper); border-bottom-color: var(--side-b); }
+/* Pick list: one line per bout (home page and the top of a dossier). */
+.picklines { list-style: none; margin: 0; padding: 0; max-width: 680px; }   /* the pick stays near the fight on wide screens */
+.picklines li { border-bottom: 1px solid var(--rule); }
+.picklines a { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 3px 16px; padding: 12px 0; text-decoration: none; }
+.pl-ab { color: var(--paper); font-size: 15px; line-height: 1.35; }
+.pl-ab .v { color: var(--muted); }
+.picklines a:hover .pl-ab { text-decoration: underline; text-underline-offset: 3px; }
+.pl-pk { font-family: var(--display); font-weight: 900; font-size: 1.3rem; line-height: 1; text-transform: uppercase; text-align: right; color: var(--muted); }
+.pl-pk.a { color: var(--side-a); } .pl-pk.b { color: var(--side-b); }
+.pl-tg { grid-column: 2; text-align: right; color: var(--muted); font-size: 10px; letter-spacing: .1em; }
+.pl-tg.hit { color: var(--gold); }
 .legal { max-width: var(--block); margin: 0 auto; padding: 18px var(--gutter) 40px; border-top: 1px solid var(--rule); font: 500 11px/1.8 var(--mono); letter-spacing: .04em; color: var(--muted); }
 .legal p { margin: 0 0 6px; }
 .legal a { color: var(--paper); }
@@ -87,6 +98,9 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .num.us b { color: var(--gold); }
 .num span { font: 500 11px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 @media (max-width: 560px) { .nums { grid-template-columns: 1fr; } }
+.how section.short { background: var(--raised); border-top: 0; border-left: 4px solid var(--gold); padding: 20px 22px 8px; margin: 0 0 26px; }
+.short ul { margin: 0 0 12px; padding-left: 20px; }
+.short li { margin-bottom: 8px; }
 </style>
 </head>
 <body>
@@ -101,6 +115,16 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 <main class="how">
   <h1>How it works</h1>
   <p class="lede">A scouting report for every bout on the main card, and a pick on every bout we have the data for. Each pick is locked before the opening bell and graded in public after the fight.</p>
+
+  <section class="short">
+    <h2>In short</h2>
+    <ul>
+      <li>Every fighter gets a rating from who they've beaten.</li>
+      <li>A model compares the two fighters on things like power, chin, size and how busy they've been, and picks the one more likely to win.</li>
+      <li>Every pick is locked before the fight and graded after. Nothing is deleted, and every pick is public.</li>
+      <li><b>Narrow</b> means close to a coin flip. <b>By record</b> and <b>coin flip</b> picks are made without the model, when a fighter's history can't be checked.</li>
+    </ul>
+  </section>
 
   <section>
     <h2>Locked before the bell</h2>

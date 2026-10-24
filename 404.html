@@ -71,6 +71,17 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .site nav { display: flex; gap: 6px 22px; flex-wrap: wrap; }
 .site nav a { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
 .site nav a:hover, .site nav a[aria-current] { color: var(--paper); border-bottom-color: var(--side-b); }
+/* Pick list: one line per bout (home page and the top of a dossier). */
+.picklines { list-style: none; margin: 0; padding: 0; max-width: 680px; }   /* the pick stays near the fight on wide screens */
+.picklines li { border-bottom: 1px solid var(--rule); }
+.picklines a { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 3px 16px; padding: 12px 0; text-decoration: none; }
+.pl-ab { color: var(--paper); font-size: 15px; line-height: 1.35; }
+.pl-ab .v { color: var(--muted); }
+.picklines a:hover .pl-ab { text-decoration: underline; text-underline-offset: 3px; }
+.pl-pk { font-family: var(--display); font-weight: 900; font-size: 1.3rem; line-height: 1; text-transform: uppercase; text-align: right; color: var(--muted); }
+.pl-pk.a { color: var(--side-a); } .pl-pk.b { color: var(--side-b); }
+.pl-tg { grid-column: 2; text-align: right; color: var(--muted); font-size: 10px; letter-spacing: .1em; }
+.pl-tg.hit { color: var(--gold); }
 .legal { max-width: var(--block); margin: 0 auto; padding: 18px var(--gutter) 40px; border-top: 1px solid var(--rule); font: 500 11px/1.8 var(--mono); letter-spacing: .04em; color: var(--muted); }
 .legal p { margin: 0 0 6px; }
 .legal a { color: var(--paper); }

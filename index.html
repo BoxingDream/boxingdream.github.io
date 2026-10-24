@@ -71,6 +71,17 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .site nav { display: flex; gap: 6px 22px; flex-wrap: wrap; }
 .site nav a { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
 .site nav a:hover, .site nav a[aria-current] { color: var(--paper); border-bottom-color: var(--side-b); }
+/* Pick list: one line per bout (home page and the top of a dossier). */
+.picklines { list-style: none; margin: 0; padding: 0; max-width: 680px; }   /* the pick stays near the fight on wide screens */
+.picklines li { border-bottom: 1px solid var(--rule); }
+.picklines a { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 3px 16px; padding: 12px 0; text-decoration: none; }
+.pl-ab { color: var(--paper); font-size: 15px; line-height: 1.35; }
+.pl-ab .v { color: var(--muted); }
+.picklines a:hover .pl-ab { text-decoration: underline; text-underline-offset: 3px; }
+.pl-pk { font-family: var(--display); font-weight: 900; font-size: 1.3rem; line-height: 1; text-transform: uppercase; text-align: right; color: var(--muted); }
+.pl-pk.a { color: var(--side-a); } .pl-pk.b { color: var(--side-b); }
+.pl-tg { grid-column: 2; text-align: right; color: var(--muted); font-size: 10px; letter-spacing: .1em; }
+.pl-tg.hit { color: var(--gold); }
 .legal { max-width: var(--block); margin: 0 auto; padding: 18px var(--gutter) 40px; border-top: 1px solid var(--rule); font: 500 11px/1.8 var(--mono); letter-spacing: .04em; color: var(--muted); }
 .legal p { margin: 0 0 6px; }
 .legal a { color: var(--paper); }
@@ -98,6 +109,14 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .cta { display: flex; align-items: center; padding: 12px 26px; background: var(--paper); color: var(--canvas); font-weight: 700; text-decoration: none; clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); }
 .cta:hover { background: var(--gold); }
 .next .stmt { margin-top: 22px; max-width: 62ch; color: var(--paper); font: 700 12px/1.6 var(--mono); letter-spacing: .06em; text-transform: uppercase; border-left: 3px solid var(--gold); padding-left: 14px; }
+
+.night { max-width: var(--block); margin: 0 auto; padding: 30px var(--gutter) 10px; border-bottom: 1px solid var(--rule); }
+.night-h { color: var(--gold); display: flex; align-items: center; gap: 10px; margin: 0 0 6px; }
+.night-card { margin: 0 0 22px; max-width: 680px; }
+.night-t { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 14px 0 10px; border-bottom: 1px solid var(--rule2); text-decoration: none; }
+.night-t .t2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.45rem; line-height: 1; }
+.night-t .m3 { color: var(--muted); }
+.night-t:hover .t2 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 
 .record { max-width: var(--block); margin: 0 auto; padding: 30px var(--gutter); display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px 30px; border-bottom: 1px solid var(--rule); }
 .record .big { font-family: var(--display); font-weight: 900; font-size: clamp(3rem, 9vw, 4.6rem); line-height: .9; font-variant-numeric: tabular-nums; }
@@ -147,6 +166,32 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
       <a class="cta mono" href="cards/2026-10-24-navarrete-foster/">Open the dossier &rarr;</a>
     </div>
 <p class="stmt">Navarrete has never been stopped in 43 fights. Neither has Foster. Our model barely splits them.</p>  </div>
+</section>
+
+<section class="night" aria-labelledby="night-title">
+  <h2 id="night-title" class="night-h mono"><span class="swatch gold"></span>Every pick · Sat 24 Oct</h2>
+  <div class="night-card">
+    <a class="night-t" href="cards/2026-10-24-smith-puello/"><span class="t2">Smith vs Puello</span><span class="m3 mono">2 PM ET · DAZN</span></a>
+    <ol class="picklines">
+  <li><a href="cards/2026-10-24-smith-puello/#fight-1"><span class="pl-ab">Smith <span class="v">v</span> Puello</span><span class="pl-pk a">Smith</span></a></li>
+  <li><a href="cards/2026-10-24-smith-puello/#fight-2"><span class="pl-ab">Visioli <span class="v">v</span> Hughes</span><span class="pl-pk a">Visioli</span></a></li>
+  <li><a href="cards/2026-10-24-smith-puello/#fight-3"><span class="pl-ab">Ryan <span class="v">v</span> Dolan</span><span class="pl-pk a">Ryan</span></a></li>
+  <li><a href="cards/2026-10-24-smith-puello/#fight-4"><span class="pl-ab">Hardy <span class="v">v</span> Nadim</span><span class="pl-pk a">Hardy</span><span class="pl-tg mono">by record</span></a></li>
+  <li><a href="cards/2026-10-24-smith-puello/#fight-5"><span class="pl-ab">Fiaz <span class="v">v</span> Flynn</span><span class="pl-pk a">Fiaz</span><span class="pl-tg mono">by record</span></a></li>
+  <li><a href="cards/2026-10-24-smith-puello/#fight-6"><span class="pl-ab">Hayden <span class="v">v</span> Harrison</span><span class="pl-pk a">Hayden</span><span class="pl-tg mono">by record</span></a></li>
+  <li><a href="cards/2026-10-24-smith-puello/#fight-7"><span class="pl-ab">Atang <span class="v">v</span> Vergara</span><span class="pl-pk a">Atang</span><span class="pl-tg mono">by record</span></a></li>
+  <li><a href="cards/2026-10-24-smith-puello/#fight-8"><span class="pl-ab">Mulunda <span class="v">v</span> Collison</span><span class="pl-pk a">Mulunda</span><span class="pl-tg mono">by record</span></a></li>
+</ol>
+  </div>
+  <div class="night-card">
+    <a class="night-t" href="cards/2026-10-24-navarrete-foster/"><span class="t2">Navarrete vs Foster</span><span class="m3 mono">8 PM ET · DAZN</span></a>
+    <ol class="picklines">
+  <li><a href="cards/2026-10-24-navarrete-foster/#fight-1"><span class="pl-ab">Navarrete <span class="v">v</span> Foster</span><span class="pl-pk b">Foster</span><span class="pl-tg mono">narrow</span></a></li>
+  <li><a href="cards/2026-10-24-navarrete-foster/#fight-2"><span class="pl-ab">Gonzalez <span class="v">v</span> Vazquez</span><span class="pl-pk a">Gonzalez</span></a></li>
+  <li><a href="cards/2026-10-24-navarrete-foster/#fight-3"><span class="pl-ab">Martin <span class="v">v</span> Zaina</span><span class="pl-pk a">Martin</span></a></li>
+  <li><a href="cards/2026-10-24-navarrete-foster/#fight-4"><span class="pl-ab">Navarro <span class="v">v</span> Moreno</span><span class="pl-pk b">Moreno</span><span class="pl-tg mono">by record</span></a></li>
+</ol>
+  </div>
 </section>
 
 <section class="record" aria-label="Track record">

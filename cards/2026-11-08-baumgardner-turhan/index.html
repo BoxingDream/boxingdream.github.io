@@ -71,6 +71,17 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .site nav { display: flex; gap: 6px 22px; flex-wrap: wrap; }
 .site nav a { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
 .site nav a:hover, .site nav a[aria-current] { color: var(--paper); border-bottom-color: var(--side-b); }
+/* Pick list: one line per bout (home page and the top of a dossier). */
+.picklines { list-style: none; margin: 0; padding: 0; max-width: 680px; }   /* the pick stays near the fight on wide screens */
+.picklines li { border-bottom: 1px solid var(--rule); }
+.picklines a { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 3px 16px; padding: 12px 0; text-decoration: none; }
+.pl-ab { color: var(--paper); font-size: 15px; line-height: 1.35; }
+.pl-ab .v { color: var(--muted); }
+.picklines a:hover .pl-ab { text-decoration: underline; text-underline-offset: 3px; }
+.pl-pk { font-family: var(--display); font-weight: 900; font-size: 1.3rem; line-height: 1; text-transform: uppercase; text-align: right; color: var(--muted); }
+.pl-pk.a { color: var(--side-a); } .pl-pk.b { color: var(--side-b); }
+.pl-tg { grid-column: 2; text-align: right; color: var(--muted); font-size: 10px; letter-spacing: .1em; }
+.pl-tg.hit { color: var(--gold); }
 .legal { max-width: var(--block); margin: 0 auto; padding: 18px var(--gutter) 40px; border-top: 1px solid var(--rule); font: 500 11px/1.8 var(--mono); letter-spacing: .04em; color: var(--muted); }
 .legal p { margin: 0 0 6px; }
 .legal a { color: var(--paper); }
@@ -135,9 +146,13 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .sb-mid { color: var(--muted); display: flex; align-items: center; gap: 8px; padding: 0 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sb-mid b { color: var(--gold); font-weight: 700; }
 
+/* ===================== THE CARD AT A GLANCE (every bout, one line each) ===================== */
+.glance { max-width: var(--block); margin: 0 auto 48px; }
+.glance-h { color: var(--muted); display: flex; align-items: center; gap: 10px; margin: 0 0 4px; padding-bottom: 10px; border-bottom: 1px solid var(--rule2); max-width: 680px; }
+
 /* ===================== BOUT CARD (every bout, including main event) ===================== */
 main.wrap { padding-top: 24px; }
-.bout { max-width: var(--block); margin: 0 auto 64px; }
+.bout { max-width: var(--block); margin: 0 auto 64px; scroll-margin-top: 58px; }   /* clear of the sticky scorebug */
 .bout-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; color: var(--muted); margin-bottom: 18px; }
 .tag { background: var(--side-b); color: var(--canvas); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 11px; padding: 4px 10px; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
 .tag.plain { background: var(--raised); color: var(--paper); border: 1px solid var(--rule2); }
@@ -217,6 +232,17 @@ main.wrap { padding-top: 24px; }
 
 .tally { display: flex; align-items: center; justify-content: flex-end; gap: 10px; padding: 16px 0 0; color: var(--muted); font: 500 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 
+/* The six stat groups sit folded under one button: the pick and the reasons come first. */
+.numbers { margin-top: 14px; }
+.numbers > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 6px 14px; padding: 14px 18px; border: 1px solid var(--rule2); color: var(--paper); }
+.numbers > summary::-webkit-details-marker { display: none; }
+.numbers > summary::after { content: ""; grid-column: 2; grid-row: 1 / span 2; width: 9px; height: 9px; border-right: 2px solid var(--gold); border-bottom: 2px solid var(--gold); transform: translateY(-3px) rotate(45deg); }
+.numbers[open] > summary::after { transform: translateY(3px) rotate(-135deg); }
+.numbers > summary:hover { border-color: var(--muted); }
+.numbers > summary .what { grid-column: 1; color: var(--muted); font-size: 10px; letter-spacing: .08em; }
+.numbers .hide, .numbers[open] .show { display: none; }
+.numbers[open] .hide { display: inline; }
+
 /* ===================== OUR PICK / RESULT ===================== */
 .call { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px 20px; margin-top: 26px; padding: 16px 22px; background: var(--raised); border-left: 4px solid var(--gold); }
 .call.a { border-left-color: var(--side-a); } .call.b { border-left-color: var(--side-b); }
@@ -241,7 +267,8 @@ main.wrap { padding-top: 24px; }
 .call-o b { font-family: var(--display); font-weight: 800; font-size: 1.25rem; letter-spacing: 0; line-height: 1; }
 .call-o .ln.a b { color: var(--side-a); } .call-o .ln.b b { color: var(--side-b); }
 .call-o .upset { background: var(--gold); color: var(--canvas); font-weight: 700; padding: 4px 12px 4px 10px; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
-.call-o .t { margin-left: auto; }
+.call-o .w { color: var(--paper); }
+.call-o .t { flex-basis: 100%; font-size: 10px; letter-spacing: .06em; }
 
 @media (max-width: 760px) {
   .ringwalk { height: auto; padding-bottom: 24px; --hh: 320px; display: flex; flex-direction: column; }
@@ -267,9 +294,7 @@ main.wrap { padding-top: 24px; }
   .ghost { font-size: 90px; }
   .call { grid-template-columns: 1fr; gap: 6px; padding: 14px 16px; }
   .call-t { text-align: left; }
-  .call-o { gap: 8px 16px; }
-  .call-o .k { flex-basis: 100%; }          /* label on its own line, both prices together below it */
-  .call-o .t { margin-left: 0; }
+  .call-o { gap: 8px 12px; }
   .sb-mid { display: flex; padding: 0 8px; }
   .sb-side .sb-rec { display: none; }
 }
@@ -328,7 +353,21 @@ main.wrap { padding-top: 24px; }
 </nav>
 
 <main class="wrap">
-<section class="bout" aria-labelledby="bout-1">
+<nav class="glance" aria-label="Every bout on this card">
+  <p class="glance-h mono"><span class="swatch gold"></span>The card · 9 bouts</p>
+  <ol class="picklines">
+  <li><a href="#fight-1"><span class="pl-ab">Baumgardner <span class="v">v</span> Turhan</span><span class="pl-pk a">Baumgardner</span></a></li>
+  <li><a href="#fight-2"><span class="pl-ab">Brown <span class="v">v</span> Scotney</span><span class="pl-pk a">Brown</span><span class="pl-tg mono">narrow</span></a></li>
+  <li><a href="#fight-3"><span class="pl-ab">Garcia <span class="v">v</span> Delgado</span><span class="pl-pk b">Delgado</span></a></li>
+  <li><a href="#fight-4"><span class="pl-ab">Ali <span class="v">v</span> Kreps</span><span class="pl-pk b">Kreps</span></a></li>
+  <li><a href="#fight-5"><span class="pl-ab">Nicolson <span class="v">v</span> Yoshida</span><span class="pl-pk a">Nicolson</span></a></li>
+  <li><a href="#fight-6"><span class="pl-ab">Sims <span class="v">v</span> Patricio</span><span class="pl-pk">Pending</span></a></li>
+  <li><a href="#fight-7"><span class="pl-ab">Dove <span class="v">v</span> Rodriguez</span><span class="pl-pk">Pending</span></a></li>
+  <li><a href="#fight-8"><span class="pl-ab">Garcia <span class="v">v</span> Castellano</span><span class="pl-pk">Pending</span></a></li>
+  <li><a href="#fight-9"><span class="pl-ab">Cruz <span class="v">v</span> Anderson</span><span class="pl-pk">Pending</span></a></li>
+</ol>
+</nav>
+<section class="bout" id="fight-1" aria-labelledby="bout-1">
   <div class="bout-top mono">
     <span class="tag">Main event</span>
 <span class="belt">IBF Women&#39;s Lightweight</span>    <span class="spec">Lightweight · 10 rounds</span>
@@ -358,13 +397,14 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Baumgardner</span></span>
-<span class="call-t mono">Locked 19 Oct 2026, 03:01 UTC</span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-19T03:01:53Z" title="19 Oct 2026, 03:01 UTC">19 Oct</time>    </span><div class="call-o mono">
   <span class="k">Bookies</span>
-  <span class="ln a"><span class="swatch a"></span>Baumgardner <b>−477</b></span>
-  <span class="ln b"><span class="swatch b"></span>Turhan <b>+335</b></span>
-  <span class="t">Median of 10 bookmakers via The Odds API · 24 Oct 2026, 00:19 UTC</span>
+  <span class="w">agree: Baumgardner is the favorite</span>
+  <span class="t">Baumgardner −477 · Turhan +335 · median of 10 bookmakers via The Odds API, 24 Oct</span>
 </div>  </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -422,21 +462,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>6.7 months</b></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.731)"><i></i></span></div>      </div>
       <div class="val r"><b>4.9 months</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>2</b></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.667)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>3</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>1.3</b></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.443)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>3.0</b></div>
     </div>
@@ -465,21 +505,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for only 8 of 20 opponents</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for only 5 of 14 opponents</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for 3 of last 5</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for 2 of last 5</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>6-1-0</b><small>8 fights</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r"><b>5-0-0</b><small>5 fights</small></div>
     </div>
@@ -496,14 +536,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>39%</b><small>7 of 18 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.389)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.571)"><i></i></span></div>      </div>
       <div class="val r"><b>57%</b><small>8 of 14 wins</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>17%</b><small>1 of 6 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.167)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.6)"><i></i></span></div>      </div>
       <div class="val r"><b>60%</b><small>3 of 5 wins</small></div>
     </div>
@@ -527,35 +567,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>Round 12</b></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.833)"><i></i></span></div>      </div>
       <div class="val r"><b>Round 10</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>8</b></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.625)"><i></i></span></div>      </div>
       <div class="val r"><b>5</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>1</b></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>63%</b><small>19 decided fights</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.632)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.429)"><i></i></span></div>      </div>
       <div class="val r"><b>43%</b><small>14 decided fights</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>9</b></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.444)"><i></i></span></div>      </div>
       <div class="val r"><b>4</b></div>
     </div>
@@ -572,28 +612,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>0-0-0</b><small>9 opponents with known stance</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r"><b>1-0-0</b><small>4 opponents with known stance</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-2">
+<section class="bout" id="fight-2" aria-labelledby="bout-2">
   <div class="bout-top mono">
     <span class="tag plain">Bout 2</span>
 <span class="belt">WBC Women&#39;s Featherweight</span>    <span class="spec">Featherweight · 10 rounds</span>
@@ -623,9 +664,10 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Brown</span></span>
-<span class="call-t mono"><span class="note">Narrow: near a coin flip</span><br>Re-called 20 Oct 2026, 02:41 UTC<br>First locked 19 Oct 2026, 03:01 UTC: too close to call
-</span>  </div>
+<span class="call-t mono"><span class="note">Narrow: near a coin flip</span><br>Locked <time datetime="2026-10-20T02:41:31Z" title="20 Oct 2026, 02:41 UTC">20 Oct</time><br>First called “too close to call” on <time datetime="2026-10-19T03:01:53Z" title="19 Oct 2026, 03:01 UTC">19 Oct</time>    </span>  </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -683,21 +725,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>4.9 months</b></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.69)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>7.1 months</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>1</b></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>1</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>2.0</b></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.665)"><i></i></span></div>      </div>
       <div class="val r"><b>1.3</b></div>
     </div>
@@ -726,21 +768,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for only 2 of 21 opponents</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.833)"><i></i></span></div>      </div>
       <div class="val r"><b>83%</b><small>7 of 12 opponents</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for 1 of last 5</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for 3 of last 5</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>1-0-0</b><small>1 fights</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r"><b>7-0-0</b><small>7 fights</small></div>
     </div>
@@ -757,14 +799,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>52%</b><small>11 of 21 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.524)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0%</b><small>0 of 12 wins</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>only 1 wins over rated winners</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0%</b><small>0 of 7 wins</small></div>
     </div>
@@ -788,35 +830,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>Round 10</b></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>Round 10</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>4</b></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.444)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>9</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>0</b></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>48%</b><small>21 decided fights</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.476)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>100%</b><small>12 decided fights</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>3</b></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.5)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>6</b></div>
     </div>
@@ -833,28 +875,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>1-0-0</b><small>2 opponents with known stance</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r"><b>0-0-0</b><small>7 opponents with known stance</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-3">
+<section class="bout" id="fight-3" aria-labelledby="bout-3">
   <div class="bout-top mono">
     <span class="tag plain">Bout 3</span>
 <span class="belt">IBF and WBA Women&#39;s Super Flyweight unification</span>    <span class="spec">Super Flyweight · 10 rounds</span>
@@ -884,8 +927,10 @@ main.wrap { padding-top: 24px; }
   <div class="call b">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Delgado</span></span>
-<span class="call-t mono">Locked 19 Oct 2026, 03:01 UTC</span>  </div>
+<span class="call-t mono">Locked <time datetime="2026-10-19T03:01:53Z" title="19 Oct 2026, 03:01 UTC">19 Oct</time>    </span>  </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -943,21 +988,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>7.1 months</b></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.69)"><i></i></span></div>      </div>
       <div class="val r"><b>4.9 months</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>1</b></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.333)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>3</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>1.3</b></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.443)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>3.0</b></div>
     </div>
@@ -986,21 +1031,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for only 9 of 35 opponents</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for only 5 of 31 opponents</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for 1 of last 5</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for 1 of last 5</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>4-4-0</b><small>9 fights</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r"><b>1-4-0</b><small>5 fights</small></div>
     </div>
@@ -1017,14 +1062,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>23%</b><small>6 of 26 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.231)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.238)"><i></i></span></div>      </div>
       <div class="val r"><b>24%</b><small>5 of 21 wins</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>25%</b><small>1 of 4 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.25)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r na"><b>—</b><small>only 1 wins over rated winners</small></div>
     </div>
@@ -1048,35 +1093,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>Round 10</b></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>Round 10</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>14</b></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.714)"><i></i></span></div>      </div>
       <div class="val r"><b>10</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>0</b></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>81%</b><small>31 decided fights</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.806)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.828)"><i></i></span></div>      </div>
       <div class="val r"><b>83%</b><small>29 decided fights</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>8</b></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.889)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>9</b></div>
     </div>
@@ -1093,28 +1138,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>1-0-0</b><small>9 opponents with known stance</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r"><b>0-1-0</b><small>5 opponents with known stance</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-4">
+<section class="bout" id="fight-4" aria-labelledby="bout-4">
   <div class="bout-top mono">
     <span class="tag plain">Bout 4</span>
 <span class="belt">Vacant WBO and IBF Women&#39;s Super Bantamweight</span>    <span class="spec">Super Bantamweight · 10 rounds</span>
@@ -1144,13 +1190,14 @@ main.wrap { padding-top: 24px; }
   <div class="call b">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Kreps</span></span>
-<span class="call-t mono">Locked 20 Oct 2026, 03:04 UTC</span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-20T03:04:11Z" title="20 Oct 2026, 03:04 UTC">20 Oct</time>    </span><div class="call-o mono">
   <span class="k">Bookies</span>
-  <span class="ln a"><span class="swatch a"></span>Ali <b>+257</b></span>
-  <span class="ln b"><span class="swatch b"></span>Kreps <b>−342</b></span>
-  <span class="t">Median of 8 bookmakers via The Odds API · 24 Oct 2026, 00:19 UTC</span>
+  <span class="w">agree: Kreps is the favorite</span>
+  <span class="t">Ali +257 · Kreps −342 · median of 8 bookmakers via The Odds API, 24 Oct</span>
 </div>  </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -1208,21 +1255,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>8.8 months</b></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.667)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>13.2 months</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>1</b></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>1.0</b></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.752)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>1.3</b></div>
     </div>
@@ -1251,21 +1298,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for only 1 of 13 opponents</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for only 0 of 11 opponents</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for 1 of last 5</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for 0 of last 5</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>0-1-0</b><small>1 fights</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>no rated opponents</small></div>
     </div>
@@ -1282,14 +1329,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>27%</b><small>3 of 11 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.273)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.273)"><i></i></span></div>      </div>
       <div class="val r"><b>27%</b><small>3 of 11 wins</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>only 0 wins over rated winners</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>only 0 wins over rated winners</small></div>
     </div>
@@ -1313,35 +1360,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>Round 10</b></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.8)"><i></i></span></div>      </div>
       <div class="val r"><b>Round 8</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>3</b></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>0</b></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>69%</b><small>13 decided fights</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.692)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.727)"><i></i></span></div>      </div>
       <div class="val r"><b>73%</b><small>11 decided fights</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>1</b></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
@@ -1358,28 +1405,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>0-0-0</b><small>1 opponents with known stance</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r"><b>0-0-0</b><small>0 opponents with known stance</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-5">
+<section class="bout" id="fight-5" aria-labelledby="bout-5">
   <div class="bout-top mono">
     <span class="tag plain">Bout 5</span>
 <span class="belt">WBC Women&#39;s Super Bantamweight</span>    <span class="spec">Super Bantamweight · 10 rounds</span>
@@ -1409,13 +1457,14 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Nicolson</span></span>
-<span class="call-t mono">Locked 19 Oct 2026, 03:01 UTC</span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-19T03:01:53Z" title="19 Oct 2026, 03:01 UTC">19 Oct</time>    </span><div class="call-o mono">
   <span class="k">Bookies</span>
-  <span class="ln a"><span class="swatch a"></span>Nicolson <b>−1600</b></span>
-  <span class="ln b"><span class="swatch b"></span>Yoshida <b>+738</b></span>
-  <span class="t">Median of 9 bookmakers via The Odds API · 24 Oct 2026, 00:19 UTC</span>
+  <span class="w">agree: Nicolson is the favorite</span>
+  <span class="t">Nicolson −1600 · Yoshida +738 · median of 9 bookmakers via The Odds API, 24 Oct</span>
 </div>  </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -1473,21 +1522,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>6.3 months</b></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.341)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>18.5 months</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>2</b></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>3.0</b></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.443)"><i></i></span></div>      </div>
       <div class="val r"><b>1.3</b></div>
     </div>
@@ -1516,21 +1565,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for only 7 of 17 opponents</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for only 6 of 24 opponents</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>records known for 2 of last 5</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>records known for 3 of last 5</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>6-1-0</b><small>7 fights</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r"><b>2-4-0</b><small>6 fights</small></div>
     </div>
@@ -1547,14 +1596,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>19%</b><small>3 of 16 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.188)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.053)"><i></i></span></div>      </div>
       <div class="val r"><b>5%</b><small>1 of 19 wins</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>0%</b><small>0 of 6 wins</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r na"><b>—</b><small>only 2 wins over rated winners</small></div>
     </div>
@@ -1578,35 +1627,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>Round 10</b></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 1.0)"><i></i></span></div>      </div>
       <div class="val r"><b>Round 10</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>9</b></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.778)"><i></i></span></div>      </div>
       <div class="val r"><b>7</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>0</b></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.0)"><i></i></span></div>      </div>
       <div class="val r"><b>0</b></div>
     </div>
     <div class="row">
       <div class="val l"><b>82%</b><small>17 decided fights</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 0.824)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.875)"><i></i></span></div>      </div>
       <div class="val r"><b>88%</b><small>24 decided fights</small></div>
     </div>
     <div class="row">
       <div class="val l"><b>8</b></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
 <div class="axis" aria-hidden="true"><span class="half l" style="width:calc((50% - 8px) * 1.0)"><i></i></span><span class="half r" style="width:calc((50% - 8px) * 0.875)"><i></i></span></div>      </div>
       <div class="val r"><b>7</b></div>
     </div>
@@ -1623,28 +1672,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l"><b>0-0-0</b><small>8 opponents with known stance</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r"><b>0-0-0</b><small>6 opponents with known stance</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-6">
+<section class="bout" id="fight-6" aria-labelledby="bout-6">
   <div class="bout-top mono">
     <span class="tag plain">Bout 6</span>
 <span class="belt">Vacant WBA Women&#39;s Bantamweight</span>    <span class="spec">Bantamweight · 10 rounds</span>
@@ -1677,6 +1727,8 @@ main.wrap { padding-top: 24px; }
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -1734,21 +1786,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
@@ -1777,21 +1829,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -1808,14 +1860,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -1839,35 +1891,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -1884,28 +1936,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-7">
+<section class="bout" id="fight-7" aria-labelledby="bout-7">
   <div class="bout-top mono">
     <span class="tag plain">Bout 7</span>
     <span class="spec">Flyweight · 8 rounds</span>
@@ -1938,6 +1991,8 @@ main.wrap { padding-top: 24px; }
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -1995,21 +2050,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
@@ -2038,21 +2093,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2069,14 +2124,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2100,35 +2155,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2145,28 +2200,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-8">
+<section class="bout" id="fight-8" aria-labelledby="bout-8">
   <div class="bout-top mono">
     <span class="tag plain">Bout 8</span>
     <span class="spec">Featherweight · 6 rounds</span>
@@ -2199,6 +2255,8 @@ main.wrap { padding-top: 24px; }
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -2256,21 +2314,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
@@ -2299,21 +2357,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2330,14 +2388,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2361,35 +2419,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2406,28 +2464,29 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
-<section class="bout" aria-labelledby="bout-9">
+<section class="bout" id="fight-9" aria-labelledby="bout-9">
   <div class="bout-top mono">
     <span class="tag plain">Bout 9</span>
     <span class="spec">Welterweight · 6 rounds</span>
@@ -2460,6 +2519,8 @@ main.wrap { padding-top: 24px; }
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
 
+  <details class="numbers">
+  <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
   <div class="round">
     <div class="round-head">
       <span class="ghost" aria-hidden="true">1</span>
@@ -2517,21 +2578,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Since last fight</div>
+        <div class="label">Time since last fight</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Fights, last 12 months</div>
+        <div class="label">Fights in the last year</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>no completed fights</small></div>
       <div class="mid">
-        <div class="label">Fights per year (3 yr)</div>
+        <div class="label">Fights a year (last 3 years)</div>
       </div>
       <div class="val r na"><b>—</b><small>no completed fights</small></div>
     </div>
@@ -2560,21 +2621,21 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Opponents&#39; win rate at the time</div>
+        <div class="label">Opponents&#39; win rate</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Same, last 5 fights</div>
+        <div class="label">Opponents&#39; win rate, last 5 fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs winning-record opponents</div>
+        <div class="label">Record vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2591,14 +2652,14 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate</div>
+        <div class="label">Wins by knockout</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">KO/TKO rate vs winning-record opponents</div>
+        <div class="label">Knockouts vs opponents with winning records</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2622,35 +2683,35 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Furthest round reached</div>
+        <div class="label">Longest fight</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 10 or later</div>
+        <div class="label">Fights that reached round 10</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights into round 12</div>
+        <div class="label">Fights that reached round 12</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Fights going the distance</div>
+        <div class="label">Fights that went to the judges</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">World title fights (WBA, WBC, IBF, WBO)</div>
+        <div class="label">World title fights</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
@@ -2667,30 +2728,31 @@ main.wrap { padding-top: 24px; }
     <div class="row">
       <div class="val l na"><b>—</b><small>data incomplete</small></div>
       <div class="mid">
-        <div class="label">Record vs southpaws</div>
+        <div class="label">Record vs southpaws (left-handers)</div>
       </div>
       <div class="val r na"><b>—</b><small>data incomplete</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Primary style</div>
+        <div class="label">Style</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
     <div class="row">
       <div class="val l na"><b>—</b><small>not yet tagged</small></div>
       <div class="mid">
-        <div class="label">Defensive system</div>
+        <div class="label">Defense</div>
       </div>
       <div class="val r na"><b>—</b><small>not yet tagged</small></div>
     </div>
   </div>
+  </details>
 
 </section>
 
 <footer>
-  <p><strong>How to read it.</strong> Bars show size, not who is better: each is drawn against 100% for rates, or against the larger of the two fighters for counts. Form: a solid pip is a win, an outlined pip is a loss, grey is a draw, and a red bar under a win means it ended inside the distance. A dash means the sample is too small to show or the record is incomplete, and the reason is printed under it.</p>
+  <p><strong>How to read it.</strong> Bars show size, not who is better: each is drawn against 100% for rates, or against the larger of the two fighters for counts. Form: a solid pip is a win, an outlined pip is a loss, grey is a draw, and a red bar under a win means it ended inside the distance. A dash means the sample is too small to show or the record is incomplete, and the reason is printed under it. World title fights count the four major bodies: WBA, WBC, IBF and WBO.</p>
   <p>Every figure is calculated from public fight records as they stood on the fight date. Data collected 24 October 2026. Sources: Wikipedia (CC BY-SA 4.0), Wikidata. Wikipedia text is licensed CC BY-SA 4.0.</p>
 </footer>
 </main>
