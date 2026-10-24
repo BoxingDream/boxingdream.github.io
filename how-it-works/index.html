@@ -136,19 +136,20 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
   <section>
     <h2>How the model picks</h2>
     <p>Every fighter gets a rating that moves with who they beat, not just how often they win. Beating a contender counts for far more than beating a journeyman. The model combines that rating with nine matchup factors: age, height, reach, activity, layoff, knockout power, chin, experience, and the quality of the opposition each fighter has faced. It learns only from fights that happened before the card it's picking, so it never sees the future.</p>
-    <p>We tested it on 3,087 past fights it had never seen:</p>
+    <p>We tested it on 3,147 past fights it had never seen, scoring every fight from both sides:</p>
     <div class="nums">
       <div class="num us"><b>80%</b><span>Winners picked by our model</span></div>
       <div class="num"><b>74%</b><span>Picking the higher-rated fighter</span></div>
-      <div class="num"><b>71%</b><span>Picking the better record</span></div>
+      <div class="num"><b>72%</b><span>Picking the better record</span></div>
     </div>
+    <p><b>Fixed on 24 October 2026.</b> In our fight records, the fighter whose record it is gets named first, and they won more often than not. The model had learned that, so in a close fight it leaned toward whoever was named first: in testing, about one pick in seven would have changed if the two names were swapped. It now gives the same pick whichever way round the names go, and the test scores every fight from both sides. Scored that way, the old model picked 79% of winners, not the 80% this page showed before. Picks made before the fix stand as they were, and the <a href="../picks.jsonl">ledger</a> names the model behind each one: elo+logreg-platt-v1 before the fix, v2 after.</p>
     <p>Every fight gets a pick. When the model's lean is within five points of a coin flip, the pick is marked <b>narrow</b>: in testing, those fights really were close to 50/50, so read a narrow pick as a lean, not a confident call. Every pick counts in the track record, and the 80% above was measured the same way, calling every fight.</p>
     <p>Until 18 October 2026 we said "too close to call" on near coin flips and named no one. Three fights still to come had been locked that way; on 19 October, before their fights, we re-called them under the new rule. The page shows both calls, and the re-call counts.</p>
   </section>
 
   <section>
     <h2>When the data is thin</h2>
-    <p>The model needs a fighter's whole career, fight by fight. When we can't verify most of a fighter's record, usually a prospect or a journeyman with no public fight history, the bout says "pick pending" while we look for it. If it's still missing two days before the fight, the pick goes to the better record, marked <b>by record</b> (in testing, picking the better record was right 71% of the time); if a record can't be found or the two are level, to the fighter billed first, marked <b>coin flip</b>. Either way the bout gets a pick, and it counts.</p>
+    <p>The model needs a fighter's whole career, fight by fight. When we can't verify most of a fighter's record, usually a prospect or a journeyman with no public fight history, the bout says "pick pending" while we look for it. If it's still missing two days before the fight, the pick goes to the better record, marked <b>by record</b> (in testing, picking the better record was right 72% of the time); if a record can't be found or the two are level, to the fighter billed first, marked <b>coin flip</b>. Either way the bout gets a pick, and it counts.</p>
   </section>
 
   <section>
