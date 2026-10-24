@@ -2075,7 +2075,13 @@
         "picked_at": "2026-10-20T03:37:06",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Ibrahim Nadim didn't fight: Edward Hardy fought Diego Alberto Ruiz instead.",
+        "source": "https://fightmag.com/boxing-dalton-smith-vs-alberto-puello-live-results/",
+        "at": "2026-10-24T23:33:55"
+      }
     },
     {
       "order": 5,
@@ -3026,7 +3032,10 @@
         "picked_at": "2026-10-20T03:37:06",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Joe Hayden by decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 7,
@@ -3530,7 +3539,10 @@
         "picked_at": "2026-10-20T03:37:06",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Leo Atang by TKO, round 1",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 8,
@@ -3980,7 +3992,10 @@
         "picked_at": "2026-10-20T03:37:06",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Chris Mulunda by decision",
+        "verdict": "recorded"
+      }
     }
   ],
   "data_as_of": "2026-10-24",
