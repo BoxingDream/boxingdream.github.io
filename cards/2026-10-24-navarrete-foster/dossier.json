@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-10-24-navarrete-foster",
     "title": "Navarrete vs Foster",
@@ -554,7 +554,10 @@
           "picked_at": "2026-10-08T04:16:17"
         }
       },
-      "result": null
+      "result": {
+        "text": "O'Shaquie Foster by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
@@ -1619,7 +1622,10 @@
         "fighter_id": 1647767691,
         "picked_at": "2026-10-19T02:45:06"
       },
-      "result": null
+      "result": {
+        "text": "Frank Martin by TKO, round 7",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 4,
