@@ -1089,7 +1089,10 @@
         "fighter_id": 950036329,
         "picked_at": "2026-10-08T04:16:17"
       },
-      "result": null
+      "result": {
+        "text": "Albert Gonzalez by KO, round 2",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 3,
