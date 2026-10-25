@@ -251,7 +251,13 @@ main.wrap { padding-top: 24px; }
 .call.a .call-v { color: var(--side-a); } .call.b .call-v { color: var(--side-b); }
 .call.pending .call-v { color: var(--muted); }
 .call-t { color: var(--muted); text-align: right; }
-.call-t .note { color: var(--paper); }
+.call .conf { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--paper); vertical-align: middle; white-space: nowrap; }
+.why { grid-column: 1 / -1; list-style: none; margin: 0; padding: 12px 0 0; border-top: 1px solid var(--rule); display: grid; gap: 6px; }
+.why li { position: relative; padding-left: 20px; font-size: 14px; line-height: 1.45; color: var(--paper); }
+.why li::before { position: absolute; left: 2px; top: 0; font: 700 14px/1.45 var(--mono); }
+.why li.pro::before { content: "+"; color: var(--gold); }
+.why li.con::before { content: "−"; color: var(--muted); }
+.call-n { grid-column: 1 / -1; margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .call-r { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding-top: 12px; border-top: 1px solid var(--rule); }
 .call-r .res { font-family: var(--display); font-weight: 800; font-size: 1.3rem; text-transform: uppercase; }
 .call .fix { flex-basis: 100%; grid-column: 1 / -1; color: var(--muted); font-size: 11px; line-height: 1.6; }
@@ -393,7 +399,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Buatsi</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-21T14:53:25Z" title="21 Oct 2026, 14:53 UTC">21 Oct</time>    </span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-21T14:53:25Z" title="21 Oct 2026, 14:53 UTC">21 Oct</time></span><div class="call-o mono">
   <span class="k">Bookies</span>
   <span class="w">agree: Buatsi is the favorite</span>
   <span class="t">Buatsi −114 · Hutchinson −106 · median of 12 bookmakers via The Odds API, 25 Oct</span>
@@ -1192,7 +1198,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Rea</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-21T14:53:25Z" title="21 Oct 2026, 14:53 UTC">21 Oct</time>    </span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-21T14:53:25Z" title="21 Oct 2026, 14:53 UTC">21 Oct</time></span><div class="call-o mono">
   <span class="k">Bookies</span>
   <span class="w">agree: Rea is the favorite</span>
   <span class="t">Rea −137 · Taylor +106 · median of 7 bookmakers via The Odds API, 25 Oct</span>

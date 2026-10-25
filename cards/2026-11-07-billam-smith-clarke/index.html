@@ -251,7 +251,13 @@ main.wrap { padding-top: 24px; }
 .call.a .call-v { color: var(--side-a); } .call.b .call-v { color: var(--side-b); }
 .call.pending .call-v { color: var(--muted); }
 .call-t { color: var(--muted); text-align: right; }
-.call-t .note { color: var(--paper); }
+.call .conf { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--paper); vertical-align: middle; white-space: nowrap; }
+.why { grid-column: 1 / -1; list-style: none; margin: 0; padding: 12px 0 0; border-top: 1px solid var(--rule); display: grid; gap: 6px; }
+.why li { position: relative; padding-left: 20px; font-size: 14px; line-height: 1.45; color: var(--paper); }
+.why li::before { position: absolute; left: 2px; top: 0; font: 700 14px/1.45 var(--mono); }
+.why li.pro::before { content: "+"; color: var(--gold); }
+.why li.con::before { content: "−"; color: var(--muted); }
+.call-n { grid-column: 1 / -1; margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .call-r { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding-top: 12px; border-top: 1px solid var(--rule); }
 .call-r .res { font-family: var(--display); font-weight: 800; font-size: 1.3rem; text-transform: uppercase; }
 .call .fix { flex-basis: 100%; grid-column: 1 / -1; color: var(--muted); font-size: 11px; line-height: 1.6; }
@@ -394,7 +400,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Billam-Smith</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time>    </span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time></span><div class="call-o mono">
   <span class="k">Bookies</span>
   <span class="w">agree: Billam-Smith is the favorite</span>
   <span class="t">Billam-Smith −400 · Clarke +284 · median of 7 bookmakers via The Odds API, 25 Oct</span>
@@ -661,7 +667,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Bentley</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time>    </span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time></span><div class="call-o mono">
   <span class="k">Bookies</span>
   <span class="w">agree: Bentley is the favorite</span>
   <span class="t">Bentley −185 · Mosley Jr. +141 · median of 8 bookmakers via The Odds API, 25 Oct</span>
@@ -928,7 +934,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Parker</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time>    </span><div class="call-o mono">
+<span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time></span><div class="call-o mono">
   <span class="k">Bookies</span>
   <span class="w">favor Dzambekov</span>
 <span class="upset">Underdog pick</span>  <span class="t">Parker +220 · Dzambekov −290 · median of 5 bookmakers via The Odds API, 25 Oct</span>
@@ -1723,7 +1729,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Hickey</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-20T03:48:18Z" title="20 Oct 2026, 03:48 UTC">20 Oct</time>    </span>  </div>
+<span class="call-t mono">Locked <time datetime="2026-10-20T03:48:18Z" title="20 Oct 2026, 03:48 UTC">20 Oct</time></span>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>

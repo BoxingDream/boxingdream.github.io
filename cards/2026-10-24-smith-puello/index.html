@@ -251,7 +251,13 @@ main.wrap { padding-top: 24px; }
 .call.a .call-v { color: var(--side-a); } .call.b .call-v { color: var(--side-b); }
 .call.pending .call-v { color: var(--muted); }
 .call-t { color: var(--muted); text-align: right; }
-.call-t .note { color: var(--paper); }
+.call .conf { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--paper); vertical-align: middle; white-space: nowrap; }
+.why { grid-column: 1 / -1; list-style: none; margin: 0; padding: 12px 0 0; border-top: 1px solid var(--rule); display: grid; gap: 6px; }
+.why li { position: relative; padding-left: 20px; font-size: 14px; line-height: 1.45; color: var(--paper); }
+.why li::before { position: absolute; left: 2px; top: 0; font: 700 14px/1.45 var(--mono); }
+.why li.pro::before { content: "+"; color: var(--gold); }
+.why li.con::before { content: "−"; color: var(--muted); }
+.call-n { grid-column: 1 / -1; margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .call-r { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding-top: 12px; border-top: 1px solid var(--rule); }
 .call-r .res { font-family: var(--display); font-weight: 800; font-size: 1.3rem; text-transform: uppercase; }
 .call .fix { flex-basis: 100%; grid-column: 1 / -1; color: var(--muted); font-size: 11px; line-height: 1.6; }
@@ -396,7 +402,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Smith</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-08T04:16:18Z" title="8 Oct 2026, 04:16 UTC">8 Oct</time>    </span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Dalton Smith by split decision</span><span class="grade hit">Called it</span></div>  </div>
+<span class="call-t mono">Locked <time datetime="2026-10-08T04:16:18Z" title="8 Oct 2026, 04:16 UTC">8 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Dalton Smith by split decision</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -659,7 +665,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Visioli</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-08T04:16:18Z" title="8 Oct 2026, 04:16 UTC">8 Oct</time>    </span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Giorgio Visioli by majority decision</span><span class="grade hit">Called it</span></div>  </div>
+<span class="call-t mono">Locked <time datetime="2026-10-08T04:16:18Z" title="8 Oct 2026, 04:16 UTC">8 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Giorgio Visioli by majority decision</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -922,7 +928,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Ryan</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-08T04:16:18Z" title="8 Oct 2026, 04:16 UTC">8 Oct</time>    </span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Shannon Ryan by TKO, round 1</span><span class="grade hit">Called it</span></div>  </div>
+<span class="call-t mono">Locked <time datetime="2026-10-08T04:16:18Z" title="8 Oct 2026, 04:16 UTC">8 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Shannon Ryan by TKO, round 1</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1184,8 +1190,8 @@ main.wrap { padding-top: 24px; }
 
   <div class="call a">
     <span class="call-k mono">Our pick</span>
-    <span class="call-v"><span class="lean">Hardy</span></span>
-<span class="call-t mono"><span class="note">By record: no verified fight history</span><br>Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time>    </span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Did not take place</span><span class="grade void">Void</span><span class="fix mono">Ibrahim Nadim didn&#39;t fight: Edward Hardy fought Diego Alberto Ruiz instead. <a href="https://fightmag.com/boxing-dalton-smith-vs-alberto-puello-live-results/" rel="nofollow noopener">Source</a>. The pick counts neither way.</span></div>  </div>
+    <span class="call-v"><span class="lean">Hardy</span><span class="conf"> · by record</span></span>
+<span class="call-t mono">Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time></span><p class="call-n">By record: no verified fight history</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Did not take place</span><span class="grade void">Void</span><span class="fix mono">Ibrahim Nadim didn&#39;t fight: Edward Hardy fought Diego Alberto Ruiz instead. <a href="https://fightmag.com/boxing-dalton-smith-vs-alberto-puello-live-results/" rel="nofollow noopener">Source</a>. The pick counts neither way.</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1447,8 +1453,8 @@ main.wrap { padding-top: 24px; }
 
   <div class="call a">
     <span class="call-k mono">Our pick</span>
-    <span class="call-v"><span class="lean">Fiaz</span></span>
-<span class="call-t mono"><span class="note">By record: no verified fight history</span><br>Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time>    </span>  </div>
+    <span class="call-v"><span class="lean">Fiaz</span><span class="conf"> · by record</span></span>
+<span class="call-t mono">Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time></span><p class="call-n">By record: no verified fight history</p>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1710,8 +1716,8 @@ main.wrap { padding-top: 24px; }
 
   <div class="call a">
     <span class="call-k mono">Our pick</span>
-    <span class="call-v"><span class="lean">Hayden</span></span>
-<span class="call-t mono"><span class="note">By record: no verified fight history</span><br>Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time>    </span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Joe Hayden by decision</span><span class="grade hit">Called it</span></div>  </div>
+    <span class="call-v"><span class="lean">Hayden</span><span class="conf"> · by record</span></span>
+<span class="call-t mono">Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time></span><p class="call-n">By record: no verified fight history</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Joe Hayden by decision</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1973,8 +1979,8 @@ main.wrap { padding-top: 24px; }
 
   <div class="call a">
     <span class="call-k mono">Our pick</span>
-    <span class="call-v"><span class="lean">Atang</span></span>
-<span class="call-t mono"><span class="note">By record: no verified fight history</span><br>Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time>    </span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Leo Atang by TKO, round 1</span><span class="grade hit">Called it</span></div>  </div>
+    <span class="call-v"><span class="lean">Atang</span><span class="conf"> · by record</span></span>
+<span class="call-t mono">Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time></span><p class="call-n">By record: no verified fight history</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Leo Atang by TKO, round 1</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -2236,8 +2242,8 @@ main.wrap { padding-top: 24px; }
 
   <div class="call a">
     <span class="call-k mono">Our pick</span>
-    <span class="call-v"><span class="lean">Mulunda</span></span>
-<span class="call-t mono"><span class="note">By record: no verified fight history</span><br>Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time>    </span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Chris Mulunda by decision</span><span class="grade hit">Called it</span></div>  </div>
+    <span class="call-v"><span class="lean">Mulunda</span><span class="conf"> · by record</span></span>
+<span class="call-t mono">Locked <time datetime="2026-10-20T03:37:06Z" title="20 Oct 2026, 03:37 UTC">20 Oct</time></span><p class="call-n">By record: no verified fight history</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Chris Mulunda by decision</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>

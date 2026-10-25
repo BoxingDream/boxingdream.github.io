@@ -122,7 +122,7 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
       <li>Every fighter gets a rating from who they've beaten.</li>
       <li>A model compares the two fighters on things like power, chin, size and how busy they've been, and picks the one more likely to win.</li>
       <li>Every pick is locked before the fight and graded after. Nothing is deleted, and every pick is public.</li>
-      <li><b>Narrow</b> means close to a coin flip. <b>By record</b> and <b>coin flip</b> picks are made without the model, when a fighter's history can't be checked.</li>
+      <li>Each pick says how sure the model is: <b>narrow</b> (a coin flip), <b>lean</b>, <b>clear</b> or <b>strong</b>. <b>By record</b> and <b>coin flip</b> picks are made without the model, when a fighter's history can't be checked.</li>
     </ul>
   </section>
 
@@ -143,7 +143,8 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
       <div class="num"><b>72%</b><span>Picking the better record</span></div>
     </div>
     <p><b>Fixed on 24 October 2026.</b> In our fight records, the fighter whose record it is gets named first, and they won more often than not. The model had learned that, so in a close fight it leaned toward whoever was named first: in testing, about one pick in seven would have changed if the two names were swapped. It now gives the same pick whichever way round the names go, and the test scores every fight from both sides. Scored that way, the old model picked 79% of winners, not the 80% this page showed before. Picks made before the fix stand as they were, and the <a href="../picks.jsonl">ledger</a> names the model behind each one: elo+logreg-platt-v1 before the fix, v2 after.</p>
-    <p>Every fight gets a pick. When the model's lean is within five points of a coin flip, the pick is marked <b>narrow</b>: in testing, those fights really were close to 50/50, so read a narrow pick as a lean, not a confident call. Every pick counts in the track record, and the 80% above was measured the same way, calling every fight.</p>
+    <p>Every fight gets a pick. When the model's lean is within five points of a coin flip, the pick is marked <b>narrow</b>: in testing, those fights really were close to 50/50, so read a narrow pick as a coin flip, not a confident call. Every pick counts in the track record, and the 80% above was measured the same way, calling every fight.</p>
+    <p>Since 24 October 2026, each model pick also says how sure the model was, and why. Above narrow come <b>lean</b> (in testing, right about 2 times in 3), <b>clear</b> (about 4 times in 5) and <b>strong</b> (about 9 times in 10). Under the pick, up to three short lines say what moved the model most, for and against, in the dossier's own numbers. The model's number and those reasons are locked into the <a href="../picks.jsonl">ledger</a> with the pick.</p>
     <p>Until 18 October 2026 we said "too close to call" on near coin flips and named no one. Three fights still to come had been locked that way; on 19 October, before their fights, we re-called them under the new rule. The page shows both calls, and the re-call counts.</p>
   </section>
 
