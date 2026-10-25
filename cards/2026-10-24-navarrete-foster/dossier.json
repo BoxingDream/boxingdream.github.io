@@ -2129,7 +2129,13 @@
         "picked_at": "2026-10-20T03:37:06",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Steven Navarro missed weight and the bout was canceled; Deric Davis fought Joaquin Silva Faccio in its place.",
+        "source": "https://fightmag.com/boxing-emanuel-navarrete-vs-oshaquie-foster-live-results/",
+        "at": "2026-10-25T04:47:10"
+      }
     }
   ],
   "data_as_of": "2026-10-24",
