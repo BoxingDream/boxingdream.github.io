@@ -71,6 +71,10 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .site nav { display: flex; gap: 6px 22px; flex-wrap: wrap; }
 .site nav a { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
 .site nav a:hover, .site nav a[aria-current] { color: var(--paper); border-bottom-color: var(--side-b); }
+/* Section titles: say what's below, big, before any data starts. */
+.sec-h { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(2.2rem, 9vw, 3.4rem); line-height: .9; letter-spacing: -.005em; margin: 0; }
+.sec-sub { color: var(--muted); margin: 10px 0 0; }
+
 /* Pick list: one line per bout (home page and the top of a dossier). */
 .picklines { list-style: none; margin: 0; padding: 0; max-width: 680px; }   /* the pick stays near the fight on wide screens */
 .picklines li { border-bottom: 1px solid var(--rule); }
