@@ -2582,7 +2582,13 @@
         "picked_at": "2026-10-20T03:37:06",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Not on the fight-week card and no result anywhere: the bout didn't take place.",
+        "source": "https://britishboxingnews.co.uk/blogs/smith-vs-puello-full-card-and-undercard/",
+        "at": "2026-10-27T17:30:00"
+      }
     },
     {
       "order": 6,
