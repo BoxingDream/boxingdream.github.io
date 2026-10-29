@@ -3715,16 +3715,21 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Rafael Espinoza",
+        "fighter_id": 1973661616,
+        "picked_at": "2026-10-29T00:07:19",
+        "basis": "coin_flip"
+      },
       "result": null
     }
   ],
-  "data_as_of": "2026-10-28",
-  "generated_at": "2026-10-28T00:07:23",
+  "data_as_of": "2026-10-29",
+  "generated_at": "2026-10-29T00:07:22",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-28T00:07:23"
+  "published_at": "2026-10-29T00:07:22"
 }
