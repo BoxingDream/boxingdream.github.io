@@ -8,7 +8,9 @@
     "venue": "The Venue",
     "location": "Riyadh, Saudi Arabia",
     "broadcaster": "DAZN PPV",
-    "status": "final"
+    "status": "final",
+    "main_card_start": "2026-10-31T14:00:00Z",
+    "start_label": "DAZN coverage starts"
   },
   "statement": "Canelo has been to the 12th round 23 times. M'billi has never been past the 10th.",
   "bouts": [
@@ -3724,12 +3726,12 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-10-29",
-  "generated_at": "2026-10-29T00:07:22",
+  "data_as_of": "2026-10-30",
+  "generated_at": "2026-10-30T02:31:38",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-29T00:07:22"
+  "published_at": "2026-10-30T02:31:38"
 }
