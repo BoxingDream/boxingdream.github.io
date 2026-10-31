@@ -560,7 +560,7 @@
       "main_event": false,
       "weight_class": "Super Middleweight",
       "scheduled_rounds": 12,
-      "title": null,
+      "title": "WBA Super Middleweight",
       "blocked": false,
       "fighters": [
         {
@@ -3726,12 +3726,12 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-10-30",
-  "generated_at": "2026-10-30T21:23:01",
+  "data_as_of": "2026-10-31",
+  "generated_at": "2026-10-31T00:18:43",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata",
     "Wikimedia Commons (photos)"
   ],
-  "published_at": "2026-10-30T21:23:01"
+  "published_at": "2026-10-31T00:18:43"
 }
