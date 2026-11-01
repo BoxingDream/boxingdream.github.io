@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-10-31-canelo-mbilli",
     "title": "Canelo vs Mbilli",
@@ -553,7 +553,10 @@
         "fighter_id": 1862518701,
         "picked_at": "2026-10-08T05:06:56"
       },
-      "result": null
+      "result": {
+        "text": "Canelo Álvarez by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
@@ -1091,7 +1094,10 @@
         "fighter_id": 1426490485,
         "picked_at": "2026-10-18T16:08:38"
       },
-      "result": null
+      "result": {
+        "text": "Jaime Munguía by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 3,
@@ -2705,7 +2711,10 @@
         "fighter_id": 2124755312,
         "picked_at": "2026-10-18T16:08:38"
       },
-      "result": null
+      "result": {
+        "text": "Carl Jammes Martin by split decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 6,
@@ -3212,7 +3221,10 @@
         "picked_at": "2026-10-20T03:42:42",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Reito Tsutsumi by TKO, round 2",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 7,
@@ -3723,7 +3735,10 @@
         "picked_at": "2026-10-29T00:07:19",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Rafael Espinoza by TKO, round 3",
+        "verdict": "recorded"
+      }
     }
   ],
   "data_as_of": "2026-10-31",
