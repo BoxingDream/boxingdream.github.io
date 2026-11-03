@@ -1120,13 +1120,13 @@
           "short": "Dzambekov",
           "alias": null,
           "nationality": "Austrian",
-          "record": "10-0-0",
+          "record": "14-0-0",
           "record_bar": {
-            "ko": 7,
-            "dec": 3,
+            "ko": 10,
+            "dec": 4,
             "draw": 0,
             "loss": 0,
-            "total": 10
+            "total": 14
           },
           "photo": null,
           "initials": "UD"
@@ -1222,7 +1222,7 @@
                 "n": null
               },
               "b": {
-                "v": "2024-10-26",
+                "v": "2026-02-15",
                 "d": null,
                 "n": null
               },
@@ -1237,13 +1237,13 @@
                 "n": 12.2
               },
               "b": {
-                "v": "24.4 months",
+                "v": "8.7 months",
                 "d": null,
-                "n": 24.4
+                "n": 8.7
               },
               "bar": {
-                "a": 50.0,
-                "b": 100.0
+                "a": 100.0,
+                "b": 71.3
               }
             },
             {
@@ -1255,13 +1255,13 @@
                 "n": 0
               },
               "b": {
-                "v": "0",
+                "v": "1",
                 "d": null,
-                "n": 0
+                "n": 1
               },
               "bar": {
                 "a": 0.0,
-                "b": 0.0
+                "b": 100.0
               }
             },
             {
@@ -1273,13 +1273,13 @@
                 "n": 1.33
               },
               "b": {
-                "v": "1.0",
+                "v": "2.3",
                 "d": null,
-                "n": 1.0
+                "n": 2.33
               },
               "bar": {
-                "a": 100.0,
-                "b": 75.2
+                "a": 57.1,
+                "b": 100.0
               }
             },
             {
@@ -1329,7 +1329,7 @@
                 "results": [
                   {
                     "r": "W",
-                    "ko": false
+                    "ko": true
                   },
                   {
                     "r": "W",
@@ -1367,7 +1367,7 @@
               },
               "b": {
                 "v": null,
-                "d": "records known for only 1 of 10 opponents",
+                "d": "records known for only 2 of 14 opponents",
                 "n": null
               },
               "bar": null
@@ -1382,7 +1382,7 @@
               },
               "b": {
                 "v": null,
-                "d": "records known for 0 of last 5",
+                "d": "records known for 1 of last 5",
                 "n": null
               },
               "bar": null
@@ -1396,8 +1396,8 @@
                 "n": null
               },
               "b": {
-                "v": "1-0-0",
-                "d": "1 fights",
+                "v": "2-0-0",
+                "d": "2 fights",
                 "n": null
               },
               "bar": null
@@ -1417,13 +1417,13 @@
                 "n": 69.2
               },
               "b": {
-                "v": "70%",
-                "d": "7 of 10 wins",
-                "n": 70.0
+                "v": "71%",
+                "d": "10 of 14 wins",
+                "n": 71.4
               },
               "bar": {
                 "a": 69.2,
-                "b": 70.0
+                "b": 71.4
               }
             },
             {
@@ -1436,7 +1436,7 @@
               },
               "b": {
                 "v": null,
-                "d": "only 1 wins over rated winners",
+                "d": "only 2 wins over rated winners",
                 "n": null
               },
               "bar": {
@@ -1453,7 +1453,7 @@
                 "n": null
               },
               "b": {
-                "v": "0 of 10",
+                "v": "0 of 14",
                 "d": "never stopped",
                 "n": null
               },
@@ -1528,13 +1528,13 @@
                 "n": 32.1
               },
               "b": {
-                "v": "30%",
-                "d": "10 decided fights",
-                "n": 30.0
+                "v": "29%",
+                "d": "14 decided fights",
+                "n": 28.6
               },
               "bar": {
                 "a": 32.1,
-                "b": 30.0
+                "b": 28.6
               }
             },
             {
@@ -1571,7 +1571,7 @@
               },
               "b": {
                 "v": "0-0-0",
-                "d": "0 opponents with known stance",
+                "d": "1 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -3033,11 +3033,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-10-26",
-  "generated_at": "2026-10-26T16:36:36",
+  "data_as_of": "2026-11-03",
+  "generated_at": "2026-11-03T05:22:04",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-26T16:36:36"
+  "published_at": "2026-11-03T05:22:04"
 }
