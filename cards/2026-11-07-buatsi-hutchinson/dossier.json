@@ -1047,7 +1047,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Jack Rafferty",
+        "fighter_id": 1790065937,
+        "picked_at": "2026-11-05T01:07:28",
+        "basis": "coin_flip"
+      },
       "result": null
     },
     {
@@ -1546,7 +1551,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Zak Miller",
+        "fighter_id": 1912733161,
+        "picked_at": "2026-11-05T01:07:28",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -2521,15 +2531,20 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Jack Turner",
+        "fighter_id": 947043991,
+        "picked_at": "2026-11-05T01:07:28",
+        "basis": "record"
+      },
       "result": null
     }
   ],
-  "data_as_of": "2026-11-03",
-  "generated_at": "2026-11-03T05:22:52",
+  "data_as_of": "2026-11-04",
+  "generated_at": "2026-11-05T01:07:30",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-03T05:22:52"
+  "published_at": "2026-11-05T01:07:30"
 }

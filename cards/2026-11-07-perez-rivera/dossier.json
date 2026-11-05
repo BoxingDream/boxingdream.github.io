@@ -1569,7 +1569,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Pryce Taylor",
+        "fighter_id": 1881488526,
+        "picked_at": "2026-11-05T01:07:49",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -2068,7 +2073,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Josh Torres",
+        "fighter_id": 1137106211,
+        "picked_at": "2026-11-05T01:07:49",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -2513,7 +2523,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Sardius Simmons",
+        "fighter_id": 1219584219,
+        "picked_at": "2026-11-05T01:07:49",
+        "basis": "coin_flip"
+      },
       "result": null
     },
     {
@@ -2958,15 +2973,20 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Quentin DeLeon",
+        "fighter_id": 1446805432,
+        "picked_at": "2026-11-05T01:07:49",
+        "basis": "coin_flip"
+      },
       "result": null
     }
   ],
-  "data_as_of": "2026-10-29",
-  "generated_at": "2026-10-29T16:53:24",
+  "data_as_of": "2026-11-04",
+  "generated_at": "2026-11-05T01:07:51",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-29T16:53:24"
+  "published_at": "2026-11-05T01:07:51"
 }
