@@ -1082,7 +1082,12 @@
           "picked_at": "2026-10-19T03:01:53"
         }
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Ellie Scotney withdrew injured; the fight is to be rescheduled.",
+        "source": "https://www.skysports.com/boxing/news/13598803/ellie-scotney-out-of-first-featherweight-world-championship-fight-as-she-withdraws-injured-from-tiara-brown-wbc-title-clash"
+      }
     },
     {
       "order": 3,
@@ -3118,7 +3123,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Brittany Sims",
+        "fighter_id": 967290530,
+        "picked_at": "2026-11-06T01:08:29",
+        "basis": "coin_flip"
+      },
       "result": null
     },
     {
@@ -3563,7 +3573,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Natalie Dove",
+        "fighter_id": 1766281966,
+        "picked_at": "2026-11-06T01:08:29",
+        "basis": "coin_flip"
+      },
       "result": null
     },
     {
@@ -4008,7 +4023,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Fernando Garcia",
+        "fighter_id": 1077362297,
+        "picked_at": "2026-11-06T01:08:29",
+        "basis": "coin_flip"
+      },
       "result": null
     },
     {
@@ -4453,15 +4473,20 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Javier Guerrero Cruz",
+        "fighter_id": 1839470413,
+        "picked_at": "2026-11-06T01:08:29",
+        "basis": "coin_flip"
+      },
       "result": null
     }
   ],
-  "data_as_of": "2026-10-26",
-  "generated_at": "2026-10-26T16:39:05",
+  "data_as_of": "2026-11-05",
+  "generated_at": "2026-11-06T01:08:31",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-26T16:39:05"
+  "published_at": "2026-11-06T01:08:31"
 }
