@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-11-07-buatsi-hutchinson",
     "title": "Buatsi vs Hutchinson",
@@ -550,7 +550,10 @@
         "fighter_id": 1254161636,
         "picked_at": "2026-10-21T14:53:25"
       },
-      "result": null
+      "result": {
+        "text": "Willy Hutchinson by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,

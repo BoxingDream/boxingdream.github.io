@@ -1636,13 +1636,13 @@
           "short": "Ali",
           "alias": null,
           "nationality": "Somali",
-          "record": "11-2-0",
+          "record": "12-2-0",
           "record_bar": {
             "ko": 3,
-            "dec": 8,
+            "dec": 9,
             "draw": 0,
             "loss": 2,
-            "total": 13
+            "total": 14
           },
           "photo": null,
           "initials": "RA"
@@ -1655,13 +1655,13 @@
           "short": "Kreps",
           "alias": null,
           "nationality": "United States",
-          "record": "11-0-0",
+          "record": "11-1-0",
           "record_bar": {
             "ko": 3,
             "dec": 8,
             "draw": 0,
-            "loss": 0,
-            "total": 11
+            "loss": 1,
+            "total": 12
           },
           "photo": null,
           "initials": "MK"
@@ -1750,12 +1750,12 @@
               "type": "pair",
               "label": "Last fought",
               "a": {
-                "v": "2026-02-14",
+                "v": "2026-11-07",
                 "d": null,
                 "n": null
               },
               "b": {
-                "v": "2025-10-03",
+                "v": "2026-11-07",
                 "d": null,
                 "n": null
               },
@@ -1765,53 +1765,53 @@
               "type": "pair",
               "label": "Since last fight",
               "a": {
-                "v": "8.8 months",
+                "v": "0.0 months",
                 "d": null,
-                "n": 8.8
+                "n": 0.0
               },
               "b": {
-                "v": "13.2 months",
+                "v": "0.0 months",
                 "d": null,
-                "n": 13.2
+                "n": 0.0
               },
               "bar": {
-                "a": 66.7,
-                "b": 100.0
+                "a": 0.0,
+                "b": 0.0
               }
             },
             {
               "type": "pair",
               "label": "Fights, last 12 months",
               "a": {
+                "v": "2",
+                "d": null,
+                "n": 2
+              },
+              "b": {
                 "v": "1",
                 "d": null,
                 "n": 1
               },
-              "b": {
-                "v": "0",
-                "d": null,
-                "n": 0
-              },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 50.0
               }
             },
             {
               "type": "pair",
               "label": "Fights per year (3 yr)",
               "a": {
-                "v": "1.0",
-                "d": null,
-                "n": 1.0
-              },
-              "b": {
                 "v": "1.3",
                 "d": null,
                 "n": 1.33
               },
+              "b": {
+                "v": "1.7",
+                "d": null,
+                "n": 1.67
+              },
               "bar": {
-                "a": 75.2,
+                "a": 79.6,
                 "b": 100.0
               }
             },
@@ -1819,13 +1819,13 @@
               "type": "pair",
               "label": "Weight class vs last fight",
               "a": {
-                "v": null,
-                "d": "last weight class unknown",
+                "v": "same",
+                "d": null,
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "last weight class unknown",
+                "v": "same",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -1835,10 +1835,6 @@
               "label": "Last 5 fights",
               "a": {
                 "results": [
-                  {
-                    "r": "L",
-                    "ko": false
-                  },
                   {
                     "r": "W",
                     "ko": false
@@ -1854,6 +1850,10 @@
                   {
                     "r": "W",
                     "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
                   }
                 ],
                 "d": null
@@ -1877,7 +1877,7 @@
                     "ko": false
                   },
                   {
-                    "r": "W",
+                    "r": "L",
                     "ko": false
                   }
                 ],
@@ -1895,12 +1895,12 @@
               "label": "Opponents' win rate at the time",
               "a": {
                 "v": null,
-                "d": "records known for only 1 of 13 opponents",
+                "d": "records known for only 2 of 14 opponents",
                 "n": null
               },
               "b": {
                 "v": null,
-                "d": "records known for only 0 of 11 opponents",
+                "d": "records known for only 1 of 12 opponents",
                 "n": null
               },
               "bar": null
@@ -1910,12 +1910,12 @@
               "label": "Same, last 5 fights",
               "a": {
                 "v": null,
-                "d": "records known for 1 of last 5",
+                "d": "records known for 2 of last 5",
                 "n": null
               },
               "b": {
                 "v": null,
-                "d": "records known for 0 of last 5",
+                "d": "records known for 1 of last 5",
                 "n": null
               },
               "bar": null
@@ -1924,13 +1924,13 @@
               "type": "pair",
               "label": "Record vs winning-record opponents",
               "a": {
-                "v": "0-1-0",
-                "d": "1 fights",
+                "v": "1-1-0",
+                "d": "2 fights",
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "no rated opponents",
+                "v": "0-1-0",
+                "d": "1 fights",
                 "n": null
               },
               "bar": null
@@ -1945,9 +1945,9 @@
               "type": "pair",
               "label": "KO/TKO rate",
               "a": {
-                "v": "27%",
-                "d": "3 of 11 wins",
-                "n": 27.3
+                "v": "25%",
+                "d": "3 of 12 wins",
+                "n": 25.0
               },
               "b": {
                 "v": "27%",
@@ -1955,7 +1955,7 @@
                 "n": 27.3
               },
               "bar": {
-                "a": 27.3,
+                "a": 25.0,
                 "b": 27.3
               }
             },
@@ -1964,7 +1964,7 @@
               "label": "KO/TKO rate vs winning-record opponents",
               "a": {
                 "v": null,
-                "d": "only 0 wins over rated winners",
+                "d": "only 1 wins over rated winners",
                 "n": null
               },
               "b": {
@@ -1978,12 +1978,12 @@
               "type": "pair",
               "label": "Times stopped",
               "a": {
-                "v": "1 of 13",
-                "d": "4 fights ago",
+                "v": "1 of 14",
+                "d": "5 fights ago",
                 "n": null
               },
               "b": {
-                "v": "0 of 11",
+                "v": "0 of 12",
                 "d": "never stopped",
                 "n": null
               },
@@ -2004,31 +2004,31 @@
                 "n": 10
               },
               "b": {
-                "v": "Round 8",
+                "v": "Round 10",
                 "d": null,
-                "n": 8
+                "n": 10
               },
               "bar": {
                 "a": 100.0,
-                "b": 80.0
+                "b": 100.0
               }
             },
             {
               "type": "pair",
               "label": "Fights into round 10 or later",
               "a": {
-                "v": "3",
+                "v": "4",
                 "d": null,
-                "n": 3
+                "n": 4
               },
               "b": {
-                "v": "0",
+                "v": "1",
                 "d": null,
-                "n": 0
+                "n": 1
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 25.0
               }
             },
             {
@@ -2053,36 +2053,36 @@
               "type": "pair",
               "label": "Fights going the distance",
               "a": {
-                "v": "69%",
-                "d": "13 decided fights",
-                "n": 69.2
+                "v": "71%",
+                "d": "14 decided fights",
+                "n": 71.4
               },
               "b": {
-                "v": "73%",
-                "d": "11 decided fights",
-                "n": 72.7
+                "v": "75%",
+                "d": "12 decided fights",
+                "n": 75.0
               },
               "bar": {
-                "a": 69.2,
-                "b": 72.7
+                "a": 71.4,
+                "b": 75.0
               }
             },
             {
               "type": "pair",
               "label": "World title fights (WBA, WBC, IBF, WBO)",
               "a": {
+                "v": "2",
+                "d": null,
+                "n": 2
+              },
+              "b": {
                 "v": "1",
                 "d": null,
                 "n": 1
               },
-              "b": {
-                "v": "0",
-                "d": null,
-                "n": 0
-              },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 50.0
               }
             }
           ]
@@ -2101,7 +2101,7 @@
               },
               "b": {
                 "v": "0-0-0",
-                "d": "0 opponents with known stance",
+                "d": "1 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -4482,11 +4482,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-11-05",
-  "generated_at": "2026-11-06T01:08:31",
+  "data_as_of": "2026-11-10",
+  "generated_at": "2026-11-10T03:47:22",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-06T01:08:31"
+  "published_at": "2026-11-10T03:47:22"
 }

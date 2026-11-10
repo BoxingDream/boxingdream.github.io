@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-11-07-billam-smith-clarke",
     "title": "Billam-Smith vs Clarke",
@@ -548,7 +548,10 @@
         "fighter_id": 1349420692,
         "picked_at": "2026-10-19T02:56:23"
       },
-      "result": null
+      "result": {
+        "text": "Cheavon Clarke by TKO, round 7",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
@@ -1084,7 +1087,10 @@
         "fighter_id": 1393953897,
         "picked_at": "2026-10-19T02:56:23"
       },
-      "result": null
+      "result": {
+        "text": "Denzel Bentley by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 3,
@@ -1615,7 +1621,10 @@
         "fighter_id": 1793875940,
         "picked_at": "2026-10-19T02:56:23"
       },
-      "result": null
+      "result": {
+        "text": "Umar Dzambekov by KO, round 4",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 4,
@@ -3995,7 +4004,10 @@
         "picked_at": "2026-11-06T01:07:32",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Masood Abdulah by unanimous decision",
+        "verdict": "recorded"
+      }
     }
   ],
   "data_as_of": "2026-11-06",

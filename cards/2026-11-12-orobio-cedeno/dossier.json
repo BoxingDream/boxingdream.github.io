@@ -505,7 +505,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Jhon Orobio",
+        "fighter_id": 1029380,
+        "picked_at": "2026-11-10T03:47:47",
+        "basis": "coin_flip"
+      },
       "result": null
     },
     {
@@ -1004,7 +1009,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Lenar Perez",
+        "fighter_id": 1859898790,
+        "picked_at": "2026-11-10T03:47:47",
+        "basis": "coin_flip"
+      },
       "result": null
     },
     {
@@ -1540,11 +1550,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-10-27",
-  "generated_at": "2026-10-27T01:20:46",
+  "data_as_of": "2026-11-10",
+  "generated_at": "2026-11-10T03:47:49",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-27T01:20:46"
+  "published_at": "2026-11-10T03:47:49"
 }

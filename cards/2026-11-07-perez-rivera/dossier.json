@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-11-07-perez-rivera",
     "title": "Perez vs Rivera",
@@ -541,7 +541,10 @@
         "fighter_id": 861489,
         "picked_at": "2026-10-19T02:56:24"
       },
-      "result": null
+      "result": {
+        "text": "Abraham Perez by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
