@@ -2088,7 +2088,10 @@
         "fighter_id": 1658363550,
         "picked_at": "2026-10-21T14:53:25"
       },
-      "result": null
+      "result": {
+        "text": "Bradley Rea by TKO, round 2",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 5,
@@ -2541,7 +2544,13 @@
         "picked_at": "2026-11-05T01:07:28",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Not on the night's results: the full results list has 12 bouts and Turner vs Gregorio isn't one of them. No reason was given.",
+        "source": "https://www.fightmag.com/boxing-joshua-buatsi-vs-willy-hutchinson-2-live-results/",
+        "at": "2026-11-10T03:56:57"
+      }
     },
     {
       "order": 6,

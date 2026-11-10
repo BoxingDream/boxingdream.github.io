@@ -3050,7 +3050,13 @@
         "fighter_id": 920671,
         "picked_at": "2026-10-20T03:48:18"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Troy Coleman didn't fight; Sam Hickey boxed Amaury Massenaux instead (Hickey won by TKO in round 5).",
+        "source": "https://www.fightmag.com/zuffa-boxing-12-billam-smith-vs-clarke-live-results/",
+        "at": "2026-11-10T03:56:56"
+      }
     },
     {
       "order": 7,

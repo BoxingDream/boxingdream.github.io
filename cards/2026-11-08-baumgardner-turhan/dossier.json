@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-11-08-baumgardner-turhan",
     "title": "Baumgardner vs Turhan",
@@ -543,7 +543,10 @@
         "fighter_id": 1556871461,
         "picked_at": "2026-10-19T03:01:53"
       },
-      "result": null
+      "result": {
+        "text": "Alycia Baumgardner by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
@@ -1618,7 +1621,10 @@
         "fighter_id": 1768082819,
         "picked_at": "2026-10-19T03:01:53"
       },
-      "result": null
+      "result": {
+        "text": "Irma Garcia by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 4,
@@ -2679,7 +2685,10 @@
         "fighter_id": 886826,
         "picked_at": "2026-10-19T03:01:53"
       },
-      "result": null
+      "result": {
+        "text": "Skye Nicolson by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 6,
