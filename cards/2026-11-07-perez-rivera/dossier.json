@@ -2084,7 +2084,10 @@
         "picked_at": "2026-11-05T01:07:49",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "José Luis Sánchez by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 5,

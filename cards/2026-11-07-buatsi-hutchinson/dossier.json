@@ -1057,7 +1057,10 @@
         "picked_at": "2026-11-05T01:07:28",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Jack Rafferty by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 3,
@@ -1561,7 +1564,10 @@
         "picked_at": "2026-11-05T01:07:28",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Gully Powar by technical decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 4,
@@ -3000,7 +3006,10 @@
         "picked_at": "2026-11-06T01:07:52",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Stephen Clarke by decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 7,
@@ -3450,7 +3459,10 @@
         "picked_at": "2026-11-06T01:07:52",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "John Joe Carrigan by KO, round 4",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 8,

@@ -2074,7 +2074,10 @@
         "picked_at": "2026-11-05T01:07:20",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Lucas Roehrig by TKO, round 7",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 5,
@@ -2524,7 +2527,10 @@
         "picked_at": "2026-11-05T01:07:20",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Da'Mazion Vanhouter by TKO, round 1",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 6,
@@ -3506,7 +3512,10 @@
         "picked_at": "2026-11-06T01:07:32",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Kayla Allen by decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 8,

@@ -3141,7 +3141,10 @@
         "picked_at": "2026-11-06T01:08:29",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Draw (decision)",
+        "verdict": "draw"
+      }
     },
     {
       "order": 7,
@@ -3591,7 +3594,10 @@
         "picked_at": "2026-11-06T01:08:29",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Nayeli Rodriguez by split decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 8,
@@ -4041,7 +4047,10 @@
         "picked_at": "2026-11-06T01:08:29",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Fernando Garcia by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 9,
