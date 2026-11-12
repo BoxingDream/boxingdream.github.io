@@ -1046,7 +1046,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Charlie Sheehy",
+        "fighter_id": 949754793,
+        "picked_at": "2026-11-12T21:22:38",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -1589,11 +1594,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-10-29",
-  "generated_at": "2026-10-29T00:09:12",
+  "data_as_of": "2026-11-12",
+  "generated_at": "2026-11-12T21:22:40",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-29T00:09:12"
+  "published_at": "2026-11-12T21:22:40"
 }

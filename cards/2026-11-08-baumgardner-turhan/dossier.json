@@ -2150,7 +2150,10 @@
         "fighter_id": 873212,
         "picked_at": "2026-10-20T03:04:11"
       },
-      "result": null
+      "result": {
+        "text": "Ramla Ali by split decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 5,
