@@ -70,6 +70,7 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .brand span { color: var(--side-b); }
 .site nav { display: flex; gap: 6px 22px; flex-wrap: wrap; }
 .site nav a { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
+@media (max-width: 480px) { .site nav { gap: 6px 14px; } .site nav a { letter-spacing: .04em; } }
 .site nav a:hover, .site nav a[aria-current] { color: var(--paper); border-bottom-color: var(--side-b); }
 /* Section titles: say what's below, big, before any data starts. */
 .sec-h { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(2.2rem, 9vw, 3.4rem); line-height: .9; letter-spacing: -.005em; margin: 0; }
@@ -164,6 +165,7 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
   <a class="brand" href="./">Boxing<span>Dream</span></a>
   <nav aria-label="Site">
     <a href="./" aria-current="page">Fights</a>
+    <a href="./boxing-this-weekend/">This weekend</a>
     <a href="./record/">Track record</a>
     <a href="./how-it-works/">How it works</a>
   </nav>
