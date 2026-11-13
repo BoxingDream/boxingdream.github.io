@@ -172,8 +172,7 @@ main.wrap { padding-top: 24px; }
 .fo .fig { display: block; height: 176px; width: auto; }
 .fo-h { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; color: var(--muted); font-size: 10.5px; margin: 8px 0 22px; }
 .fo-h span:first-child { text-align: right; }
-.fo-h .ghost-h { color: var(--side-b); }
-.fo-h span.a.ghost-h { color: var(--side-a); }
+.fo-h .ghost-h { color: var(--lose); }
 .fighter .given { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); min-height: 1.2em; }
 .fighter h2 { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.6rem, 6vw, 2.8rem); line-height: .9; letter-spacing: 0; hyphens: none; }
 .fighter h2.long { font-size: clamp(1.25rem, 5vw, 2.2rem); }
@@ -285,8 +284,12 @@ main.wrap { padding-top: 24px; }
   .ringwalk { height: auto; padding-bottom: 24px; --hh: 320px; display: flex; flex-direction: column; }
   .stage { position: relative; height: var(--hh); }
   .panel { -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%); }
-  /* The bar wraps to several lines on a phone: put it above the figures, not over them. */
-  .bug { position: relative; order: -1; top: auto; left: auto; margin: 14px 14px 0; max-width: none; padding: 8px 14px; font-size: 10px; }
+  /* On a phone the fighters come first; the facts sit under the names as a
+     tidy list (the dots between items would strand at line ends). */
+  .bug { position: relative; order: 1; top: auto; left: auto; margin: 22px 16px 0; max-width: none; padding: 0; clip-path: none; background: none; font-size: 10.5px; display: grid; gap: 6px; justify-items: start; }
+  .bug .sep { display: none; }
+  .bug > span:first-child { color: var(--paper); }
+  .chyron { order: 2; }
   .plates { position: relative; bottom: auto; grid-template-columns: 1fr; gap: 20px; margin-top: -52px; padding: 0 16px; }
   .plate.b { text-align: left; } .plate.b .ptag { justify-content: flex-start; } .plate.b .hero-rec { justify-content: flex-start; }
   .hero-surname { font-size: clamp(2.6rem, 17vw, 4rem); }
