@@ -70,6 +70,7 @@ footer p { margin: 0 0 8px; max-width: 70ch; }
 .brand span { color: var(--side-b); }
 .site nav { display: flex; gap: 6px 22px; flex-wrap: wrap; }
 .site nav a { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
+@media (max-width: 480px) { .site nav { gap: 6px 14px; } .site nav a { letter-spacing: .04em; } }
 .site nav a:hover, .site nav a[aria-current] { color: var(--paper); border-bottom-color: var(--side-b); }
 /* Section titles: say what's below, big, before any data starts. */
 .sec-h { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(2.2rem, 9vw, 3.4rem); line-height: .9; letter-spacing: -.005em; margin: 0; }
@@ -370,11 +371,11 @@ main.wrap { padding-top: 24px; }
 <main class="wrap">
 <nav class="glance" aria-labelledby="card-title">
   <h2 id="card-title" class="sec-h">The card</h2>
-  <p class="sec-sub mono">3 bouts · our pick for each · tap one to jump to it</p>
+  <p class="sec-sub mono">3 bouts · how every pick did · tap one to jump to it</p>
   <ol class="picklines">
-  <li><a href="#fight-1"><span class="pl-ab">Orobio <span class="v">v</span> Cedeno</span><span class="pl-pk a">Orobio</span><span class="pl-tg mono">coin flip</span></a></li>
+  <li><a href="#fight-1"><span class="pl-ab">Orobio <span class="v">v</span> Cedeno</span><span class="pl-pk a">Orobio</span><span class="pl-tg mono hit">Called it</span></a></li>
   <li><a href="#fight-2"><span class="pl-ab">Perez <span class="v">v</span> Ziyatdinov</span><span class="pl-pk a">Perez</span><span class="pl-tg mono">coin flip</span></a></li>
-  <li><a href="#fight-3"><span class="pl-ab">Butler <span class="v">v</span> Bazinyan</span><span class="pl-pk b">Bazinyan</span></a></li>
+  <li><a href="#fight-3"><span class="pl-ab">Butler <span class="v">v</span> Bazinyan</span><span class="pl-pk b">Bazinyan</span><span class="pl-tg mono hit">Called it</span></a></li>
 </ol>
 </nav>
 <section class="bout" id="fight-1" aria-labelledby="bout-1">
@@ -407,11 +408,7 @@ main.wrap { padding-top: 24px; }
   <div class="call a">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Orobio</span><span class="conf"> · coin flip</span></span>
-<span class="call-t mono">Locked <time datetime="2026-11-10T03:47:47Z" title="10 Nov 2026, 03:47 UTC">10 Nov</time></span><p class="call-n">Coin flip: no record to compare</p><div class="call-o mono">
-  <span class="k">Bookies</span>
-  <span class="w">agree: Orobio is the favorite</span>
-  <span class="t">Orobio −1000 · Cedeno +600 · median of 16 bookmakers via The Odds API, 13 Nov</span>
-</div>  </div>
+<span class="call-t mono">Locked <time datetime="2026-11-10T03:47:47Z" title="10 Nov 2026, 03:47 UTC">10 Nov</time></span><p class="call-n">Coin flip: no record to compare</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Jhon Orobio by TKO, round 3</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -937,11 +934,7 @@ main.wrap { padding-top: 24px; }
   <div class="call b">
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Bazinyan</span></span>
-<span class="call-t mono">Locked <time datetime="2026-10-21T17:11:05Z" title="21 Oct 2026, 17:11 UTC">21 Oct</time></span><div class="call-o mono">
-  <span class="k">Bookies</span>
-  <span class="w">favor Butler</span>
-<span class="upset">Underdog pick</span>  <span class="t">Butler −145 · Bazinyan +115 · median of 12 bookmakers via The Odds API, 13 Nov</span>
-</div>  </div>
+<span class="call-t mono">Locked <time datetime="2026-10-21T17:11:05Z" title="21 Oct 2026, 17:11 UTC">21 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Erik Bazinyan by TKO, round 10</span><span class="grade hit">Called it</span></div>  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1177,7 +1170,7 @@ main.wrap { padding-top: 24px; }
 
 <footer>
   <p><strong>How to read it.</strong> Bars show size, not who is better: each is drawn against 100% for rates, or against the larger of the two fighters for counts. Form: a solid pip is a win, an outlined pip is a loss, grey is a draw, and a red bar under a win means it ended inside the distance. A dash means the sample is too small to show or the record is incomplete, and the reason is printed under it. World title fights count the four major bodies: WBA, WBC, IBF and WBO.</p>
-  <p>Every figure is calculated from public fight records as they stood on the fight date. Figures last changed 10 November 2026. The records are re-checked every day until the fight. Sources: Wikipedia (CC BY-SA 4.0), Wikidata. Wikipedia text is licensed CC BY-SA 4.0.</p>
+  <p>Every figure is calculated from public fight records as they stood on the fight date. Figures last changed 10 November 2026. Sources: Wikipedia (CC BY-SA 4.0), Wikidata. Wikipedia text is licensed CC BY-SA 4.0.</p>
 </footer>
 </main>
 <div class="legal">
