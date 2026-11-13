@@ -1076,7 +1076,10 @@
         "fighter_id": 2047125222,
         "picked_at": "2026-10-20T03:48:18"
       },
-      "result": null
+      "result": {
+        "text": "Atif Oberlton by split decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 3,
@@ -1580,7 +1583,10 @@
         "picked_at": "2026-11-05T01:07:49",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Pryce Taylor by split decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 4,
@@ -2537,7 +2543,10 @@
         "picked_at": "2026-11-05T01:07:49",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Sardius Simmons by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 6,
