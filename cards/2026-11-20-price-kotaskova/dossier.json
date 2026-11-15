@@ -8,6 +8,7 @@
     "venue": "Utilita Arena Cardiff",
     "location": "Cardiff, Wales, UK",
     "broadcaster": "BBC Two",
+    "promoter": "BOXXER",
     "status": "final"
   },
   "statement": "Kotaskova has never been stopped in 15 fights. Price has stopped only 2 of her 10 opponents.",
@@ -1494,11 +1495,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-10-27",
-  "generated_at": "2026-10-27T01:21:32",
+  "data_as_of": "2026-11-15",
+  "generated_at": "2026-11-15T01:10:44",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-10-27T01:21:32"
+  "published_at": "2026-11-15T01:10:44"
 }

@@ -8,6 +8,7 @@
     "venue": "Dignity Health Sports Park",
     "location": "Carson, California, US",
     "broadcaster": "DAZN, TNT",
+    "promoter": "Matchroom Boxing",
     "status": "final",
     "main_card_start": "2026-11-15T01:00:00Z"
   },
@@ -2109,11 +2110,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-11-13",
-  "generated_at": "2026-11-13T17:09:53",
+  "data_as_of": "2026-11-15",
+  "generated_at": "2026-11-15T01:10:03",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-13T17:09:53"
+  "published_at": "2026-11-15T01:10:03"
 }
