@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-11-14-riley-coupe",
     "title": "Riley vs Coupe",
@@ -516,7 +516,10 @@
         }
       ],
       "pick": null,
-      "result": null
+      "result": {
+        "text": "Viddal Riley by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
@@ -1047,7 +1050,10 @@
         }
       ],
       "pick": null,
-      "result": null
+      "result": {
+        "text": "Zelfa Barrett by TKO, round 5",
+        "verdict": "recorded"
+      }
     }
   ],
   "data_as_of": "2026-11-15",

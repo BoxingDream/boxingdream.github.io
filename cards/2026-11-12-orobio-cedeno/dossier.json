@@ -1018,7 +1018,13 @@
         "picked_at": "2026-11-10T03:47:47",
         "basis": "coin_flip"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Lenar Perez withdrew with a training injury; Butler vs Bazinyan became the co-feature.",
+        "source": "https://www.fightmag.com/butler-vs-bazinyan-new-co-feature-in-montreal-as-perez-withdraws-with-injury/",
+        "at": "2026-11-15T06:33:06"
+      }
     },
     {
       "order": 3,

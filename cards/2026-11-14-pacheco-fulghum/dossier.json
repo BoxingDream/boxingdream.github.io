@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-11-14-pacheco-fulghum",
     "title": "Pacheco vs Fulghum",
@@ -547,7 +547,10 @@
         "fighter_id": 2084771477,
         "picked_at": "2026-10-21T16:46:12"
       },
-      "result": null
+      "result": {
+        "text": "Darius Fulghum by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
@@ -1054,7 +1057,13 @@
         "picked_at": "2026-11-12T21:22:38",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Gabriel Flores Jr. did not fight; Sheehy fought Jose Matias Romero instead.",
+        "source": "https://sports.yahoo.com/articles/diego-pacheco-vs-darius-fulghum-223721165.html",
+        "at": "2026-11-15T06:33:17"
+      }
     },
     {
       "order": 3,
