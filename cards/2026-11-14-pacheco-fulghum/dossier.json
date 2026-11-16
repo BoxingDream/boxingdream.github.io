@@ -1602,7 +1602,10 @@
         "fighter_id": 1005308948,
         "picked_at": "2026-10-21T16:46:12"
       },
-      "result": null
+      "result": {
+        "text": "David Bankole Adeleye by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 4,
@@ -2116,7 +2119,10 @@
         "picked_at": "2026-11-13T17:09:51",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Anthony Olascuaga by unanimous decision",
+        "verdict": "recorded"
+      }
     }
   ],
   "data_as_of": "2026-11-15",
