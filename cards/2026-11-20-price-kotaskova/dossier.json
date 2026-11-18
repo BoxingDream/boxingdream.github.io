@@ -1046,7 +1046,12 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Rhys Edwards",
+        "fighter_id": 1812090278,
+        "picked_at": "2026-11-18T01:07:27",
+        "basis": "record"
+      },
       "result": null
     },
     {
@@ -1491,15 +1496,20 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Kyran Jones",
+        "fighter_id": 1157072029,
+        "picked_at": "2026-11-18T01:07:27",
+        "basis": "coin_flip"
+      },
       "result": null
     }
   ],
-  "data_as_of": "2026-11-15",
-  "generated_at": "2026-11-15T01:10:44",
+  "data_as_of": "2026-11-18",
+  "generated_at": "2026-11-18T01:07:27",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-15T01:10:44"
+  "published_at": "2026-11-18T01:07:27"
 }
