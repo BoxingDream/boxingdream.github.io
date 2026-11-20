@@ -1050,7 +1050,24 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Chantelle Cameron",
+        "fighter_id": 1251035292,
+        "picked_at": "2026-11-20T17:07:28",
+        "prob": 0.806,
+        "pushes": {
+          "activity": 0.0,
+          "age": 0.052,
+          "chin": 0.0,
+          "experience": 0.019,
+          "height": -0.005,
+          "ko_rate": 0.154,
+          "layoff": 0.0,
+          "opp_quality": -0.007,
+          "rating": 1.244,
+          "reach": 0.0
+        }
+      },
       "result": null
     },
     {
@@ -1500,10 +1517,10 @@
     }
   ],
   "data_as_of": "2026-11-20",
-  "generated_at": "2026-11-20T01:11:44",
+  "generated_at": "2026-11-20T17:13:23",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-20T01:11:44"
+  "published_at": "2026-11-20T17:13:23"
 }
