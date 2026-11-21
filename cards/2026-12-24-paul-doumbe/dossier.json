@@ -47,14 +47,14 @@
           "surname": "Doumbé",
           "short": "Doumbé",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "France",
+          "record": "1-0-0",
           "record_bar": {
             "ko": 0,
-            "dec": 0,
+            "dec": 1,
             "draw": 0,
             "loss": 0,
-            "total": 0
+            "total": 1
           },
           "photo": null,
           "initials": "CD"
@@ -1085,8 +1085,8 @@
           "surname": "Overeem",
           "short": "Overeem",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "Netherlands",
+          "record": "0-0-0",
           "record_bar": {
             "ko": 0,
             "dec": 0,
@@ -1104,14 +1104,14 @@
           "surname": "Manuwa",
           "short": "Manuwa",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United Kingdom",
+          "record": "1-0-0",
           "record_bar": {
-            "ko": 0,
+            "ko": 1,
             "dec": 0,
             "draw": 0,
             "loss": 0,
-            "total": 0
+            "total": 1
           },
           "photo": null,
           "initials": "JM"
@@ -1268,7 +1268,7 @@
               "label": "Last 5 fights",
               "a": {
                 "results": [],
-                "d": "data incomplete"
+                "d": "no completed fights"
               },
               "b": {
                 "results": [],
@@ -1286,7 +1286,7 @@
               "label": "Opponents' win rate at the time",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for only 0 of 0 opponents",
                 "n": null
               },
               "b": {
@@ -1301,7 +1301,7 @@
               "label": "Same, last 5 fights",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for 0 of last 5",
                 "n": null
               },
               "b": {
@@ -1316,7 +1316,7 @@
               "label": "Record vs winning-record opponents",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no rated opponents",
                 "n": null
               },
               "b": {
@@ -1337,7 +1337,7 @@
               "label": "KO/TKO rate",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 0 wins",
                 "n": null
               },
               "b": {
@@ -1352,7 +1352,7 @@
               "label": "KO/TKO rate vs winning-record opponents",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 0 wins over rated winners",
                 "n": null
               },
               "b": {
@@ -1367,7 +1367,7 @@
               "label": "Times stopped",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
@@ -1388,7 +1388,7 @@
               "label": "Furthest round reached",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
@@ -1403,7 +1403,7 @@
               "label": "Fights into round 10 or later",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
@@ -1418,7 +1418,7 @@
               "label": "Fights into round 12",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
@@ -1433,7 +1433,7 @@
               "label": "Fights going the distance",
               "a": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "not enough fights",
                 "n": null
               },
               "b": {
@@ -1447,16 +1447,19 @@
               "type": "pair",
               "label": "World title fights (WBA, WBC, IBF, WBO)",
               "a": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
               "b": {
                 "v": null,
                 "d": "data incomplete",
                 "n": null
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             }
           ]
         },
@@ -1468,8 +1471,8 @@
               "type": "pair",
               "label": "Record vs southpaws",
               "a": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0-0-0",
+                "d": "0 opponents with known stance",
                 "n": null
               },
               "b": {
@@ -1516,11 +1519,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-11-20",
-  "generated_at": "2026-11-20T17:13:23",
+  "data_as_of": "2026-11-21",
+  "generated_at": "2026-11-21T17:07:42",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-20T17:13:23"
+  "published_at": "2026-11-21T17:07:42"
 }
