@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "published",
+  "status": "settled",
   "card": {
     "slug": "2026-11-20-price-kotaskova",
     "title": "Price vs Kotaskova",
@@ -1052,7 +1052,10 @@
         "picked_at": "2026-11-18T01:07:27",
         "basis": "record"
       },
-      "result": null
+      "result": {
+        "text": "Rhys Edwards by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 3,
