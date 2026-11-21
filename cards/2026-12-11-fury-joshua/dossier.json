@@ -1106,14 +1106,19 @@
           "reach": 0.127
         }
       },
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Jai Opetaia withdrew with a hand injury (reported 19 November 2026).",
+        "source": "https://www.skysports.com/boxing/news/13613336/fury-vs-joshua-undercard-jai-opetaia-has-withdrawn-from-heavyweight-bout-with-deontay-wilder-on-december-11-bill"
+      }
     }
   ],
-  "data_as_of": "2026-11-06",
-  "generated_at": "2026-11-06T01:15:44",
+  "data_as_of": "2026-11-21",
+  "generated_at": "2026-11-21T17:31:08",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-06T01:15:44"
+  "published_at": "2026-11-21T17:31:08"
 }
