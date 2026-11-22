@@ -545,7 +545,10 @@
         "fighter_id": 1516839187,
         "picked_at": "2026-10-21T16:52:32"
       },
-      "result": null
+      "result": {
+        "text": "Lauren Price by unanimous decision",
+        "verdict": "recorded"
+      }
     },
     {
       "order": 2,
