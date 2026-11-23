@@ -45,7 +45,7 @@
           "given": "Anthony",
           "surname": "Joshua",
           "short": "Joshua",
-          "alias": null,
+          "alias": "AJ",
           "nationality": "England",
           "record": "30-4-0",
           "record_bar": {
@@ -2068,11 +2068,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-11-21",
-  "generated_at": "2026-11-21T17:36:15",
+  "data_as_of": "2026-11-23",
+  "generated_at": "2026-11-23T01:07:55",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-21T17:36:15"
+  "published_at": "2026-11-23T01:07:55"
 }
