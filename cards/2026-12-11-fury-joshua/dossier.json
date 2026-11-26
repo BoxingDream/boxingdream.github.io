@@ -1620,7 +1620,12 @@
         }
       ],
       "pick": null,
-      "result": null
+      "result": {
+        "text": "Did not take place",
+        "verdict": "void",
+        "reason": "Martin Bakole moved up to replace Jai Opetaia against Deontay Wilder.",
+        "source": "https://www.skysports.com/boxing/news/13615668/"
+      }
     },
     {
       "order": 4,
@@ -2066,13 +2071,4874 @@
       ],
       "pick": null,
       "result": null
+    },
+    {
+      "order": 5,
+      "main_event": false,
+      "weight_class": "Heavyweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": false,
+      "fighters": [
+        {
+          "id": 1713741999,
+          "name": "Deontay Wilder",
+          "given": "Deontay",
+          "surname": "Wilder",
+          "short": "Wilder",
+          "alias": null,
+          "nationality": "United States",
+          "record": "46-4-1",
+          "record_bar": {
+            "ko": 44,
+            "dec": 2,
+            "draw": 1,
+            "loss": 4,
+            "total": 51
+          },
+          "photo": null,
+          "initials": "DW"
+        },
+        {
+          "id": 1386622318,
+          "name": "Martin Bakole",
+          "given": "Martin",
+          "surname": "Bakole",
+          "short": "Bakole",
+          "alias": "Martin Makabu Bakole",
+          "nationality": "Congolese",
+          "record": "21-2-1",
+          "record_bar": {
+            "ko": 16,
+            "dec": 5,
+            "draw": 1,
+            "loss": 2,
+            "total": 24
+          },
+          "photo": null,
+          "initials": "MB"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [
+            "Wilder is 7.6 years older",
+            "Wilder is 3 cm taller",
+            "Wilder has 3 cm more reach",
+            "Same stance"
+          ],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": "41",
+                "d": null,
+                "n": 41.1
+              },
+              "b": {
+                "v": "33",
+                "d": null,
+                "n": 33.5
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 81.5
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": "201 cm",
+                "d": null,
+                "n": 201.0
+              },
+              "b": {
+                "v": "198 cm",
+                "d": null,
+                "n": 198.0
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 98.5
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": "211 cm",
+                "d": null,
+                "n": 211.0
+              },
+              "b": {
+                "v": "208 cm",
+                "d": null,
+                "n": 208.0
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 98.6
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": "Orthodox",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": "Orthodox",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": "2026-04-04",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": "2025-05-03",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": "8.2 months",
+                "d": null,
+                "n": 8.2
+              },
+              "b": {
+                "v": "19.3 months",
+                "d": null,
+                "n": 19.3
+              },
+              "bar": {
+                "a": 42.5,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "b": {
+                "v": "0",
+                "d": null,
+                "n": 0
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": "1.3",
+                "d": null,
+                "n": 1.33
+              },
+              "b": {
+                "v": "1.0",
+                "d": null,
+                "n": 1.0
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 75.2
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "last weight class unknown",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "last weight class unknown",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  }
+                ],
+                "d": null
+              },
+              "b": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "D",
+                    "ko": false
+                  }
+                ],
+                "d": null
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "records known for only 24 of 51 opponents",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "records known for only 9 of 24 opponents",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": "86%",
+                "d": "4 of last 5",
+                "n": 86.5
+              },
+              "b": {
+                "v": "93%",
+                "d": "4 of last 5",
+                "n": 92.7
+              },
+              "bar": {
+                "a": 86.5,
+                "b": 92.7
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": "19-4-1",
+                "d": "24 fights",
+                "n": null
+              },
+              "b": {
+                "v": "6-2-1",
+                "d": "9 fights",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": "96%",
+                "d": "44 of 46 wins",
+                "n": 95.7
+              },
+              "b": {
+                "v": "76%",
+                "d": "16 of 21 wins",
+                "n": 76.2
+              },
+              "bar": {
+                "a": 95.7,
+                "b": 76.2
+              }
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": "90%",
+                "d": "17 of 19 wins",
+                "n": 89.5
+              },
+              "b": {
+                "v": "67%",
+                "d": "4 of 6 wins",
+                "n": 66.7
+              },
+              "bar": {
+                "a": 89.5,
+                "b": 66.7
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": "3 of 51",
+                "d": "2 fights ago",
+                "n": null
+              },
+              "b": {
+                "v": "2 of 24",
+                "d": "1 fights ago",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": "Round 12",
+                "d": null,
+                "n": 12
+              },
+              "b": {
+                "v": "Round 10",
+                "d": null,
+                "n": 10
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 83.3
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": "7",
+                "d": null,
+                "n": 7
+              },
+              "b": {
+                "v": "4",
+                "d": null,
+                "n": 4
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 57.1
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": "4",
+                "d": null,
+                "n": 4
+              },
+              "b": {
+                "v": "0",
+                "d": null,
+                "n": 0
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": "6%",
+                "d": "50 decided fights",
+                "n": 6.0
+              },
+              "b": {
+                "v": "22%",
+                "d": "23 decided fights",
+                "n": 21.7
+              },
+              "bar": {
+                "a": 6.0,
+                "b": 21.7
+              }
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": "13",
+                "d": null,
+                "n": 13
+              },
+              "b": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 7.7
+              }
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": "3-1-0",
+                "d": "24 opponents with known stance",
+                "n": null
+              },
+              "b": {
+                "v": "0-0-0",
+                "d": "9 opponents with known stance",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": "Slugger",
+                "d": null,
+                "n": null,
+                "inferred": true
+              },
+              "b": {
+                "v": "Boxer-Puncher",
+                "d": null,
+                "n": null,
+                "inferred": true
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": {
+        "text": "Deontay Wilder",
+        "fighter_id": 1713741999,
+        "picked_at": "2026-11-26T17:08:11",
+        "narrow": true,
+        "prob": 0.51,
+        "pushes": {
+          "activity": 0.03,
+          "age": -0.45,
+          "chin": 0.088,
+          "experience": -0.515,
+          "height": 0.005,
+          "ko_rate": 0.246,
+          "layoff": 0.221,
+          "opp_quality": 0.008,
+          "rating": 0.386,
+          "reach": 0.022
+        }
+      },
+      "result": null
+    },
+    {
+      "order": 6,
+      "main_event": false,
+      "weight_class": "Heavyweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 1858816489,
+          "name": "Moses Jolly",
+          "given": "Moses",
+          "surname": "Jolly",
+          "short": "Jolly",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "MJ"
+        },
+        {
+          "id": 2073393186,
+          "name": "Igor Adiel Macedo",
+          "given": "Igor Adiel",
+          "surname": "Macedo",
+          "short": "Macedo",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "IM"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [],
+                "d": "data incomplete"
+              },
+              "b": {
+                "results": [],
+                "d": "data incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
+    },
+    {
+      "order": 7,
+      "main_event": false,
+      "weight_class": "Lightweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": false,
+      "fighters": [
+        {
+          "id": 2092863451,
+          "name": "Joe Cordina",
+          "given": "Joe",
+          "surname": "Cordina",
+          "short": "Cordina",
+          "alias": null,
+          "nationality": "Wales",
+          "record": "19-1-0",
+          "record_bar": {
+            "ko": 9,
+            "dec": 10,
+            "draw": 0,
+            "loss": 1,
+            "total": 20
+          },
+          "photo": null,
+          "initials": "JC"
+        },
+        {
+          "id": 1434360679,
+          "name": "Mauricio Lara",
+          "given": "Mauricio",
+          "surname": "Lara",
+          "short": "Lara",
+          "alias": "Bronco",
+          "nationality": "Mexico",
+          "record": "31-3-2",
+          "record_bar": {
+            "ko": 24,
+            "dec": 7,
+            "draw": 2,
+            "loss": 3,
+            "total": 36
+          },
+          "photo": null,
+          "initials": "ML"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [
+            "Cordina is 6.2 years older",
+            "Cordina is 5 cm taller",
+            "Cordina has 5 cm more reach",
+            "Same stance"
+          ],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": "35",
+                "d": null,
+                "n": 35.0
+              },
+              "b": {
+                "v": "28",
+                "d": null,
+                "n": 28.8
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 82.3
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": "175 cm",
+                "d": null,
+                "n": 175.0
+              },
+              "b": {
+                "v": "170 cm",
+                "d": null,
+                "n": 170.0
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 97.1
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": "175 cm",
+                "d": null,
+                "n": 175.0
+              },
+              "b": {
+                "v": "170 cm",
+                "d": null,
+                "n": 170.0
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 97.1
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": "Orthodox",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": "Orthodox",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": "2025-12-13",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": "2026-08-29",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": "11.9 months",
+                "d": null,
+                "n": 11.9
+              },
+              "b": {
+                "v": "3.4 months",
+                "d": null,
+                "n": 3.4
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 28.6
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "b": {
+                "v": "2",
+                "d": null,
+                "n": 2
+              },
+              "bar": {
+                "a": 50.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": "1.0",
+                "d": null,
+                "n": 1.0
+              },
+              "b": {
+                "v": "2.0",
+                "d": null,
+                "n": 2.0
+              },
+              "bar": {
+                "a": 50.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": "same",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "last weight class unknown",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  }
+                ],
+                "d": null
+              },
+              "b": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  }
+                ],
+                "d": null
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "records known for only 7 of 20 opponents",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "records known for only 5 of 36 opponents",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": "94%",
+                "d": "4 of last 5",
+                "n": 94.1
+              },
+              "b": {
+                "v": null,
+                "d": "records known for 1 of last 5",
+                "n": null
+              },
+              "bar": {
+                "a": 94.1,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": "6-1-0",
+                "d": "7 fights",
+                "n": null
+              },
+              "b": {
+                "v": "3-1-1",
+                "d": "5 fights",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": "47%",
+                "d": "9 of 19 wins",
+                "n": 47.4
+              },
+              "b": {
+                "v": "77%",
+                "d": "24 of 31 wins",
+                "n": 77.4
+              },
+              "bar": {
+                "a": 47.4,
+                "b": 77.4
+              }
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": "17%",
+                "d": "1 of 6 wins",
+                "n": 16.7
+              },
+              "b": {
+                "v": "100%",
+                "d": "3 of 3 wins",
+                "n": 100.0
+              },
+              "bar": {
+                "a": 16.7,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": "1 of 20",
+                "d": "2 fights ago",
+                "n": null
+              },
+              "b": {
+                "v": "1 of 36",
+                "d": "23 fights ago",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": "Round 12",
+                "d": null,
+                "n": 12
+              },
+              "b": {
+                "v": "Round 12",
+                "d": null,
+                "n": 12
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": "9",
+                "d": null,
+                "n": 9
+              },
+              "b": {
+                "v": "3",
+                "d": null,
+                "n": 3
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 33.3
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": "5",
+                "d": null,
+                "n": 5
+              },
+              "b": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 20.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": "50%",
+                "d": "20 decided fights",
+                "n": 50.0
+              },
+              "b": {
+                "v": "26%",
+                "d": "34 decided fights",
+                "n": 26.5
+              },
+              "bar": {
+                "a": 50.0,
+                "b": 26.5
+              }
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": "4",
+                "d": null,
+                "n": 4
+              },
+              "b": {
+                "v": "2",
+                "d": null,
+                "n": 2
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 50.0
+              }
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": "1-1-0",
+                "d": "7 opponents with known stance",
+                "n": null
+              },
+              "b": {
+                "v": "0-0-0",
+                "d": "5 opponents with known stance",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": {
+        "text": "Mauricio Lara",
+        "fighter_id": 1434360679,
+        "picked_at": "2026-11-26T17:08:11",
+        "prob": 0.579,
+        "pushes": {
+          "activity": -0.09,
+          "age": -0.367,
+          "chin": -0.081,
+          "experience": 0.305,
+          "height": 0.008,
+          "ko_rate": -0.378,
+          "layoff": -0.169,
+          "opp_quality": 0.001,
+          "rating": 0.415,
+          "reach": 0.036
+        }
+      },
+      "result": null
+    },
+    {
+      "order": 8,
+      "main_event": false,
+      "weight_class": "Featherweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 1076919605,
+          "name": "Hayato Tsutsumi",
+          "given": "Hayato",
+          "surname": "Tsutsumi",
+          "short": "Tsutsumi",
+          "alias": null,
+          "nationality": "Japan",
+          "record": "9-0-0",
+          "record_bar": {
+            "ko": 6,
+            "dec": 3,
+            "draw": 0,
+            "loss": 0,
+            "total": 9
+          },
+          "photo": null,
+          "initials": "HT"
+        },
+        {
+          "id": 987694466,
+          "name": "Victor Pasillas",
+          "given": "Victor",
+          "surname": "Pasillas",
+          "short": "Pasillas",
+          "alias": null,
+          "nationality": "United States",
+          "record": "19-1-0",
+          "record_bar": {
+            "ko": 11,
+            "dec": 8,
+            "draw": 0,
+            "loss": 1,
+            "total": 20
+          },
+          "photo": null,
+          "initials": "VP"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [
+            "Pasillas is 7.4 years older",
+            "Orthodox vs southpaw"
+          ],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": "27",
+                "d": null,
+                "n": 27.4
+              },
+              "b": {
+                "v": "34",
+                "d": null,
+                "n": 34.8
+              },
+              "bar": {
+                "a": 78.7,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": "171 cm",
+                "d": null,
+                "n": 171.0
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": "Orthodox",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": "Southpaw",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": "2026-07-14",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": "4.9 months",
+                "d": null,
+                "n": 4.9
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": "2.0",
+                "d": null,
+                "n": 2.0
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "last weight class unknown",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  }
+                ],
+                "d": null
+              },
+              "b": {
+                "results": [],
+                "d": "data incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "records known for only 3 of 9 opponents",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "records known for 2 of last 5",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": "3-0-0",
+                "d": "3 fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": "67%",
+                "d": "6 of 9 wins",
+                "n": 66.7
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 66.7,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": "67%",
+                "d": "2 of 3 wins",
+                "n": 66.7
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 66.7,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": "0 of 9",
+                "d": "never stopped",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": "Round 12",
+                "d": null,
+                "n": 12
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": "33%",
+                "d": "9 decided fights",
+                "n": 33.3
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 33.3,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": "0",
+                "d": null,
+                "n": 0
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": "2-0-0",
+                "d": "4 opponents with known stance",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": "Boxer-Puncher",
+                "d": null,
+                "n": null,
+                "inferred": true
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
+    },
+    {
+      "order": 9,
+      "main_event": false,
+      "weight_class": "Super Featherweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 1013365,
+          "name": "Reito Tsutsumi",
+          "given": "Reito",
+          "surname": "Tsutsumi",
+          "short": "Tsutsumi",
+          "alias": null,
+          "nationality": "Japan",
+          "record": "6-0-0",
+          "record_bar": {
+            "ko": 5,
+            "dec": 1,
+            "draw": 0,
+            "loss": 0,
+            "total": 6
+          },
+          "photo": null,
+          "initials": "RT"
+        },
+        {
+          "id": 1901022507,
+          "name": "Muheeb Fazeldin",
+          "given": "Muheeb",
+          "surname": "Fazeldin",
+          "short": "Fazeldin",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "MF"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": "24",
+                "d": null,
+                "n": 24.3
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": "165 cm",
+                "d": null,
+                "n": 165.0
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": "168 cm",
+                "d": null,
+                "n": 168.0
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": "Southpaw",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": "2026-10-31",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": "1.3 months",
+                "d": null,
+                "n": 1.3
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": "3",
+                "d": null,
+                "n": 3
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": "3.7",
+                "d": null,
+                "n": 3.73
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "last weight class unknown",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  }
+                ],
+                "d": null
+              },
+              "b": {
+                "results": [],
+                "d": "data incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "records known for only 1 of 6 opponents",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "records known for 1 of last 5",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": "1-0-0",
+                "d": "1 fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": "83%",
+                "d": "5 of 6 wins",
+                "n": 83.3
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 83.3,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "only 1 wins over rated winners",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": "0 of 6",
+                "d": "never stopped",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": "Round 6",
+                "d": null,
+                "n": 6
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": "0",
+                "d": null,
+                "n": 0
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": "0",
+                "d": null,
+                "n": 0
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": "17%",
+                "d": "6 decided fights",
+                "n": 16.7
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 16.7,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": "0",
+                "d": null,
+                "n": 0
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": "0-0-0",
+                "d": "1 opponents with known stance",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
+    },
+    {
+      "order": 10,
+      "main_event": false,
+      "weight_class": "Light Heavyweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 1339731457,
+          "name": "Constantino Nanga",
+          "given": "Constantino",
+          "surname": "Nanga",
+          "short": "Nanga",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "CN"
+        },
+        {
+          "id": 1630749966,
+          "name": "Lerrone Richards",
+          "given": "Lerrone",
+          "surname": "Richards",
+          "short": "Richards",
+          "alias": "Sniper The Boss",
+          "nationality": "England",
+          "record": "19-2-0",
+          "record_bar": {
+            "ko": 4,
+            "dec": 15,
+            "draw": 0,
+            "loss": 2,
+            "total": 21
+          },
+          "photo": null,
+          "initials": "LR"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": "34",
+                "d": null,
+                "n": 34.3
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": "180 cm",
+                "d": null,
+                "n": 180.0
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": "180 cm",
+                "d": null,
+                "n": 180.0
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": "Southpaw",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": "2026-06-04",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": "6.2 months",
+                "d": null,
+                "n": 6.2
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": "1.0",
+                "d": null,
+                "n": 1.0
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": "same",
+                "d": null,
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [],
+                "d": "data incomplete"
+              },
+              "b": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  }
+                ],
+                "d": null
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "records known for only 2 of 21 opponents",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "records known for 0 of last 5",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "2-0-0",
+                "d": "2 fights",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "21%",
+                "d": "4 of 19 wins",
+                "n": 21.1
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 21.1
+              }
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "only 2 wins over rated winners",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "1 of 21",
+                "d": "2 fights ago",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "Round 12",
+                "d": null,
+                "n": 12
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "6",
+                "d": null,
+                "n": 6
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "5",
+                "d": null,
+                "n": 5
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "76%",
+                "d": "21 decided fights",
+                "n": 76.2
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 76.2
+              }
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 100.0
+              }
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": "1-1-0",
+                "d": "4 opponents with known stance",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": "Boxer",
+                "d": null,
+                "n": null,
+                "inferred": true
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
+    },
+    {
+      "order": 11,
+      "main_event": false,
+      "weight_class": "Super Flyweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 2058535593,
+          "name": "Mikie Tallon",
+          "given": "Mikie",
+          "surname": "Tallon",
+          "short": "Tallon",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "MT"
+        },
+        {
+          "id": 1286987689,
+          "name": "Sean Bruce",
+          "given": "Sean",
+          "surname": "Bruce",
+          "short": "Bruce",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "SB"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [],
+                "d": "data incomplete"
+              },
+              "b": {
+                "results": [],
+                "d": "data incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
+    },
+    {
+      "order": 12,
+      "main_event": false,
+      "weight_class": "Super Featherweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 999525889,
+          "name": "Mohammed Alakel",
+          "given": "Mohammed",
+          "surname": "Alakel",
+          "short": "Alakel",
+          "alias": null,
+          "nationality": "Saudi Arabia",
+          "record": "9-0-0",
+          "record_bar": {
+            "ko": 3,
+            "dec": 6,
+            "draw": 0,
+            "loss": 0,
+            "total": 9
+          },
+          "photo": null,
+          "initials": "MA"
+        },
+        {
+          "id": 1042215202,
+          "name": "Rogger Rivera",
+          "given": "Rogger",
+          "surname": "Rivera",
+          "short": "Rivera",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "RR"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [],
+                "d": "data incomplete"
+              },
+              "b": {
+                "results": [],
+                "d": "data incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
+    },
+    {
+      "order": 13,
+      "main_event": false,
+      "weight_class": "Super Welterweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 2069776935,
+          "name": "Odel Kamara",
+          "given": "Odel",
+          "surname": "Kamara",
+          "short": "Kamara",
+          "alias": "King",
+          "nationality": "England",
+          "record": "1-0-0",
+          "record_bar": {
+            "ko": 1,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 1
+          },
+          "photo": null,
+          "initials": "OK"
+        },
+        {
+          "id": 1767551459,
+          "name": "Patrik Matejcek",
+          "given": "Patrik",
+          "surname": "Matejcek",
+          "short": "Matejcek",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "PM"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": "23",
+                "d": null,
+                "n": 23.0
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": "2026-10-03",
+                "d": null,
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": "2.3 months",
+                "d": null,
+                "n": 2.3
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": "1",
+                "d": null,
+                "n": 1
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": "1.0",
+                "d": null,
+                "n": 1.0
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": {
+                "a": 100.0,
+                "b": 0.0
+              }
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "last weight class unknown",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  }
+                ],
+                "d": null
+              },
+              "b": {
+                "results": [],
+                "d": "data incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "records known for only 0 of 1 opponents",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "records known for 0 of last 5",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "no rated opponents",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": null,
+                "d": "only 1 wins",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "only 0 wins over rated winners",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": null,
+                "d": "not enough fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": null,
+                "d": "not enough fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": null,
+                "d": "not enough fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": null,
+                "d": "not enough fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": null,
+                "d": "not enough fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": "0",
+                "d": null,
+                "n": 0
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": "0-0-0",
+                "d": "0 opponents with known stance",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
+    },
+    {
+      "order": 14,
+      "main_event": false,
+      "weight_class": "Heavyweight",
+      "scheduled_rounds": 10,
+      "title": null,
+      "blocked": true,
+      "fighters": [
+        {
+          "id": 2004772223,
+          "name": "Roman Fury",
+          "given": "Roman",
+          "surname": "Fury",
+          "short": "Fury",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "RF"
+        },
+        {
+          "id": 1489407224,
+          "name": "Adam Kolarik",
+          "given": "Adam",
+          "surname": "Kolarik",
+          "short": "Kolarik",
+          "alias": null,
+          "nationality": null,
+          "record": "Record not found yet",
+          "record_bar": {
+            "ko": 0,
+            "dec": 0,
+            "draw": 0,
+            "loss": 0,
+            "total": 0
+          },
+          "photo": null,
+          "initials": "AK"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Physical",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Age",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Height",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Reach",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Stance",
+              "a": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not listed",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Activity",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Last fought",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Since last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights, last 12 months",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights per year (3 yr)",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Weight class vs last fight",
+              "a": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "no completed fights",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "form",
+              "label": "Last 5 fights",
+              "a": {
+                "results": [],
+                "d": "data incomplete"
+              },
+              "b": {
+                "results": [],
+                "d": "data incomplete"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Opposition",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Opponents' win rate at the time",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Same, last 5 fights",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Record vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Power and chin",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "KO/TKO rate",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "KO/TKO rate vs winning-record opponents",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Times stopped",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Furthest round reached",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 10 or later",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights into round 12",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Fights going the distance",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "World title fights (WBA, WBC, IBF, WBO)",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        },
+        {
+          "title": "Style",
+          "chips": [],
+          "rows": [
+            {
+              "type": "pair",
+              "label": "Record vs southpaws",
+              "a": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "data incomplete",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Primary style",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            },
+            {
+              "type": "pair",
+              "label": "Defensive system",
+              "a": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "b": {
+                "v": null,
+                "d": "not yet tagged",
+                "n": null
+              },
+              "bar": null
+            }
+          ]
+        }
+      ],
+      "pick": null,
+      "result": null
     }
   ],
-  "data_as_of": "2026-11-23",
-  "generated_at": "2026-11-23T01:07:55",
+  "data_as_of": "2026-11-26",
+  "generated_at": "2026-11-26T17:13:54",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-23T01:07:55"
+  "published_at": "2026-11-26T17:13:54"
 }
