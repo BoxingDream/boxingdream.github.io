@@ -2641,14 +2641,14 @@
           "surname": "Jolly",
           "short": "Jolly",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United Kingdom",
+          "record": "12-0-1",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
-            "draw": 0,
+            "ko": 8,
+            "dec": 4,
+            "draw": 1,
             "loss": 0,
-            "total": 0
+            "total": 13
           },
           "photo": null,
           "initials": "MJ"
@@ -4162,14 +4162,14 @@
           "surname": "Fazeldin",
           "short": "Fazeldin",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United Kingdom",
+          "record": "14-1-1",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
-            "draw": 0,
-            "loss": 0,
-            "total": 0
+            "ko": 4,
+            "dec": 10,
+            "draw": 1,
+            "loss": 1,
+            "total": 16
           },
           "photo": null,
           "initials": "MF"
@@ -4645,14 +4645,14 @@
           "surname": "Nanga",
           "short": "Nanga",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "Sweden",
+          "record": "15-0-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 11,
+            "dec": 4,
             "draw": 0,
             "loss": 0,
-            "total": 0
+            "total": 15
           },
           "photo": null,
           "initials": "CN"
@@ -5148,14 +5148,14 @@
           "surname": "Tallon",
           "short": "Tallon",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United Kingdom",
+          "record": "15-0-1",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
-            "draw": 0,
+            "ko": 4,
+            "dec": 11,
+            "draw": 1,
             "loss": 0,
-            "total": 0
+            "total": 16
           },
           "photo": null,
           "initials": "MT"
@@ -5167,14 +5167,14 @@
           "surname": "Bruce",
           "short": "Bruce",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United Kingdom",
+          "record": "8-3-0",
           "record_bar": {
             "ko": 0,
-            "dec": 0,
+            "dec": 8,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 3,
+            "total": 11
           },
           "photo": null,
           "initials": "SB"
@@ -5612,14 +5612,14 @@
           "surname": "Rivera",
           "short": "Rivera",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "Peru",
+          "record": "3-7-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 2,
+            "dec": 1,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 7,
+            "total": 10
           },
           "photo": null,
           "initials": "RR"
@@ -6057,14 +6057,14 @@
           "surname": "Matejcek",
           "short": "Matejcek",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "Czech Republic",
+          "record": "6-1-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 3,
+            "dec": 3,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 1,
+            "total": 7
           },
           "photo": null,
           "initials": "PM"
@@ -6503,14 +6503,14 @@
           "surname": "Fury",
           "short": "Fury",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "United Kingdom",
+          "record": "6-0-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 3,
+            "dec": 3,
             "draw": 0,
             "loss": 0,
-            "total": 0
+            "total": 6
           },
           "photo": null,
           "initials": "RF"
@@ -6522,14 +6522,14 @@
           "surname": "Kolarik",
           "short": "Kolarik",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "Czech Republic",
+          "record": "10-12-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 7,
+            "dec": 3,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 12,
+            "total": 22
           },
           "photo": null,
           "initials": "AK"
@@ -6935,10 +6935,10 @@
     }
   ],
   "data_as_of": "2026-11-26",
-  "generated_at": "2026-11-26T17:13:54",
+  "generated_at": "2026-11-26T17:18:52",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-26T17:13:54"
+  "published_at": "2026-11-26T17:18:52"
 }
