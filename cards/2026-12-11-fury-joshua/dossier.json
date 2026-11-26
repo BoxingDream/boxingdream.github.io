@@ -2660,14 +2660,14 @@
           "surname": "Macedo",
           "short": "Macedo",
           "alias": null,
-          "nationality": null,
-          "record": "Record not found yet",
+          "nationality": "Brazil",
+          "record": "15-1-0",
           "record_bar": {
-            "ko": 0,
-            "dec": 0,
+            "ko": 14,
+            "dec": 1,
             "draw": 0,
-            "loss": 0,
-            "total": 0
+            "loss": 1,
+            "total": 16
           },
           "photo": null,
           "initials": "IM"
@@ -3628,7 +3628,7 @@
       "weight_class": "Featherweight",
       "scheduled_rounds": 10,
       "title": null,
-      "blocked": true,
+      "blocked": false,
       "fighters": [
         {
           "id": 1076919605,
@@ -3758,8 +3758,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
+                "v": "2026-06-12",
+                "d": null,
                 "n": null
               },
               "bar": null
@@ -3773,13 +3773,13 @@
                 "n": 4.9
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "6.0 months",
+                "d": null,
+                "n": 6.0
               },
               "bar": {
-                "a": 100.0,
-                "b": 0.0
+                "a": 81.7,
+                "b": 100.0
               }
             },
             {
@@ -3791,13 +3791,13 @@
                 "n": 1
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "1",
+                "d": null,
+                "n": 1
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 100.0
               }
             },
             {
@@ -3809,13 +3809,13 @@
                 "n": 2.0
               },
               "b": {
-                "v": null,
-                "d": "no completed fights",
-                "n": null
+                "v": "1.0",
+                "d": null,
+                "n": 1.0
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 50.0
               }
             },
             {
@@ -3828,7 +3828,7 @@
               },
               "b": {
                 "v": null,
-                "d": "no completed fights",
+                "d": "last weight class unknown",
                 "n": null
               },
               "bar": null
@@ -3862,8 +3862,29 @@
                 "d": null
               },
               "b": {
-                "results": [],
-                "d": "data incomplete"
+                "results": [
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "L",
+                    "ko": false
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": true
+                  },
+                  {
+                    "r": "W",
+                    "ko": false
+                  }
+                ],
+                "d": null
               }
             }
           ]
@@ -3882,7 +3903,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for only 0 of 20 opponents",
                 "n": null
               },
               "bar": null
@@ -3897,7 +3918,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "records known for 0 of last 5",
                 "n": null
               },
               "bar": null
@@ -3912,7 +3933,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "no rated opponents",
                 "n": null
               },
               "bar": null
@@ -3932,13 +3953,13 @@
                 "n": 66.7
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "58%",
+                "d": "11 of 19 wins",
+                "n": 57.9
               },
               "bar": {
                 "a": 66.7,
-                "b": 0.0
+                "b": 57.9
               }
             },
             {
@@ -3951,7 +3972,7 @@
               },
               "b": {
                 "v": null,
-                "d": "data incomplete",
+                "d": "only 0 wins over rated winners",
                 "n": null
               },
               "bar": {
@@ -3968,8 +3989,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "1 of 20",
+                "d": "3 fights ago",
                 "n": null
               },
               "bar": null
@@ -3989,13 +4010,13 @@
                 "n": 12
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "Round 11",
+                "d": null,
+                "n": 11
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 91.7
               }
             },
             {
@@ -4007,13 +4028,13 @@
                 "n": 1
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "1",
+                "d": null,
+                "n": 1
               },
               "bar": {
                 "a": 100.0,
-                "b": 0.0
+                "b": 100.0
               }
             },
             {
@@ -4025,9 +4046,9 @@
                 "n": 1
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
               "bar": {
                 "a": 100.0,
@@ -4043,13 +4064,13 @@
                 "n": 33.3
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "40%",
+                "d": "20 decided fights",
+                "n": 40.0
               },
               "bar": {
                 "a": 33.3,
-                "b": 0.0
+                "b": 40.0
               }
             },
             {
@@ -4061,9 +4082,9 @@
                 "n": 0
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
-                "n": null
+                "v": "0",
+                "d": null,
+                "n": 0
               },
               "bar": {
                 "a": 0.0,
@@ -4085,8 +4106,8 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "data incomplete",
+                "v": "0-0-0",
+                "d": "2 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -6935,10 +6956,10 @@
     }
   ],
   "data_as_of": "2026-11-26",
-  "generated_at": "2026-11-26T17:18:52",
+  "generated_at": "2026-11-26T23:07:07",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-26T17:18:52"
+  "published_at": "2026-11-26T23:07:07"
 }
