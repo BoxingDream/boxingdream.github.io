@@ -320,6 +320,15 @@ main.wrap { padding-top: 24px; }
   .spec { margin-left: 0; width: 100%; }
   .pip { width: 19px; height: 19px; font-size: 9px; }
 }
+/* Fan picks ("Your call"): a visitor's own pick, kept only in their browser. Hidden until the script runs. */
+.fan { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 10px; padding: 14px 22px; border: 1px dashed var(--rule2); }
+.fan .call-k { color: var(--paper); }
+.fan-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.fan-btns button { font: 700 13px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--paper); background: transparent; border: 1px solid var(--rule2); padding: 12px 18px; min-height: 44px; cursor: pointer; }
+.fan-btns button:hover, .fan-btns button:focus-visible { border-color: var(--gold); color: var(--gold); }
+.fan-msg { margin: 0; color: var(--muted); }
+.fan-msg b { color: var(--paper); font-weight: 700; }
+.fan-note { color: var(--muted); font-size: 12px; margin: 0 0 8px; }
 </style>
 </head>
 <body>
@@ -371,6 +380,7 @@ main.wrap { padding-top: 24px; }
 </nav>
 
 <main class="wrap">
+<p class="fan-note mono" hidden>Your picks stay in this browser. Just for fun: no prizes, no betting. 18+.</p>
 <nav class="glance" aria-labelledby="card-title">
   <h2 id="card-title" class="sec-h">The card</h2>
   <p class="sec-sub mono">14 bouts · our pick for each · tap one to jump to it</p>
@@ -426,6 +436,11 @@ main.wrap { padding-top: 24px; }
   <span class="w">agree: Fury is the favorite</span>
   <span class="t">Fury −180 · Joshua +150 · median of 14 bookmakers via The Odds API, 26 Nov</span>
 </div>  </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#1" data-lock="2026-12-11T00:00:00Z" data-a="2036096496" data-b="1657559553" data-an="Fury" data-bn="Joshua" data-ours="2036096496" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="2036096496">Fury</button><button type="button" data-f="1657559553">Joshua</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1217,6 +1232,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#4" data-lock="2026-12-11T00:00:00Z" data-a="1059805581" data-b="996895696" data-an="Vanhouter" data-bn="Essomba" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1059805581">Vanhouter</button><button type="button" data-f="996895696">Essomba</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1480,6 +1500,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Wilder</span><span class="conf"> · narrow</span></span>
 <span class="call-t mono">Locked <time datetime="2026-11-26T17:08:11Z" title="26 Nov 2026, 17:08 UTC">26 Nov</time></span><ul class="why"><li class="pro">Wilder has beaten better fighters</li><li class="pro">Wilder hits harder: 44 of 46 wins by knockout, Bakole 16 of 21</li><li class="con">Against: Bakole has fewer miles on the clock: 24 pro fights to Wilder&#39;s 51</li></ul><p class="call-n">Narrow: a coin flip. In testing, picks this close were right about half the time.</p>  </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#5" data-lock="2026-12-11T00:00:00Z" data-a="1713741999" data-b="1386622318" data-an="Wilder" data-bn="Bakole" data-ours="1713741999" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1713741999">Wilder</button><button type="button" data-f="1386622318">Bakole</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1744,6 +1769,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#6" data-lock="2026-12-11T00:00:00Z" data-a="1858816489" data-b="2073393186" data-an="Jolly" data-bn="Macedo" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1858816489">Jolly</button><button type="button" data-f="2073393186">Macedo</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -2007,6 +2037,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Lara</span><span class="conf"> · lean</span></span>
 <span class="call-t mono">Locked <time datetime="2026-11-26T17:08:11Z" title="26 Nov 2026, 17:08 UTC">26 Nov</time></span><ul class="why"><li class="pro">Lara hits harder: 24 of 31 wins by knockout, Cordina 9 of 19</li><li class="pro">Lara is younger: 28 to Cordina&#39;s 35</li><li class="con">Against: Cordina has beaten better fighters</li></ul><p class="call-n">Lean: a slight edge. In testing, picks like this were right about 2 times in 3.</p>  </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#7" data-lock="2026-12-11T00:00:00Z" data-a="2092863451" data-b="1434360679" data-an="Cordina" data-bn="Lara" data-ours="1434360679" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="2092863451">Cordina</button><button type="button" data-f="1434360679">Lara</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -2270,6 +2305,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v">Pending</span>
     <span class="call-t mono">Locks before fight night</span>
+  </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#8" data-lock="2026-12-11T00:00:00Z" data-a="1076919605" data-b="987694466" data-an="Tsutsumi" data-bn="Pasillas" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1076919605">Tsutsumi</button><button type="button" data-f="987694466">Pasillas</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
   </div>
 
   <details class="numbers">
@@ -2535,6 +2575,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#9" data-lock="2026-12-11T00:00:00Z" data-a="1013365" data-b="1901022507" data-an="Tsutsumi" data-bn="Fazeldin" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1013365">Tsutsumi</button><button type="button" data-f="1901022507">Fazeldin</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -2798,6 +2843,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
+  </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#10" data-lock="2026-12-11T00:00:00Z" data-a="1339731457" data-b="1630749966" data-an="Nanga" data-bn="Richards" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1339731457">Nanga</button><button type="button" data-f="1630749966">Richards</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
   </div>
 
   <details class="numbers">
@@ -3063,6 +3113,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#11" data-lock="2026-12-11T00:00:00Z" data-a="2058535593" data-b="1286987689" data-an="Tallon" data-bn="Bruce" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="2058535593">Tallon</button><button type="button" data-f="1286987689">Bruce</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -3326,6 +3381,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
+  </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#12" data-lock="2026-12-11T00:00:00Z" data-a="999525889" data-b="1042215202" data-an="Alakel" data-bn="Rivera" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="999525889">Alakel</button><button type="button" data-f="1042215202">Rivera</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
   </div>
 
   <details class="numbers">
@@ -3591,6 +3651,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#13" data-lock="2026-12-11T00:00:00Z" data-a="2069776935" data-b="1767551459" data-an="Kamara" data-bn="Matejcek" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="2069776935">Kamara</button><button type="button" data-f="1767551459">Matejcek</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -3855,6 +3920,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-v">Pending</span>
     <span class="call-t mono">Finding fight records · locks two days out at the latest</span>
   </div>
+  <div class="fan" hidden data-key="2026-12-11-fury-joshua#14" data-lock="2026-12-11T00:00:00Z" data-a="2004772223" data-b="1489407224" data-an="Fury" data-bn="Kolarik" data-ours="" data-result="">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="2004772223">Fury</button><button type="button" data-f="1489407224">Kolarik</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -4107,6 +4177,56 @@ main.wrap { padding-top: 24px; }
   els.forEach(function (el) {
     try { el.textContent = 'Your time: ' + f.format(new Date(el.getAttribute('datetime'))); el.hidden = false; } catch (e) {}
   });
+})();
+</script>
+<script>
+/* Fan picks: stored only in this browser (localStorage), never sent anywhere.
+   They close when ours do (00:00 UTC on fight day) and are graded once the
+   card is settled. Without storage the buttons still work for this visit. */
+(function () {
+  var els = document.querySelectorAll('.fan');
+  if (!els.length) return;
+  var KEY = 'bd.fanpicks', store = {};
+  try { store = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { store = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+  var shown = false;
+  els.forEach(function (el) {
+    var ds = el.dataset, btns = el.querySelector('.fan-btns'), msg = el.querySelector('.fan-msg');
+    function name(id) { return id === ds.a ? ds.an : id === ds.b ? ds.bn : ''; }
+    function say(parts) {
+      msg.textContent = '';
+      parts.forEach(function (p) { var n = p[1] ? document.createElement('b') : document.createTextNode(p[0]); if (p[1]) n.textContent = p[0]; msg.appendChild(n); });
+    }
+    function draw() {
+      var mine = store[ds.key], res = ds.result, open = !res && Date.now() < Date.parse(ds.lock);
+      btns.hidden = true;
+      if (res) {
+        if (!mine) { el.hidden = true; return; }
+        if (res === 'push') { say([['You picked '], [name(mine), 1], ['. Draw: your pick counts neither way.']]); }
+        else {
+          var line = [['You ' + (mine === res ? '✓' : '✗'), 1]];
+          if (ds.ours) line.push([' · BoxingDream ' + (ds.ours === res ? '✓' : '✗'), 1]);
+          say(line);
+        }
+      } else if (mine) {
+        say([['Locked in: '], [name(mine), 1], ['. Graded after the fight.']]);
+      } else if (open) {
+        btns.hidden = false; say([]);
+      } else {
+        say([['Fan picks closed at the bell.']]);
+      }
+      el.hidden = false; shown = true;
+    }
+    btns.addEventListener('click', function (ev) {
+      var f = ev.target.closest('button[data-f]');
+      if (!f || store[ds.key]) return;
+      if (Date.now() < Date.parse(ds.lock)) { store[ds.key] = f.dataset.f; save(); }
+      draw();
+    });
+    draw();
+  });
+  var note = document.querySelector('.fan-note');
+  if (note && shown) note.hidden = false;
 })();
 </script>
 </body>

@@ -320,6 +320,15 @@ main.wrap { padding-top: 24px; }
   .spec { margin-left: 0; width: 100%; }
   .pip { width: 19px; height: 19px; font-size: 9px; }
 }
+/* Fan picks ("Your call"): a visitor's own pick, kept only in their browser. Hidden until the script runs. */
+.fan { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 10px; padding: 14px 22px; border: 1px dashed var(--rule2); }
+.fan .call-k { color: var(--paper); }
+.fan-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.fan-btns button { font: 700 13px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--paper); background: transparent; border: 1px solid var(--rule2); padding: 12px 18px; min-height: 44px; cursor: pointer; }
+.fan-btns button:hover, .fan-btns button:focus-visible { border-color: var(--gold); color: var(--gold); }
+.fan-msg { margin: 0; color: var(--muted); }
+.fan-msg b { color: var(--paper); font-weight: 700; }
+.fan-note { color: var(--muted); font-size: 12px; margin: 0 0 8px; }
 </style>
 </head>
 <body>
@@ -371,6 +380,7 @@ main.wrap { padding-top: 24px; }
 </nav>
 
 <main class="wrap">
+<p class="fan-note mono" hidden>Your picks stay in this browser. Just for fun: no prizes, no betting. 18+.</p>
 <nav class="glance" aria-labelledby="card-title">
   <h2 id="card-title" class="sec-h">The card</h2>
   <p class="sec-sub mono">7 bouts · how every pick did · tap one to jump to it</p>
@@ -415,6 +425,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Álvarez</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-08T05:06:56Z" title="8 Oct 2026, 05:06 UTC">8 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Canelo Álvarez by unanimous decision</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-10-31-canelo-mbilli#1" data-lock="2026-10-31T00:00:00Z" data-a="1862518701" data-b="785657" data-an="Álvarez" data-bn="M&#39;billi" data-ours="1862518701" data-result="1862518701">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1862518701">Álvarez</button><button type="button" data-f="785657">M&#39;billi</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -678,6 +693,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Munguía</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-18T16:08:38Z" title="18 Oct 2026, 16:08 UTC">18 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Jaime Munguía by unanimous decision</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-10-31-canelo-mbilli#2" data-lock="2026-10-31T00:00:00Z" data-a="1426490485" data-b="1209221793" data-an="Munguía" data-bn="Zon" data-ours="1426490485" data-result="1426490485">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1426490485">Munguía</button><button type="button" data-f="1209221793">Zon</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1467,6 +1487,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Picasso</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-18T16:08:38Z" title="18 Oct 2026, 16:08 UTC">18 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Carl Jammes Martin by split decision</span><span class="grade miss">Missed</span></div>  </div>
+  <div class="fan" hidden data-key="2026-10-31-canelo-mbilli#5" data-lock="2026-10-31T00:00:00Z" data-a="2124755312" data-b="1901805474" data-an="Picasso" data-bn="Martin" data-ours="2124755312" data-result="1901805474">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="2124755312">Picasso</button><button type="button" data-f="1901805474">Martin</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1730,6 +1755,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Tsutsumi</span><span class="conf"> · by record</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-20T03:42:42Z" title="20 Oct 2026, 03:42 UTC">20 Oct</time></span><p class="call-n">By record: no verified fight history</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Reito Tsutsumi by TKO, round 2</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-10-31-canelo-mbilli#6" data-lock="2026-10-31T00:00:00Z" data-a="1013365" data-b="962801538" data-an="Tsutsumi" data-bn="Garcia" data-ours="1013365" data-result="1013365">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1013365">Tsutsumi</button><button type="button" data-f="962801538">Garcia</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1993,6 +2023,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Espinoza</span><span class="conf"> · billed first</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-29T00:07:19Z" title="29 Oct 2026, 00:07 UTC">29 Oct</time></span><p class="call-n">Billed first: no record to compare, so the pick goes to the fighter billed first</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Rafael Espinoza by TKO, round 3</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-10-31-canelo-mbilli#7" data-lock="2026-10-31T00:00:00Z" data-a="1973661616" data-b="1327821419" data-an="Espinoza" data-bn="Blandon" data-ours="1973661616" data-result="1973661616">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1973661616">Espinoza</button><button type="button" data-f="1327821419">Blandon</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -2245,6 +2280,56 @@ main.wrap { padding-top: 24px; }
   els.forEach(function (el) {
     try { el.textContent = 'Your time: ' + f.format(new Date(el.getAttribute('datetime'))); el.hidden = false; } catch (e) {}
   });
+})();
+</script>
+<script>
+/* Fan picks: stored only in this browser (localStorage), never sent anywhere.
+   They close when ours do (00:00 UTC on fight day) and are graded once the
+   card is settled. Without storage the buttons still work for this visit. */
+(function () {
+  var els = document.querySelectorAll('.fan');
+  if (!els.length) return;
+  var KEY = 'bd.fanpicks', store = {};
+  try { store = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { store = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+  var shown = false;
+  els.forEach(function (el) {
+    var ds = el.dataset, btns = el.querySelector('.fan-btns'), msg = el.querySelector('.fan-msg');
+    function name(id) { return id === ds.a ? ds.an : id === ds.b ? ds.bn : ''; }
+    function say(parts) {
+      msg.textContent = '';
+      parts.forEach(function (p) { var n = p[1] ? document.createElement('b') : document.createTextNode(p[0]); if (p[1]) n.textContent = p[0]; msg.appendChild(n); });
+    }
+    function draw() {
+      var mine = store[ds.key], res = ds.result, open = !res && Date.now() < Date.parse(ds.lock);
+      btns.hidden = true;
+      if (res) {
+        if (!mine) { el.hidden = true; return; }
+        if (res === 'push') { say([['You picked '], [name(mine), 1], ['. Draw: your pick counts neither way.']]); }
+        else {
+          var line = [['You ' + (mine === res ? '✓' : '✗'), 1]];
+          if (ds.ours) line.push([' · BoxingDream ' + (ds.ours === res ? '✓' : '✗'), 1]);
+          say(line);
+        }
+      } else if (mine) {
+        say([['Locked in: '], [name(mine), 1], ['. Graded after the fight.']]);
+      } else if (open) {
+        btns.hidden = false; say([]);
+      } else {
+        say([['Fan picks closed at the bell.']]);
+      }
+      el.hidden = false; shown = true;
+    }
+    btns.addEventListener('click', function (ev) {
+      var f = ev.target.closest('button[data-f]');
+      if (!f || store[ds.key]) return;
+      if (Date.now() < Date.parse(ds.lock)) { store[ds.key] = f.dataset.f; save(); }
+      draw();
+    });
+    draw();
+  });
+  var note = document.querySelector('.fan-note');
+  if (note && shown) note.hidden = false;
 })();
 </script>
 </body>

@@ -320,6 +320,15 @@ main.wrap { padding-top: 24px; }
   .spec { margin-left: 0; width: 100%; }
   .pip { width: 19px; height: 19px; font-size: 9px; }
 }
+/* Fan picks ("Your call"): a visitor's own pick, kept only in their browser. Hidden until the script runs. */
+.fan { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 10px; padding: 14px 22px; border: 1px dashed var(--rule2); }
+.fan .call-k { color: var(--paper); }
+.fan-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.fan-btns button { font: 700 13px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--paper); background: transparent; border: 1px solid var(--rule2); padding: 12px 18px; min-height: 44px; cursor: pointer; }
+.fan-btns button:hover, .fan-btns button:focus-visible { border-color: var(--gold); color: var(--gold); }
+.fan-msg { margin: 0; color: var(--muted); }
+.fan-msg b { color: var(--paper); font-weight: 700; }
+.fan-note { color: var(--muted); font-size: 12px; margin: 0 0 8px; }
 </style>
 </head>
 <body>
@@ -371,6 +380,7 @@ main.wrap { padding-top: 24px; }
 </nav>
 
 <main class="wrap">
+<p class="fan-note mono" hidden>Your picks stay in this browser. Just for fun: no prizes, no betting. 18+.</p>
 <nav class="glance" aria-labelledby="card-title">
   <h2 id="card-title" class="sec-h">The card</h2>
   <p class="sec-sub mono">8 bouts · how every pick did · tap one to jump to it</p>
@@ -416,6 +426,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Billam-Smith</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Cheavon Clarke by TKO, round 7</span><span class="grade miss">Missed</span></div>  </div>
+  <div class="fan" hidden data-key="2026-11-07-billam-smith-clarke#1" data-lock="2026-11-07T00:00:00Z" data-a="1349420692" data-b="1498764084" data-an="Billam-Smith" data-bn="Clarke" data-ours="1349420692" data-result="1498764084">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1349420692">Billam-Smith</button><button type="button" data-f="1498764084">Clarke</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -679,6 +694,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Bentley</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Denzel Bentley by unanimous decision</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-11-07-billam-smith-clarke#2" data-lock="2026-11-07T00:00:00Z" data-a="1393953897" data-b="1130324212" data-an="Bentley" data-bn="Mosley Jr." data-ours="1393953897" data-result="1393953897">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1393953897">Bentley</button><button type="button" data-f="1130324212">Mosley Jr.</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -942,6 +962,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Parker</span></span>
 <span class="call-t mono">Locked <time datetime="2026-10-19T02:56:23Z" title="19 Oct 2026, 02:56 UTC">19 Oct</time></span><div class="call-r"><span class="call-k mono">Result</span><span class="res">Umar Dzambekov by KO, round 4</span><span class="grade miss">Missed</span></div>  </div>
+  <div class="fan" hidden data-key="2026-11-07-billam-smith-clarke#3" data-lock="2026-11-07T00:00:00Z" data-a="1793875940" data-b="1025600053" data-an="Parker" data-bn="Dzambekov" data-ours="1793875940" data-result="1025600053">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1793875940">Parker</button><button type="button" data-f="1025600053">Dzambekov</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1205,6 +1230,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Roehrig</span><span class="conf"> · billed first</span></span>
 <span class="call-t mono">Locked <time datetime="2026-11-05T01:07:20Z" title="5 Nov 2026, 01:07 UTC">5 Nov</time></span><p class="call-n">Billed first: no record to compare, so the pick goes to the fighter billed first</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Lucas Roehrig by TKO, round 7</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-11-07-billam-smith-clarke#4" data-lock="2026-11-07T00:00:00Z" data-a="1075744228" data-b="1844112671" data-an="Roehrig" data-bn="McDonald" data-ours="1075744228" data-result="1075744228">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1075744228">Roehrig</button><button type="button" data-f="1844112671">McDonald</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1468,6 +1498,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Vanhouter</span><span class="conf"> · billed first</span></span>
 <span class="call-t mono">Locked <time datetime="2026-11-05T01:07:20Z" title="5 Nov 2026, 01:07 UTC">5 Nov</time></span><p class="call-n">Billed first: no record to compare, so the pick goes to the fighter billed first</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Da&#39;Mazion Vanhouter by TKO, round 1</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-11-07-billam-smith-clarke#5" data-lock="2026-11-07T00:00:00Z" data-a="1059805581" data-b="2024580130" data-an="Vanhouter" data-bn="Baláž" data-ours="1059805581" data-result="1059805581">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1059805581">Vanhouter</button><button type="button" data-f="2024580130">Baláž</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -1994,6 +2029,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Allen</span><span class="conf"> · billed first</span></span>
 <span class="call-t mono">Locked <time datetime="2026-11-06T01:07:32Z" title="6 Nov 2026, 01:07 UTC">6 Nov</time></span><p class="call-n">Billed first: no record to compare, so the pick goes to the fighter billed first</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Kayla Allen by decision</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-11-07-billam-smith-clarke#7" data-lock="2026-11-07T00:00:00Z" data-a="1554645907" data-b="1605559443" data-an="Allen" data-bn="Igel" data-ours="1554645907" data-result="1554645907">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="1554645907">Allen</button><button type="button" data-f="1605559443">Igel</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -2257,6 +2297,11 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Our pick</span>
     <span class="call-v"><span class="lean">Abdulah</span><span class="conf"> · billed first</span></span>
 <span class="call-t mono">Locked <time datetime="2026-11-06T01:07:32Z" title="6 Nov 2026, 01:07 UTC">6 Nov</time></span><p class="call-n">Billed first: no record to compare, so the pick goes to the fighter billed first</p><div class="call-r"><span class="call-k mono">Result</span><span class="res">Masood Abdulah by unanimous decision</span><span class="grade hit">Called it</span></div>  </div>
+  <div class="fan" hidden data-key="2026-11-07-billam-smith-clarke#8" data-lock="2026-11-07T00:00:00Z" data-a="903152407" data-b="1841744854" data-an="Abdulah" data-bn="Palma" data-ours="903152407" data-result="903152407">
+    <span class="call-k mono">Your call</span>
+    <div class="fan-btns" hidden><button type="button" data-f="903152407">Abdulah</button><button type="button" data-f="1841744854">Palma</button></div>
+    <p class="fan-msg mono" aria-live="polite"></p>
+  </div>
 
   <details class="numbers">
   <summary class="mono"><span><span class="show">See all the numbers</span><span class="hide">Hide the numbers</span></span><span class="what">Physical · Activity · Opposition · Power and chin · Experience · Style</span></summary>
@@ -2509,6 +2554,56 @@ main.wrap { padding-top: 24px; }
   els.forEach(function (el) {
     try { el.textContent = 'Your time: ' + f.format(new Date(el.getAttribute('datetime'))); el.hidden = false; } catch (e) {}
   });
+})();
+</script>
+<script>
+/* Fan picks: stored only in this browser (localStorage), never sent anywhere.
+   They close when ours do (00:00 UTC on fight day) and are graded once the
+   card is settled. Without storage the buttons still work for this visit. */
+(function () {
+  var els = document.querySelectorAll('.fan');
+  if (!els.length) return;
+  var KEY = 'bd.fanpicks', store = {};
+  try { store = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { store = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+  var shown = false;
+  els.forEach(function (el) {
+    var ds = el.dataset, btns = el.querySelector('.fan-btns'), msg = el.querySelector('.fan-msg');
+    function name(id) { return id === ds.a ? ds.an : id === ds.b ? ds.bn : ''; }
+    function say(parts) {
+      msg.textContent = '';
+      parts.forEach(function (p) { var n = p[1] ? document.createElement('b') : document.createTextNode(p[0]); if (p[1]) n.textContent = p[0]; msg.appendChild(n); });
+    }
+    function draw() {
+      var mine = store[ds.key], res = ds.result, open = !res && Date.now() < Date.parse(ds.lock);
+      btns.hidden = true;
+      if (res) {
+        if (!mine) { el.hidden = true; return; }
+        if (res === 'push') { say([['You picked '], [name(mine), 1], ['. Draw: your pick counts neither way.']]); }
+        else {
+          var line = [['You ' + (mine === res ? '✓' : '✗'), 1]];
+          if (ds.ours) line.push([' · BoxingDream ' + (ds.ours === res ? '✓' : '✗'), 1]);
+          say(line);
+        }
+      } else if (mine) {
+        say([['Locked in: '], [name(mine), 1], ['. Graded after the fight.']]);
+      } else if (open) {
+        btns.hidden = false; say([]);
+      } else {
+        say([['Fan picks closed at the bell.']]);
+      }
+      el.hidden = false; shown = true;
+    }
+    btns.addEventListener('click', function (ev) {
+      var f = ev.target.closest('button[data-f]');
+      if (!f || store[ds.key]) return;
+      if (Date.now() < Date.parse(ds.lock)) { store[ds.key] = f.dataset.f; save(); }
+      draw();
+    });
+    draw();
+  });
+  var note = document.querySelector('.fan-note');
+  if (note && shown) note.hidden = false;
 })();
 </script>
 </body>

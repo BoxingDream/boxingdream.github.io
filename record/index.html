@@ -117,6 +117,8 @@ h2 + .mono { color: var(--muted); margin: 0 0 12px; }
 details.fine { color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
 details.fine summary { cursor: pointer; }
 details.fine p { margin: 12px 0 0; max-width: 40em; }
+.fan-score { margin: 0 0 28px; padding: 14px 18px; border: 1px dashed var(--rule2); max-width: 34em; }
+.fan-score b { color: var(--gold); }
 </style>
 </head>
 <body>
@@ -136,6 +138,7 @@ details.fine p { margin: 12px 0 0; max-width: 40em; }
   <div class="strip" role="img" aria-label="42 called and 11 missed, oldest first"><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="miss"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="miss"></i><i class="miss"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="miss"></i><i class="miss"></i><i class="miss"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="miss"></i><i class="miss"></i><i class="hit"></i><i class="miss"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="hit"></i><i class="miss"></i><i class="hit"></i><i class="miss"></i><i class="hit"></i><i class="hit"></i></div>
   <p class="legend mono"><span><i class="hit"></i>Called it</span><span><i class="miss"></i>Missed</span></p>
 
+  <p class="fan-score" hidden></p>
   <h2>Results</h2>
   <p class="mono">Newest first</p>
   <ul class="rows"><li>
@@ -380,6 +383,30 @@ details.fine p { margin: 12px 0 0; max-width: 40em; }
   els.forEach(function (el) {
     try { el.textContent = 'Your time: ' + f.format(new Date(el.getAttribute('datetime'))); el.hidden = false; } catch (e) {}
   });
+})();
+</script>
+<script type="application/json" id="fan-results">{"2026-10-08-iglesias-zaren#1": {"p": "1099601617", "w": "1099601617"}, "2026-10-08-iglesias-zaren#2": {"p": "923477", "w": "923477"}, "2026-10-10-schofield-bahdi#1": {"p": "1988242140", "w": "1988242140"}, "2026-10-10-schofield-bahdi#2": {"p": null, "w": "991171439"}, "2026-10-17-dubois-wardley#1": {"p": "1411737330", "w": "1411737330"}, "2026-10-17-dubois-wardley#2": {"p": "2042738421", "w": "2042738421"}, "2026-10-17-fundora-hadribeaj#1": {"p": "2134773542", "w": "2134773542"}, "2026-10-17-fundora-hadribeaj#3": {"p": null, "w": "2090185857"}, "2026-10-24-navarrete-foster#1": {"p": "1643587585", "w": "1643587585"}, "2026-10-24-navarrete-foster#2": {"p": "950036329", "w": "950036329"}, "2026-10-24-navarrete-foster#3": {"p": "1647767691", "w": "1647767691"}, "2026-10-24-smith-puello#1": {"p": "1192760973", "w": "1192760973"}, "2026-10-24-smith-puello#2": {"p": "1038764", "w": "1038764"}, "2026-10-24-smith-puello#3": {"p": "1423567961", "w": "1423567961"}, "2026-10-24-smith-puello#6": {"p": "900619595", "w": "900619595"}, "2026-10-24-smith-puello#7": {"p": "1162584", "w": "1162584"}, "2026-10-24-smith-puello#8": {"p": "2078679015", "w": "2078679015"}, "2026-10-31-canelo-mbilli#1": {"p": "1862518701", "w": "1862518701"}, "2026-10-31-canelo-mbilli#2": {"p": "1426490485", "w": "1426490485"}, "2026-10-31-canelo-mbilli#5": {"p": "2124755312", "w": "1901805474"}, "2026-10-31-canelo-mbilli#6": {"p": "1013365", "w": "1013365"}, "2026-10-31-canelo-mbilli#7": {"p": "1973661616", "w": "1973661616"}, "2026-11-07-billam-smith-clarke#1": {"p": "1349420692", "w": "1498764084"}, "2026-11-07-billam-smith-clarke#2": {"p": "1393953897", "w": "1393953897"}, "2026-11-07-billam-smith-clarke#3": {"p": "1793875940", "w": "1025600053"}, "2026-11-07-billam-smith-clarke#4": {"p": "1075744228", "w": "1075744228"}, "2026-11-07-billam-smith-clarke#5": {"p": "1059805581", "w": "1059805581"}, "2026-11-07-billam-smith-clarke#7": {"p": "1554645907", "w": "1554645907"}, "2026-11-07-billam-smith-clarke#8": {"p": "903152407", "w": "903152407"}, "2026-11-07-buatsi-hutchinson#1": {"p": "1254161636", "w": "1633216332"}, "2026-11-07-buatsi-hutchinson#2": {"p": "1790065937", "w": "1790065937"}, "2026-11-07-buatsi-hutchinson#3": {"p": "1912733161", "w": "943749681"}, "2026-11-07-buatsi-hutchinson#4": {"p": "1658363550", "w": "1658363550"}, "2026-11-07-buatsi-hutchinson#6": {"p": "2061969515", "w": "2061969515"}, "2026-11-07-buatsi-hutchinson#7": {"p": "1106483808", "w": "1106483808"}, "2026-11-07-buatsi-hutchinson#8": {"p": "1002715761", "w": "1002715761"}, "2026-11-07-perez-rivera#1": {"p": "861489", "w": "861489"}, "2026-11-07-perez-rivera#2": {"p": "2047125222", "w": "2047125222"}, "2026-11-07-perez-rivera#3": {"p": "1881488526", "w": "1881488526"}, "2026-11-07-perez-rivera#4": {"p": "1137106211", "w": "1842768023"}, "2026-11-07-perez-rivera#5": {"p": "1219584219", "w": "1219584219"}, "2026-11-08-baumgardner-turhan#1": {"p": "1556871461", "w": "1556871461"}, "2026-11-08-baumgardner-turhan#3": {"p": "1768082819", "w": "1983815918"}, "2026-11-08-baumgardner-turhan#4": {"p": "873212", "w": "868836"}, "2026-11-08-baumgardner-turhan#5": {"p": "886826", "w": "886826"}, "2026-11-08-baumgardner-turhan#6": {"p": "967290530", "w": "push"}, "2026-11-08-baumgardner-turhan#7": {"p": "1766281966", "w": "1659333436"}, "2026-11-08-baumgardner-turhan#8": {"p": "1077362297", "w": "1077362297"}, "2026-11-08-baumgardner-turhan#9": {"p": "1839470413", "w": "1839470413"}, "2026-11-12-orobio-cedeno#1": {"p": "1029380", "w": "1029380"}, "2026-11-12-orobio-cedeno#3": {"p": "1646884392", "w": "1646884392"}, "2026-11-14-pacheco-fulghum#1": {"p": "2084771477", "w": "1186745661"}, "2026-11-14-pacheco-fulghum#3": {"p": "1005308948", "w": "1005308948"}, "2026-11-14-pacheco-fulghum#4": {"p": "851659", "w": "1289204343"}, "2026-11-14-riley-coupe#1": {"p": null, "w": "1363360775"}, "2026-11-14-riley-coupe#2": {"p": null, "w": "1371106595"}, "2026-11-20-price-kotaskova#1": {"p": "1516839187", "w": "1516839187"}, "2026-11-20-price-kotaskova#2": {"p": "1812090278", "w": "1812090278"}}</script>
+<script>
+/* "You vs BoxingDream": the visitor's own picks (kept in their browser by the
+   card pages) graded against the settled results; nothing leaves the browser. */
+(function () {
+  var mine = {}, res = {};
+  try { mine = JSON.parse(localStorage.getItem('bd.fanpicks') || '{}') || {}; } catch (e) { return; }
+  try { res = JSON.parse(document.getElementById('fan-results').textContent); } catch (e) { return; }
+  var yw = 0, yl = 0, ow = 0, ol = 0;
+  Object.keys(mine).forEach(function (k) {
+    var r = res[k];
+    if (!r || r.w === 'push') return;
+    if (mine[k] === r.w) yw++; else yl++;
+    if (r.p) { if (r.p === r.w) ow++; else ol++; }
+  });
+  if (!(yw + yl)) return;
+  var el = document.querySelector('.fan-score'), b = document.createElement('b');
+  b.textContent = 'You vs BoxingDream: ';
+  el.appendChild(b);
+  el.appendChild(document.createTextNode("you're " + yw + '–' + yl + ' on the bouts you picked' +
+    ((ow + ol) ? ", we're " + ow + '–' + ol + ' on the same bouts.' : '.')));
+  el.hidden = false;
 })();
 </script>
 </body>
