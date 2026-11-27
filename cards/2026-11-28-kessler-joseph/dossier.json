@@ -283,7 +283,7 @@
               "a": {
                 "v": "92%",
                 "d": "5 of last 5",
-                "n": 91.6
+                "n": 91.8
               },
               "b": {
                 "v": null,
@@ -291,7 +291,7 @@
                 "n": null
               },
               "bar": {
-                "a": 91.6,
+                "a": 91.8,
                 "b": 0.0
               }
             },
@@ -526,11 +526,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-11-26",
-  "generated_at": "2026-11-26T01:07:09",
+  "data_as_of": "2026-11-27",
+  "generated_at": "2026-11-27T17:07:19",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-26T01:07:09"
+  "published_at": "2026-11-27T17:07:19"
 }

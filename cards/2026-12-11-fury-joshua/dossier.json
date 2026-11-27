@@ -294,7 +294,7 @@
               "a": {
                 "v": "89%",
                 "d": "27 of 39 opponents",
-                "n": 89.3
+                "n": 89.1
               },
               "b": {
                 "v": "88%",
@@ -302,7 +302,7 @@
                 "n": 88.0
               },
               "bar": {
-                "a": 89.3,
+                "a": 89.1,
                 "b": 88.0
               }
             },
@@ -328,8 +328,8 @@
               "type": "pair",
               "label": "Record vs winning-record opponents",
               "a": {
-                "v": "23-2-1",
-                "d": "26 fights",
+                "v": "24-2-1",
+                "d": "27 fights",
                 "n": null
               },
               "b": {
@@ -367,9 +367,9 @@
               "type": "pair",
               "label": "KO/TKO rate vs winning-record opponents",
               "a": {
-                "v": "70%",
-                "d": "16 of 23 wins",
-                "n": 69.6
+                "v": "71%",
+                "d": "17 of 24 wins",
+                "n": 70.8
               },
               "b": {
                 "v": "86%",
@@ -377,7 +377,7 @@
                 "n": 86.4
               },
               "bar": {
-                "a": 69.6,
+                "a": 70.8,
                 "b": 86.4
               }
             },
@@ -850,9 +850,9 @@
               "type": "pair",
               "label": "Same, last 5 fights",
               "a": {
-                "v": "86%",
+                "v": "87%",
                 "d": "4 of last 5",
-                "n": 86.5
+                "n": 86.6
               },
               "b": {
                 "v": null,
@@ -860,7 +860,7 @@
                 "n": null
               },
               "bar": {
-                "a": 86.5,
+                "a": 86.6,
                 "b": 0.0
               }
             },
@@ -2367,9 +2367,9 @@
               "type": "pair",
               "label": "Same, last 5 fights",
               "a": {
-                "v": "86%",
+                "v": "87%",
                 "d": "4 of last 5",
-                "n": 86.5
+                "n": 86.6
               },
               "b": {
                 "v": "93%",
@@ -2377,7 +2377,7 @@
                 "n": 92.7
               },
               "bar": {
-                "a": 86.5,
+                "a": 86.6,
                 "b": 92.7
               }
             },
@@ -4928,7 +4928,7 @@
               },
               "b": {
                 "v": null,
-                "d": "records known for only 2 of 21 opponents",
+                "d": "records known for only 3 of 21 opponents",
                 "n": null
               },
               "bar": null
@@ -4957,8 +4957,8 @@
                 "n": null
               },
               "b": {
-                "v": "2-0-0",
-                "d": "2 fights",
+                "v": "3-0-0",
+                "d": "3 fights",
                 "n": null
               },
               "bar": null
@@ -4996,11 +4996,14 @@
                 "n": null
               },
               "b": {
-                "v": null,
-                "d": "only 2 wins over rated winners",
-                "n": null
+                "v": "0%",
+                "d": "0 of 3 wins",
+                "n": 0.0
               },
-              "bar": null
+              "bar": {
+                "a": 0.0,
+                "b": 0.0
+              }
             },
             {
               "type": "pair",
@@ -5129,7 +5132,7 @@
               },
               "b": {
                 "v": "1-1-0",
-                "d": "4 opponents with known stance",
+                "d": "5 opponents with known stance",
                 "n": null
               },
               "bar": null
@@ -6973,10 +6976,10 @@
     }
   ],
   "data_as_of": "2026-11-27",
-  "generated_at": "2026-11-27T01:13:48",
+  "generated_at": "2026-11-27T17:07:58",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-27T01:13:48"
+  "published_at": "2026-11-27T17:07:58"
 }
