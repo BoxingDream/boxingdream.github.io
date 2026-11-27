@@ -517,7 +517,24 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Jake Paul",
+        "fighter_id": 1020687802,
+        "picked_at": "2026-11-27T01:14:06",
+        "prob": 0.97,
+        "pushes": {
+          "activity": 0.151,
+          "age": 0.0,
+          "chin": -0.261,
+          "experience": -0.248,
+          "height": 0.0,
+          "ko_rate": 0.735,
+          "layoff": 2.543,
+          "opp_quality": 0.0,
+          "rating": 1.611,
+          "reach": 0.0
+        }
+      },
       "result": null
     },
     {
@@ -1534,15 +1551,32 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Jimi Manuwa",
+        "fighter_id": 1594573438,
+        "picked_at": "2026-11-27T01:14:06",
+        "prob": 0.614,
+        "pushes": {
+          "activity": 0.0,
+          "age": 0.0,
+          "chin": 0.0,
+          "experience": 0.019,
+          "height": 0.0,
+          "ko_rate": 0.0,
+          "layoff": 0.0,
+          "opp_quality": 0.0,
+          "rating": -0.486,
+          "reach": 0.0
+        }
+      },
       "result": null
     }
   ],
-  "data_as_of": "2026-11-26",
-  "generated_at": "2026-11-26T23:17:03",
+  "data_as_of": "2026-11-27",
+  "generated_at": "2026-11-27T01:20:51",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-26T23:17:03"
+  "published_at": "2026-11-27T01:20:51"
 }

@@ -4146,7 +4146,24 @@
           ]
         }
       ],
-      "pick": null,
+      "pick": {
+        "text": "Hayato Tsutsumi",
+        "fighter_id": 1076919605,
+        "picked_at": "2026-11-27T01:07:33",
+        "prob": 0.855,
+        "pushes": {
+          "activity": 0.09,
+          "age": 0.438,
+          "chin": 0.184,
+          "experience": 0.21,
+          "height": 0.0,
+          "ko_rate": 0.111,
+          "layoff": 0.022,
+          "opp_quality": 0.0,
+          "rating": 0.766,
+          "reach": 0.0
+        }
+      },
       "result": null
     },
     {
@@ -6955,11 +6972,11 @@
       "result": null
     }
   ],
-  "data_as_of": "2026-11-26",
-  "generated_at": "2026-11-26T23:07:07",
+  "data_as_of": "2026-11-27",
+  "generated_at": "2026-11-27T01:13:48",
   "sources": [
     "Wikipedia (CC BY-SA 4.0)",
     "Wikidata"
   ],
-  "published_at": "2026-11-26T23:07:07"
+  "published_at": "2026-11-27T01:13:48"
 }
