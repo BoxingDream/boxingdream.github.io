@@ -328,6 +328,7 @@ main.wrap { padding-top: 24px; }
 .fan-btns button:hover, .fan-btns button:focus-visible { border-color: var(--gold); color: var(--gold); }
 .fan-msg { margin: 0; color: var(--muted); }
 .fan-msg b { color: var(--paper); font-weight: 700; }
+.fan-split { flex-basis: 100%; margin: 0; color: var(--muted); }
 .fan-note { color: var(--muted); font-size: 12px; margin: 0 0 8px; }
 .offlist { margin: 56px 0 0; }
 .offlist ul { list-style: none; margin: 12px 0 0; padding: 0; }
@@ -384,7 +385,7 @@ main.wrap { padding-top: 24px; }
 </nav>
 
 <main class="wrap">
-<p class="fan-note mono" hidden>Your picks stay in this browser. Just for fun: no prizes, no betting. 18+.</p>
+<p class="fan-note mono" hidden>Your picks stay in this browser. We count picks anonymously to show the fan split. Just for fun: no prizes, no betting. 18+.</p>
 <nav class="glance" aria-labelledby="card-title">
   <h2 id="card-title" class="sec-h">The card</h2>
   <p class="sec-sub mono">7 bouts · how every pick did · tap one to jump to it</p>
@@ -433,6 +434,7 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Your call</span>
     <div class="fan-btns" hidden><button type="button" data-f="1254161636">Buatsi</button><button type="button" data-f="1633216332">Hutchinson</button></div>
     <p class="fan-msg mono" aria-live="polite"></p>
+    <p class="fan-split mono" hidden></p>
   </div>
 
   <details class="numbers">
@@ -701,6 +703,7 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Your call</span>
     <div class="fan-btns" hidden><button type="button" data-f="1790065937">Rafferty</button><button type="button" data-f="1010572136">Martirosyan</button></div>
     <p class="fan-msg mono" aria-live="polite"></p>
+    <p class="fan-split mono" hidden></p>
   </div>
 
   <details class="numbers">
@@ -969,6 +972,7 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Your call</span>
     <div class="fan-btns" hidden><button type="button" data-f="1912733161">Miller</button><button type="button" data-f="943749681">Powar</button></div>
     <p class="fan-msg mono" aria-live="polite"></p>
+    <p class="fan-split mono" hidden></p>
   </div>
 
   <details class="numbers">
@@ -1237,6 +1241,7 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Your call</span>
     <div class="fan-btns" hidden><button type="button" data-f="1658363550">Rea</button><button type="button" data-f="1378368129">Taylor</button></div>
     <p class="fan-msg mono" aria-live="polite"></p>
+    <p class="fan-split mono" hidden></p>
   </div>
 
   <details class="numbers">
@@ -1505,6 +1510,7 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Your call</span>
     <div class="fan-btns" hidden><button type="button" data-f="2061969515">Clarke</button><button type="button" data-f="994317750">Collison</button></div>
     <p class="fan-msg mono" aria-live="polite"></p>
+    <p class="fan-split mono" hidden></p>
   </div>
 
   <details class="numbers">
@@ -1773,6 +1779,7 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Your call</span>
     <div class="fan-btns" hidden><button type="button" data-f="1106483808">Carrigan</button><button type="button" data-f="1702060133">Diop</button></div>
     <p class="fan-msg mono" aria-live="polite"></p>
+    <p class="fan-split mono" hidden></p>
   </div>
 
   <details class="numbers">
@@ -2041,6 +2048,7 @@ main.wrap { padding-top: 24px; }
     <span class="call-k mono">Your call</span>
     <div class="fan-btns" hidden><button type="button" data-f="1002715761">Ummataliev</button><button type="button" data-f="1754718408">Santana</button></div>
     <p class="fan-msg mono" aria-live="polite"></p>
+    <p class="fan-split mono" hidden></p>
   </div>
 
   <details class="numbers">
@@ -2303,12 +2311,32 @@ main.wrap { padding-top: 24px; }
 })();
 </script>
 <script>
-/* Fan picks: stored only in this browser (localStorage), never sent anywhere.
-   They close when ours do (00:00 UTC on fight day) and are graded once the
-   card is settled. Without storage the buttons still work for this visit. */
+/* Fan picks: the visitor's own picks stay in this browser (localStorage).
+   Each new pick also adds one to an anonymous count (/api/fans: bout and
+   fighter only, nothing about the visitor), shown as the fan split once a
+   bout has 20 picks, and only after this visitor has picked or picks have
+   closed. They close when ours do (00:00 UTC on fight day) and are graded
+   once the card is settled. Without storage the buttons still work for this visit. */
 (function () {
   var els = document.querySelectorAll('.fan');
   if (!els.length) return;
+  var API = '/api/fans', MIN = 20, counts = {}, splits = [];
+  function split(el) {
+    var ds = el.dataset, c = counts[ds.key] || {}, p = el.querySelector('.fan-split');
+    var na = c[ds.a] || 0, nb = c[ds.b] || 0, n = na + nb;
+    var seen = store[ds.key] || ds.result || Date.now() >= Date.parse(ds.lock);
+    if (!seen || n < MIN) { p.hidden = true; return; }
+    var pa = Math.round(100 * na / n);
+    p.textContent = 'Fans: ' + pa + '% ' + ds.an + ' · ' + (100 - pa) + '% ' + ds.bn + ' (' + n + ' picks)';
+    p.hidden = false;
+  }
+  function load() {
+    var card = els[0].dataset.key.split('#')[0];
+    try {
+      fetch(API + '/counts?card=' + encodeURIComponent(card)).then(function (r) { return r.ok ? r.json() : {}; })
+        .then(function (c) { counts = c || {}; splits.forEach(split); }).catch(function () {});
+    } catch (e) {}
+  }
   var KEY = 'bd.fanpicks', store = {};
   try { store = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { store = {}; }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
@@ -2343,11 +2371,21 @@ main.wrap { padding-top: 24px; }
     btns.addEventListener('click', function (ev) {
       var f = ev.target.closest('button[data-f]');
       if (!f || store[ds.key]) return;
-      if (Date.now() < Date.parse(ds.lock)) { store[ds.key] = f.dataset.f; save(); }
-      draw();
+      if (Date.now() < Date.parse(ds.lock)) {
+        store[ds.key] = f.dataset.f; save();
+        try {
+          fetch(API + '/pick', {method: 'POST', headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({key: ds.key, f: f.dataset.f})})
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (b) { if (b) { counts[ds.key] = b; split(el); } }).catch(function () {});
+        } catch (e) {}
+      }
+      draw(); split(el);
     });
     draw();
+    if (!el.hidden) splits.push(el);
   });
+  if (splits.length) load();
   var note = document.querySelector('.fan-note');
   if (note && shown) note.hidden = false;
 })();
